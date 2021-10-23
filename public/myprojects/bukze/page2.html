@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BUKZE</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/49212a0441.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<style>
+@font-face {
+    font-family: Brandon_reg;
+    src: url(Brandon_reg.otf);
+}
+.navbar-inverse{
+  background-color: #FFFFFF;
+  border: none;
+}
+.effect1{
+   
+     display: block;
+}
+.second-nav{
+  position: relative;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.second-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+
+}
+
+.second-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #248CCB;
+    transition: width .3s;
+}
+
+.second-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.footer p{
+  font-family: brandon_reg;
+ }
+ .footer h4{
+  font-family: brandon_reg;
+ }
+ .content h4{
+  font-family: brandon_reg;
+ }
+ .content p{
+  font-family: brandon_reg;
+ }
+ .content li{
+  font-family: brandon_reg;
+ }
+ ul{
+  list-style-type: none;
+ }
+ .navbar-fixed-top2
+ {
+
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 500;
+ }
+
+ .searchbutton
+ {
+  position: absolute;
+  z-index: 1000;
+    color: #eeeeee;
+ }
+ .searchbutton:hover
+ {
+  color: red;
+  background-color: red;
+    display: block;
+ }
+ .genere p{
+  font-size: 16px;
+  margin-bottom: 4px;
+ }
+ .main .btn{
+  border-radius: 20px;
+  width:100px;
+  border: 1px solid #808080;
+  font-size: 15px;
+  font-family: brandon_reg;
+  color: #808080;
+  height:35px;
+ }
+ .side .btn{
+  border-radius: 7px;
+  width:80px;
+  border: 1px solid #808080;
+  font-size: 15px;
+  font-family: brandon_reg;
+  color: black;
+  height:35px;
+ }
+ .effect{
+   box-shadow: 0 10px 6px -6px #777;
+}
+.effect .btn-default{
+  border: 1px solid #808080;
+}
+ .checkbox{
+  font-family: brandon_reg;
+ }
+ .checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    width: 1.1em;
+    height: 1.1em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .6em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+    padding-bottom: 5%;
+    color: #34BBFF;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+.sameline p{
+  display: inline-block;
+  padding-right: 10px;
+ }
+.sameline1 p{
+  display: inline-block;
+  padding-right: 10px;
+ }
+ .sameline1 h4{
+  display: inline-block;
+  padding-right: 0px;
+ }
+
+ .category{
+ color: #808080;
+ }
+ .category1 a{
+  color: #808080;
+ }
+ .category1 a:hover{
+ color: #34BBFF;
+ text-decoration: none;
+ }
+
+.category1 a:focus{
+ color: #34BBFF;
+ text-decoration: none;
+ }
+
+
+
+.bookimage
+{
+  height:250px;width:200px;margin-top:20px;
+}
+
+.hover-effect:hover
+ {
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
+ }
+ .favoritebutton
+ {
+  position: absolute;
+  height: 50px;
+  width: 40px;
+  margin-top: 2%;
+  margin-left: 61%;
+ }
+ .addtobagbut:hover
+ {
+  background-color: #248CCB;
+  color: white;
+ }
+ .buynowbut:hover
+ {
+  background-color: #248CCB;
+  color: white;
+ }
+</style>
+<body>
+  <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top effect1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" class="logo"></img></a>
+        </div>
+      </div>
+      <div class="col-md-offset-2 col-md-6">
+        <div class="col-md-9">
+        <form class="navbar-form">
+          <div class="input-group has-feedback has-feedback-left">
+            <span class="glyphicon glyphicon-search form-control-feedback searchbutton" style="padding-top:0.2em; font-size:20px;"></span>
+            <input type="text" class="form-control searchbar" id="search" style="font-size:20px;color:#555"placeholder="&nbsp &nbsp Search" />
+          </div>
+          </div>
+        </form>
+      </div>
+      <div class=" col-md-3">
+        <div class="col-md-offset-5 col-md-6">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><img src="bag.png" style="height:20px;width:20px"></img></a></li>
+          <li><a href="#"><img src="user.png" style="height:20px;width:20px"></img></a></li>
+
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container-fluid">
+<div class="second-nav">
+<nav class="navbar navbar-inverse navbar-fixed-top2" style="margin-top:3.6%;padding-top:2%;background-color:#FFFFFF;box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+">
+  <div class="container-fluid">
+
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="myNavbar1">
+    <div class="row" style="margin-left: 25.2%;">
+
+  <ul class="nav navbar-nav" style="" id='mmenu'>
+   <li><a href="page2.html" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px;">&nbsp Education&nbsp</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px"> &nbsp &nbsp Fiction &nbsp &nbsp</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">Non-Fiction</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">&nbsp Kid's Zone</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">&nbsp&nbsp&nbspHealth&nbsp&nbsp</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">&nbsp&nbspGeneral&nbsp&nbsp</a></li>
+    
+   
+  </ul>
+
+</div>
+</div>
+</nav><!--End of Navbar-->
+</div>
+</div>
+<br>
+<br>
+<div class="container">
+<div class="content" style="margin-top:10%">
+  <div class="row">
+
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <p style="font-size:20px">Shop By Category</p>
+    </div>
+    <div class="col-md-3">
+      <div class="sameline1">
+      <p style="font-size:20px;">Sort By</p>
+      <h4 style="color:#808080;font-size:15px">Newest Item</h4>&nbsp
+      <a href="#"><span class="caret" style="color:black"></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="row genre">
+    <div class="col-md-3">
+     <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">College</a>
+          <a hre="#" class="btn btn-default buynowbut">School</a>
+        </div>
+      <div class="category1" style="padding-left:12%;line-height:200%">
+      <a href="#"><p>All genre</p></a>
+      <a href="#"><p>Arts and Photography</p></a>
+      <a href="#"><p>Biographies and Memories</p></a>
+      <a href="#"><p>Children's Books</p></a>
+      <a href="#"><p>Cookbook, Food & Wine</p></a>
+      <a href="#"><p>History</p></a>
+      <a href="#"><p>Literature and Fiction</p></a>
+      <a href="#"><p>Mystery and Suspense</p></a>
+      <a href="#"><p>Romance</p></a>
+      <a href="#"><p>Sci-Fi and Fantasy</p></a>
+      <a href="#"><p>Teen and Young Adult</p></a>
+ 
+
+    </div>
+      <p style="font-size:20px;margin-left:0px;padding-top: 10px">Search By</p>
+          <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">Author</a>
+          <a hre="#" class="btn btn-default buynowbut">Publisher</a>
+        </div>
+        <div class="category" style="padding-left:0px;">
+     <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Author
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Author
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Author
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Author
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Author
+          </label>
+        </div>
+        <p style="font-size:12px;color:#808080;margin-left:40px">23 More...</p>
+        </div><!--category-->
+
+      <p style="font-size:20px;margin-left:0px;padding-bottom:0px;padding-top: 10px;">Languages</p>
+      <div class="category">
+       <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            English
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Language2
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Language3
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Language4
+          </label>
+        </div>
+      </div><!--Category-->
+
+      <p style="font-size:20px;margin-left:0px;padding-top: 10px;">Book Type</p>
+      <div class="category" style="padding-left:0%">
+     <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Hardcover
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Paperback
+          </label>
+        </div>
+      </div><!--category-->
+    </div>
+    <div class="col-md-3" style="padding-top:2%">
+      <div class="hover-effect">
+      <center>
+        <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage"></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;    margin-top: 2px;font-size:14px;color:#808080"><i>Walter Issacson</i></p>
+        <div class="sameline">
+          <p style="font-size: small;color:#808080;padding-top:10px;margin-bottom:0px"><i class="fa fa-inr" aria-hidden="true"></i><del>&nbsp957</del><sup>47<sup></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><i class="fa fa-inr" aria-hidden="true"></i><b style="color: #333">&nbsp 1761<sup>96<sup></b></p>
+        </div>
+     
+        <div class="btn-group main" style="padding-bottom:20px;padding-top: 10px">
+          <a hre="#" class="btn btn-default addtobagbut" style="padding-top: 3px;padding-left: 22px;font-size: smaller;"><img src="bag.png" style="height:20px;width:20px"></a>
+          <a href="payment.html" class="btn btn-default buynowbut"><img src="buy.png" style="height:20px;width:20px"></a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+      <br>
+      <br>
+      <br>
+      <div class="hover-effect">
+      <center>
+                <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage" ></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>₹ &nbsp 1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹  1761.96</b></p>
+        </div>
+      
+        <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+      <br>
+      <br>
+      <br>
+      <div class="hover-effect">
+      <center>
+                <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage" ></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>₹1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹1761.96</b></p>
+        </div>
+       
+        <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+     <br>
+     <br> 
+     <br>
+    </div>
+    <div class="col-md-3" style="padding-top:2%">
+      <div class="hover-effect">
+      <center>
+                <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage"></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>₹1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹1761.96</b></p>
+        </div>
+      
+        <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+      <br>
+      <br>
+      <br>
+      <div class="hover-effect">
+      <center>
+                <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png"  class="bookimage" ></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>&#8377 1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹1761.96</b></p>
+        </div>
+    
+        <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+      <br>
+      <br>
+      <br>
+      <div class="hover-effect">
+      <center>
+                <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage" ></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>₹1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹1761.96</b></p>
+        </div>
+  
+        <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+     <br>
+     <br> 
+     <br>
+    </div>
+    <div class="col-md-3" style="padding-top:2%">
+      <div class="hover-effect">
+      <center>
+                <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage" ></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>₹1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b style="color:#333">₹1761.96</b></p>
+        </div>
+
+        <div class="btn-group main" style="padding-bottom:20px;padding-top: 10px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+      <br>
+      <br>
+      <br>
+      <div class="hover-effect">
+      <center>
+                       <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage" ></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>₹1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹1761.96</b></p>
+        </div>
+        <p style="font-size:14px;color:#808080">You Saved ₹195.77</p>
+        <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+      <br>
+      <br>
+      <br>
+      <div class="hover-effect">
+      <center>
+                <img src="heart.png" class="favoritebutton">
+      <a href="page3.html"><img src="e1.png" class="bookimage" ></img></a>
+        <p style="margin-bottom:0;font-size:18px;padding-top:10px">Big Magic</p>
+        <p style="margin-bottom:0;font-size:15px;color:#808080">Walter Issacson</p>
+        <div class="sameline">
+          <p style="font-size:18px;color:#808080;padding-top:10px;margin-bottom:0px"><del>₹1957.47</del></p>
+          <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹1761.96</b></p>
+        </div>
+        <p style="font-size:14px;color:#808080">You Saved ₹195.77</p>
+        <div class="btn-group main" style="padding-bottom:20px">
+          <a hre="#" class="btn btn-default addtobagbut">ADD TO BAG</a>
+          <a hre="#" class="btn btn-default buynowbut">BUY</a>
+        </div>
+      </center>
+    </div><!--Hover-effect-->
+     <br>
+     <br> 
+     <br>
+    </div>
+  </div>
+</div><!--End of Content-->
+</div><!--End of Container-->  
+<div class="container-fluid">
+<div class="footer" style="background-color:#248CCB">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" style="padding-top:3%">
+  <h4 style="color:white">BUZKE</h4>
+  <p style="color:white">A new place to find books</p>
+  <p style="color:#ECECEC">What is Buzke?Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">About</p>
+  <p style="color:#ECECEC;margin-bottom:0">Legal</p>
+  <p style="color:#ECECEC">Testimonials</p>
+</div>
+
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">Contact us</p>
+  <p style="color:#ECECEC;margin-bottom:0">Terms</p>
+</div>
+<div class="col-md-1" style="padding-top:3%">
+  <img src="book.png" style="height:75px;width:75px">
+</div>
+<div class="col-md-3" style="padding-top:4%">
+  <p style="color:#ECECEC;font-size:30px">12,789 Pages Turned</p>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <a href="#"><img src="fb.png" style="height:40px;width:40px;"></a>&nbsp&nbsp
+    <a href="#"><img src="twitter.png" style="height:40px;width:40px;"></a>
+  </div>
+  <p style="color:white">Copyright &copy; 2016-2017  Thoutz Technologies Private Limited</p>
+  <div class="col-md-offset-1 col-md-4">
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+  
+ $( ".btn" )
+  .mouseenter(function() {
+$(this).html('<span style="font-size: smaller;vertical-align: -webkit-baseline-middle;">ADD TO BAG</span>');
+  })
+  .mouseleave(function() {
+   $(this).html('<img src="bag.png" style="height:20px;width:20px">')
+  });
+</script>
+
+
+<script type="text/javascript" src="jquery-2.0.2.js"></script>
+<script src="bootstrap.js"></script>
+</html>

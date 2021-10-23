@@ -1,0 +1,80 @@
+
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+body
+{
+    background-image: url('images/blackbg.png');
+}
+.mainbackpic
+{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    opacity: 0.7;
+
+}
+.btn-default
+{
+	margin: auto;
+	display: block;
+	margin-top: 5%;
+	height: 10%;
+	width: 100%;
+}
+
+.brandname{
+    margin-top: 2%;
+    font-family: roboto;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+
+.pageheading{
+    margin-top: 2%;
+    font-family: roboto;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+.uploadbut{
+    text-align: center;
+    color: white;
+}
+.inputbutton
+{
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #ccc; 
+}
+
+.helpbut{
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    color: white;
+}
+.inputfield{
+    padding-top: 7px;
+    border-width: 0px 0px 7px 0px;
+    border-color: black;
+    text-align: center;
+}
+.input-group-addon
+{
+    background-color: transparent;
+    border-width: 0px 0px 0px 0px;
+}
+
+.inputposition
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.sendbutton{
+    text-align: center;
+}

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/build.css">
+
+<style type="text/css">
+
+
+body
+{
+	overflow: hidden;
+}
+
+.topbtnback
+{
+position:absolute;
+margin-top: 0;
+left: 0;
+margin: 0;
+z-index: 2;
+width: 7%;
+}
+
+.topbtnhome
+{
+position:absolute;
+margin-top: 0;
+left: 7%;
+margin: 0; 
+z-index: 2;
+}
+
+.topbtnhelp
+{
+position:absolute;
+margin-top: 0;
+right: 0; 
+z-index: 2;
+}
+.textos
+{
+	font-size: 3vh;
+	font-size: 3vw;
+	font-family: roboto;
+}
+.textis
+{
+	font-size: 2vh;
+	font-size: 2vw;
+	font-family: roboto;
+}
+
+
+
+.btn-custom2
+{
+	background-color: red;
+	color: white;
+}
+
+.btn-custom1
+{
+	background-color: black;
+	color: white;
+}
+
+
+
+.addressboard
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.addressboard.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+
+.addressboardtext
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.addressboardtext.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+
+.housed
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.housed.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+
+.mailed
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.mailed.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+
+<img src="1.png" style="position:fixed;bottom: 0;right: 0;margin: 0; width: 100%; height: 80%;" class="img-responsive">
+
+
+
+<img src="board.png" style="position:fixed;bottom: 0;left: 5%;margin: 0; width: 25%;z-index: 2;height: 20%;" 
+ class="img-responsive addressboard">
+<div class="addressboardtext" id="domainnamede" style="position:fixed;bottom: 3em;left: 10%;margin: 0; font-size:2vh;font-size:2vw;z-index: 2;">
+</div>
+
+
+
+
+<div class="container-fluid" style="background-color: #12a4dd;" id="1">
+<div class="row">
+<div class="cols-md-12">
+
+<a href="#1">
+<button class="btn btn-custom1 btn-sm topbtnback">
+<div class="textis" >Home</div>
+</button>
+</a>
+
+<a href="#1" data-toggle="modal" data-target="#mymodal1">
+<button class="btn btn-custom1 btn-sm topbtnhelp">
+<div class="textis" >Help</div>
+</button>
+</a>
+</div>
+
+
+<div class="cols-xs-12" style="margin-top: 4em;">
+
+<center>
+
+
+
+  <form onSubmit='validate(); return false;'>
+  Enter an email address: 
+  <input id='email'> <br>
+  <button type='submit' id='validate'>Validate!</button>
+  </form>
+  <br>
+  <h1 id='result'></h1>
+
+
+
+<div class="form-group">
+<div class="input-group"> 
+<div class="textos">Enter your Domain name:  
+</div>
+<br>
+
+<input type="text" id="domainname" class="form-control">
+<form class="list" >
+<select name="users" id="ext">
+<option value="">com</option>
+<option value="1">in</option>
+</select>
+</form>
+</div>
+</div>
+<br>
+
+<a href="#2">
+<button class="btn btn-custom2 btn-lg" onclick="addboard()" style="position: absolute; z-index: 5;">
+<div class="textis">Submit</div>
+</button>
+</a>
+
+</center>
+</div>
+
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid" style="background-color: #12a4dd;">
+<div class="row">
+<div class="cols-md-12">
+<img src="2.png" style="height: 100%;width: 100%;" class="img-responsive">
+<img src="2.png" style="height: 100%;width: 100%;" class="img-responsive">
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid" style="background-color: #12a4dd;" id="2">
+<div class="row">
+<div class="cols-xs-12">
+
+<a href="#1">
+<button class="btn btn-custom1 btn-sm topbtnback">
+<div class="textis">Back</div>
+</button>
+</a>
+
+<a href="#1">
+<button class="btn btn-custom1 btn-sm topbtnhome">
+<div class="textis">Home</div>
+</button>
+</a>
+
+
+<a href="#2" data-toggle="modal" data-target="#mymodal2">
+<button class="btn btn-custom1 btn-sm topbtnhelp">
+<div class="textis">Help</div>
+</button>
+</a>
+
+</div>
+
+
+<div class="cols-xs-12" style="margin-top: 4em;">
+
+<center>
+
+<div class="textos addressboard"> Type of Hosting needed</div>
+<br>
+
+<div class="textis addressboard">
+
+<div class="checkbox checkbox-primary checkbox-inline">
+<input type="radio" id="simple" name="hosting" onchange="firsthouse()" checked>
+<label for="simple"> Simple </label>&nbsp&nbsp
+</div>
+
+<div class="checkbox checkbox-primary checkbox-inline">
+<input type="radio" id="moderate" name="hosting" onchange="secondhouse()">
+<label for="moderate"> Moderate </label>&nbsp&nbsp
+</div>
+
+<div class="checkbox checkbox-primary checkbox-inline">
+<input type="radio" id="deluxe" name="hosting" onchange="thirdhouse()">
+<label for="deluxe"> Deluxe </label>&nbsp&nbsp
+</div>
+</div>
+
+
+</center>
+
+<br>
+<center>
+<a href="#3">
+<button class="btn btn-custom2 btn-lg addressboard" style="position: absolute; z-index: 10;"><div class="textis">Submit</div>
+</button>
+</a>
+</center>
+
+<img src="1st.png" style="position:fixed;bottom: 15%;left: 30%;margin: 0; width: 40%;z-index: 0;height: 50%;" 
+ class="img-responsive housed" id="house">
+
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid" style="background-color: #12a4dd;">
+<div class="row">
+<div class="cols-md-12">
+<img src="2.png" style="height: 100%;width: 100%;" class="img-responsive">
+<img src="2.png" style="height: 100%;width: 100%;" class="img-responsive">
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid" style="background-color: #12a4dd;" id="3">
+<div class="row">
+<div class="cols-xs-12">
+
+
+<a href="#2">
+<button class="btn btn-custom1 btn-sm topbtnback">
+<div class="textis">Back</div>
+</button>
+</a>
+
+<a href="#1">
+<button class="btn btn-custom1 btn-sm topbtnhome">
+<div class="textis">Home</div>
+</button>
+</a>
+
+<a href="#3" data-toggle="modal" data-target="#mymodal3">
+<button class="btn btn-custom1 btn-sm topbtnhelp">
+<div class="textis">Help</div>
+</button>
+</a>
+</div>
+
+
+<div class="cols-xs-12" style="margin-top: 4em;">
+
+<center>
+<div class="textos housed"> Do you want your personal MailBox</div><br>
+<div class="textis housed">
+
+<div class="checkbox checkbox-primary checkbox-inline">
+<input type="radio" id="mailyes" name="mailbox" onchange="mailyes()" checked>
+<label for="mailyes"> Yes </label>&nbsp&nbsp
+</div>
+
+<div class="checkbox checkbox-primary checkbox-inline">
+<input type="radio" id="mailno" name="mailbox" onchange="mailno()">
+<label for="mailno"> No </label>&nbsp&nbsp
+</div>
+
+</div><br>
+
+
+<a href="#4">
+<button class="btn btn-custom2 btn-lg housed" style="position: absolute;"><div class="textis">Submit</div>
+</button>
+</a>
+</center>
+
+<img src="mail.png" style="position:fixed;bottom: 0%;left: 70%;margin: 0; width: 20%;z-index: 2;height: 30%;" 
+ class="img-responsive mailed" id="mail">
+
+
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+</div>
+</div>
+ </div>
+
+
+
+
+<div class="container-fluid" style="background-color: #12a4dd;">
+<div class="row">
+<div class="cols-md-12">
+<img src="2.png" style="height: 100%;width: 100%;" class="img-responsive">
+<img src="2.png" style="height: 100%;width: 100%;" class="img-responsive">
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid" style="background-color: #12a4dd;" id="4">
+<div class="row">
+
+<div class="cols-xs-12 ">
+
+
+<a href="#3">
+<button class="btn btn-custom1 btn-sm topbtnback">
+<div class="textis">Back</div>
+</button>
+</a>
+
+<a href="#1">
+<button class="btn btn-custom1 btn-sm topbtnhome">
+<div class="textis">Home</div>
+</button>
+</a>
+
+</div>
+
+
+<div class="cols-xs-12 " style="margin-top: 4em;">
+<center>
+
+<div class="textos mailed">
+Contact your Architects to build your project
+</div><br>
+
+<a href="#4">
+<button class="btn btn-custom2 btn-lg mailed" style="position: absolute;"><div class="textis">Submit</div>
+</button>
+</a>
+</center>
+
+ 
+
+
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+<p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="mymodal1" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<div class="fullfont">
+<center>
+<div class="textos">About Domain</div>
+<button type="button" style="color:black;" class="close" data-dismiss="modal">&times;</button>
+</center>
+</div>
+</div>
+<div class="modal-title"></div>
+<div class="modal-body">
+<center>
+
+
+</center>
+</div>
+</div>  
+</div>
+</div>
+
+
+
+
+<div id="mymodal2" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<div class="fullfont">
+<center>
+<div class="textos">About Hosting</div>
+<button type="button" style="color:black;" class="close" data-dismiss="modal">&times;</button>
+</center>
+</div>
+</div>
+<div class="modal-title"></div>
+<div class="modal-body">
+<center>
+
+
+</center>
+</div>
+</div>  
+</div>
+</div>
+
+
+
+<div id="mymodal3" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<div class="fullfont">
+<center>
+<div class="textos">
+About MailBox
+</div>
+<button type="button" style="color:black;" class="close" data-dismiss="modal">&times;</button>
+</center>
+</div>
+</div>
+<div class="modal-title"></div>
+<div class="modal-body">
+<center>
+
+
+</center>
+</div>
+</div>  
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+
+
+
+
+function validateEmail(email) {   
+var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+return re.test(email);
+}
+
+
+function validate(){
+  $("#result").text("");
+  var email = $("#email").val();
+  if (validateEmail(email)) {
+    $("#result").text(email + " is valid :)");
+    $("#result").css("color", "green");
+  } else {
+    $("#result").text(email + "is not valid :(");
+    $("#result").css("color", "red");
+  }
+  return false;
+}
+
+$("form").bind("submit", validate);
+
+
+
+
+
+
+
+function addboard()
+{
+var ext=$("#ext option:selected").text();
+var domain= document.getElementById("domainname").value;
+document.getElementById("domainnamede").innerHTML = (domain +"."+ ext);
+} 
+
+function firsthouse()
+{
+document.getElementById("house").src = "1st.png";
+}
+function secondhouse()
+{
+document.getElementById("house").src = "2nd.png";
+}
+function thirdhouse()
+{
+document.getElementById("house").src = "3rd.png";
+}
+
+
+function mailyes()
+{
+document.getElementById("mail").src = "mail.png";
+}
+function mailno()
+{
+document.getElementById("mail").src="blank.png";
+}
+
+
+$(window).scroll(function(){
+var wScroll = $(this).scrollTop();
+
+if(wScroll > $('#2').offset().top - $(window).height()/2 )
+{
+$('.addressboard').each(function(){
+$('.addressboard').addClass(' is-showing');
+});
+}
+
+if(wScroll < $('#2').offset().top - $(window).height()/2 )
+{
+$('.addressboard').each(function(){
+$('.addressboard').removeClass(' is-showing');
+});
+}
+
+
+if(wScroll > $('#2').offset().top - $(window).height()/2 )
+{
+$('.addressboardtext').each(function(){
+$('.addressboardtext').addClass(' is-showing');
+});
+}
+
+
+if(wScroll < $('#2').offset().top - $(window).height()/2 )
+{
+$('.addressboardtext').each(function(){
+$('.addressboardtext').removeClass(' is-showing');
+});
+}
+
+
+if(wScroll > $('#3').offset().top - $(window).height()/2 )
+{
+$('.housed').each(function(){
+$('.housed').addClass(' is-showing');
+});
+}
+
+if(wScroll < $('#3').offset().top - $(window).height()/2 )
+{
+$('.housed').each(function(){
+$('.housed').removeClass(' is-showing');
+});
+}
+
+if(wScroll > $('#4').offset().top - $(window).height()/2 )
+{
+$('.mailed').each(function(){
+$('.mailed').addClass(' is-showing');
+});
+}
+
+if(wScroll < $('#4').offset().top - $(window).height()/2 )
+{
+$('.mailed').each(function(){
+$('.mailed').removeClass(' is-showing');
+});
+}
+
+});
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

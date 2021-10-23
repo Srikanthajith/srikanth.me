@@ -1,43 +1,1360 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+	<title>Srikanth Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+      body{
+        font-family: Montserrat;
+        background: #141414;
+        overflow: hidden;
+      }
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(img/loading.gif) center no-repeat #ffca03;
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+}
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+/* nav bar css starts */
+.navbar-fixed-left {
+  width: 5%;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  border-style: none double none none;
+  border-color:  ;
+  z-index: 1000;
+  background-color: black;
+  padding-top: 0%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+	width: 120%;
+  float: none;  /* Cancel default li float: left */
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+
+.sidemenuicons
+{
+	padding-top: 100%;
+	padding-bottom: 100%;
+  width: 5%;
+  color:#fff;
+  font-size: 1.5em;
+  z-index: 100;
+  background-color: transparent;
+  padding-left: 40%;
+  padding-right: 90%;
+  cursor: pointer;
+}
+
+.active-navbar
+{
+	background-color: #FFD700;
+}
+
+.spanclass-addition
+{
+	color: black;
+}
+/* navbar ends */
+
+/* slick carousel starts */
+.slick-arrow:before {
+  color: white;    
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+
+.slider {
+ margin: 0 30px;
+}
+
+.slider-nav
+{
+  height: 15%;
+  margin-top: -2%;
+  margin-left: 7%;
+  cursor: pointer;
+}
+
+.slider-for
+{
+  margin-top: -6%;
+  height: 64%;
+}
+.totalslider{
+  margin-right: 0%;
+  margin-top: -3%;
+}
+
+.projectdisplay{
+
+	background-color: black;
+	color: #ffffff;
+
+}
+.projectdisplay>h2{
+	padding-top: 5%;
+  	text-align: center;
+	font-size: 2vw;
+}
+
+
+.slider-nav .slick-center{
+  border-style: solid;
+  border-color: #FFD700;
+}
+.slick-slide:focus{
+	outline: none;
+}
+/* slick carousel ends */
+
+
+
+/*for the project display in slick starts*/
+.projectheading
+{
+	margin-top: 3%;
+	text-align: right;  
+	border-style: none none solid none; 
+	border-color: #FFD700;
+}
+.projdescription
+{
+margin-top: 2%;
+	text-align: left
+}
+.ulclass>li {
+  padding-left: 1em; 
+  text-indent: -.7em;
+  color: #FFD700;
+}
+.ulclass>li>h5 {
+  color: #ffffff;
+  font-size: 1.1em;
+}
+
+.projectscreenshot
+{
+margin-top: -1%;
+}
+.btn-websitenavbutton
+{
+	color: black;
+	background-color: #ffd700;
+}
+/* for project display ends */
+
+
+/*for parallax header */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 20%;
+  padding-top: 3%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+
+}
+.cd-fixed-bg:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: top left;
+  transform: skewY(-3deg);
+    border-style: none none solid none;
+  border-color: #FFD700 ;
+}
+
+
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  margin-top: -1%;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.cd-fixed-bg.cd-bg-1 {
+  background-color: black;
+
+}
+.cd-fixed-bg.cd-bg-2 {
+    
+}
+
+/*
+rgb(59,51,74)
+rgb(101,92,152)
+*/
+.cd-scrolling-bg {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 4em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: inline-block;
+  background: #141414;
+  color: white;
+
+}
+.cd-scrolling-bg:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: top left;
+  transform: skewY(-3deg);
+}
+/* parallax header ends */
+/* top social link  starts */
+.topsociallink 
+{
+  position: absolute;
+  margin-top: -8%;
+  color:#fff;
+  font-size: 1.5em;
+  z-index: 100;
+  background-color: transparent;
+}
+.topsociallink:hover
+{
+	color: #ffd700;
+}
+.icon1
+{
+  margin-left: 95%;
+}
+.icon2
+{
+  margin-left: 91%;
+}
+.icon3
+{
+  margin-left: 87%;
+}
+.icon4
+{
+  margin-left: 83%;
+}
+.icon5
+{
+  margin-left: 79%;
+}
+/* top social link ends */
+
+
+
+
+/* for form */
+
+
+.mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color:white; 
+  transition: all 0.5s;
+}
+
+.mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 2px 0;
+  font-size: 16px;
+  color:white;
+}
+
+.mat-div {
+  padding: 10px 0 0 0;
+  position: relative;
+}
+
+.mat-div:after, .mat-div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2; 
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.mat-div::after {
+  background-color: #FFD700;
+  transform: scaleX(0);
+}
+
+.is-active::after {
+  transform: scaleX(1);
+}
+
+.is-active .mat-label {
+  color: #FFD700;
+}
+
+.is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+.btn-defaultsubmit
+{
+	background-color: #FFD700;
+	color: black;
+}
+/*form ends*/
+/* first page images */
+.computerimage{
+	position: absolute;
+	left: 2%;
+	height: 83%;
+	width: 35%;
+	top: 5%;
+	-webkit-transition: all 2s ease; 
+	-moz-transition: all 2s ease; 
+	-ms-transition: all 2s ease; 
+	transition: all 1s ease; 
+}
+.computerimage:hover{
+	height: 87%;
+	width:36%;
+	top: 3%;
+}
+
+.phoneimage
+{
+	position: absolute;
+	left: 40%;
+    height: 17%;
+    width: 5%;
+    top: 23%;
+    -webkit-transition: all 2s ease; 
+	-moz-transition: all 2s ease; 
+	-ms-transition: all 2s ease; 
+	transition: all 1s ease; 
+}
+.phoneimage:hover{
+    height: 20%;
+    width: 6%;
+    top: 21%;
+    left: 39%;
+}
+.paperimage
+{
+	position: absolute;
+	left: 49%;
+    height: 11%;
+    width: 5%;
+    top: 49%;
+    -webkit-transition: all 2s ease; 
+	-moz-transition: all 2s ease; 
+	-ms-transition: all 2s ease; 
+	transition: all 1s ease; 
+}
+.paperimage:hover
+{
+	left: 50%;
+    height: 14%;
+    width: 6%;
+    top: 48%;
+}
+
+.phone2image
+{
+position: absolute;
+    left: 62%;
+    height: 27%;
+    width: 12%;
+    top: 19%;
+    -webkit-transition: all 2s ease; 
+	-moz-transition: all 2s ease; 
+	-ms-transition: all 2s ease; 
+	transition: all 1s ease; 
+}
+
+.phone2image:hover
+{
+    height: 30%;
+    width: 13%;
+    top: 19%;
+}
+
+.headphoneimage
+{
+	position: absolute;
+    left: 75%;
+    height: 17%;
+    width: 11%;
+    top: 46%;
+    -webkit-transition: all 2s ease; 
+	-moz-transition: all 2s ease; 
+	-ms-transition: all 2s ease; 
+	transition: all 1s ease; 
+}
+.headphoneimage:hover
+{
+    left: 74%;
+    height: 20%;
+    width: 13%;
+    top: 43%;
+}
+.clipboardimage
+{
+	position: absolute;
+    left: 78%;
+    height: 31%;
+    width: 15%;
+    top: -3%;
+    -webkit-transition: all 2s ease; 
+	-moz-transition: all 2s ease; 
+	-ms-transition: all 2s ease; 
+	transition: all 1s ease; 
+}
+
+.clipboardimage:hover
+{
+    left: 78%;
+    height: 33%;
+    width: 16%;
+    top: -2%;
+}
+
+.computertext
+{
+	position: absolute;
+ 	left: 6%;
+    top: 44%;
+    font-size: 1.2em;
+    z-index: 1000;
+    color: #ffd700;	
+    -webkit-transition: all 2s ease; 
+	-moz-transition: all 2s ease; 
+	-ms-transition: all 2s ease; 
+	transition: all 2s ease; 
+}
+.phonetext{
+	position: absolute;
+left: 45%;
+    top: 24%;
+    font-size: 1.2em;
+    z-index: 1000;
+    color: #ffd700;	
+}
+.papertext{
+	position: absolute;
+	left: 38%;
+    top: 48%;
+    font-size: 1.2em;
+    z-index: 1000;
+    color: #ffd700;		
+}
+.paper2text{
+	position: absolute;
+    left: 58%;
+    top: 42%;
+    font-size: 1.2em;
+    z-index: 1000;
+    color: #ffd700;	
+}
+.clipboardtext
+{
+	position: absolute;
+    left: 88%;
+    top: -9%;
+    font-size: 1.2em;
+    z-index: 1000;
+    color: #ffd700;		
+}
+.headphonetext{
+	position: absolute;
+	left: 85%;
+    top: 54%;
+    font-size: 1.2em;
+    z-index: 1000;
+    color: #ffd700;		
+}
+.maindesctext{
+	position: absolute;
+    left: 26%;
+    top: 4%;
+    width: 46%;
+    font-size: 1.2em;
+    z-index: 1000;
+    color: #ffd700;	
+}
+/*FOR PAPER FOLDING EFFECT */
+h1.flag {
+	white-space: nowrap;
+	font-size: 2vw;
+	position: relative;
+	cursor: default;
+}
+/* Paper Shadow */
+h1.flag:before {
+	position: absolute;
+	bottom: 0;
+	background-color: rgb(60, 119, 112);
+	width: 89%;
+	left: 4%;
+	height: 40%;
+	-webkit-filter: blur(2vw);
+	        filter: blur(2vw);
+	-webkit-transition: all 200ms cubic-bezier(0.0, 0.0, 0.2, 1);
+	transition: all 200ms cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+/* Each letter */
+h1.flag span {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	display: inline-block;
+	width: 3em;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	-webkit-transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
+	transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+/* Solid Surface */
+h1.flag span:before {
+	content: '';
+	background-color: #F9F8EF;
+	-webkit-transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
+	transition: all 1s cubic-bezier(0.0, 0.0, 0.2, 1);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+/* Odd letters */
+h1.flag span:nth-child(odd) {
+	-webkit-transform: skewY(-8deg);
+	        transform: skewY(-8deg);
+	color: black;
+	background: -webkit-linear-gradient(120deg, rgb(255, 255, 255), rgb(237, 236, 227));
+	background: linear-gradient(-30deg, rgb(255, 255, 255), rgb(237, 236, 227));
+	box-shadow: inset -1px 0 0px rgba(255, 255, 255, .3);
+	prospective: 1000px;
+}
+/* Even letters */
+h1.flag span:nth-child(even) {
+	-webkit-transform: skewY(8deg);
+	        transform: skewY(8deg);
+	color: black;
+	background: -webkit-linear-gradient(3deg, rgb(199, 198, 191), rgb(237, 236, 227));
+	background: linear-gradient(87deg, rgb(199, 198, 191), rgb(237, 236, 227));
+	box-shadow: inset -1px 0 0px rgba(0, 0, 0, .05);
+	prospective: 1000px;
+}
+/* Paper border-radius */
+h1.flag span:first-of-type,
+		h1.flag span:first-of-type:before {
+	border-radius: 4px 0 0 4px;
+}
+h1.flag span:last-of-type,
+		h1.flag span:last-of-type:before {
+	border-radius: 0 4px 4px 0;
+}
+/* Hover interaction */
+h1.flag:hover:before {
+	opacity: 0.5;
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="2" /></filter></svg>#filter');
+	-webkit-filter: blur(2px);
+	        filter: blur(2px);
+	left: 1%;
+	width: 98%;
+}
+h1.flag:hover span {
+	-webkit-transform: none;
+	        transform: none;
+	color: black;
+	box-shadow: none;
+	-webkit-transition-duration: 200ms;
+	        transition-duration: 200ms;
+	width: 3.1em;
+}
+h1.flag:hover span:before {
+	opacity: 1;
+	-webkit-transition-duration: 200ms;
+	        transition-duration: 200ms;
+}
+/* ends */
+
+/* tooltip */
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #ffd700; color: black;}
+.red-tooltip + .tooltip > .tooltip-arrow { border-right-color:#ffd700; }
+</style>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <div class="se-pre-con"></div>
+<div class="navbar navbar-inverse navbar-fixed-left">
+  <ul class="nav" style="">
+   <li id="liforabout"  data-toggle="tooltip" data-placement="right" title="" data-original-title="About Me" class="red-tooltip">
+   <span class="sidemenuicons fa fa-user" id="spanforabout"></span>
+   </li>
+   <li id="liforwork"  data-toggle="tooltip" data-placement="right" title="" data-original-title="Portfolio" class="red-tooltip">
+   <span class="sidemenuicons fa fa-newspaper-o" id="spanforwork"></span>
+   </li>
+   <li id="liforcontact"  data-toggle="tooltip" data-placement="right" title="" data-original-title="Contacts" class="red-tooltip">
+   <span class="sidemenuicons fa fa-phone" id="spanforcontact"></span>
+   </li>
+  </ul>
+</div>
+
+
+    <div class="cd-fixed-bg cd-bg-1">
+      <h1 id="headertext" class="animated fadeIn"></h1>
+    </div> <!-- cd-fixed-bg -->
+      <a href="https://www.facebook.com/srikanthajith.b" target="_blank"><span class="topsociallink icon1 fa fa-facebook"></span></a>
+      <a href="https://github.com/Srikanthajith" target="_blank"><span class="topsociallink icon3 fa fa-github"></span></a>
+      <a href="https://www.linkedin.com/in/srikanth-ajith-b9855569/" target="_blank"><span class="topsociallink icon4 fa fa-linkedin"></span></a>
+      <a href="https://www.instagram.com/srikanthajith/" target="_blank"><span class="topsociallink icon2 fa fa-instagram"></span></a>
+
+
+<div class="container-fluid" id="aboutpage" style="padding-top: 5%; background-color: black;">
+  	<div class="row">
+  		<div class="col-md-12" style="text-align: center;height: 100%;">
+  			<h1 class="flag animated fadeInDown" style="margin-top: -4%;">SRIKANTH</h1>
+  			<h2 class="maindesctext animated fadeIn">I am a 21 year old Chennai-based innovative FULL STACK WEB DEVELOPER. Developed visually appealing and user friendly websites.Experienced with all stages from front-end and back-end of the development for dynamic web projects.</h2>
+  			<h3 class="computertext">Developed <br>Creative, <br>Dynamic and <br>Interactive <br>Websites</h3>
+  			<h3 class="phonetext">Responsive, <br>Cross Browser <br>Websites</h3>
+  			<h3 class="papertext">Perfectionist<br>Hard to accept<br>short of perfection</h3>
+  			<h3 class="paper2text">Can deliver<br> backend solutions <br>for web applications</h3>
+  			<h3 class="clipboardtext">Concentrates<br>on every details<br> in the design</h3>
+  			<h3 class="headphonetext">Passionate about<br>Exploring, Driving and<br>Extra curriculars</h3>
+  		<img src="img/firstpage/computer.png" class="computerimage img-responsive animated fadeInLeft">
+  		<img src="img/firstpage/phone.png" class="phoneimage img-responsive animated fadeInUp">
+  		<img src="img/firstpage/paper.png" class="paperimage img-responsive animated fadeInUp">
+  		<img src="img/firstpage/paper2.png" class="phone2image img-responsive animated fadeInUp">
+  		<img src="img/firstpage/headphone.png" class="headphoneimage img-responsive animated fadeInRight">
+  		 <img src="img/firstpage/clipboard.png" class="clipboardimage img-responsive animated fadeInRight">
+  		</div>
+  	</div>
+</div>
+
+    <div class="cd-scrolling-bg">
+
+
+
+<div class="totalslider" id="workpage">
+<div class="slider slider-for">
+
+
+  	<div class="projectexplain">
+	    <div class="container-fluid">
+	  		<div class="row">
+	  			<div class="col-md-3 projectheading">
+	  			<h3>Greenvironment</h3>
+	  			</div><br><br><br>
+	  			<div class="col-md-2 ">
+	  			<a href="http://www.greenvironmentindia.com/" target="_blank">
+	  			<button class="btn btn-md btn-websitenavbutton">View Website</button>
+	  			</a>
+	  			</div>
+	  		</div>
+        <div class="row">
+          <div class="col-md-offset-1 col-md-6 projdescription">
+              <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL.</h4>
+              <h4>Category: Work Project.</h4>
+              <h5>Description: This is the official website for Greenvironment Innovation & Marketing India (P) Ltd, where details about their product and the informations to their clients are provied.</h5>
+              <h5>Features:</h5>
+              <ul class="ulclass">
+                <li><h5>Developed and Designed the front-end and back-end also responsive pages for viewing in mobiles.</h5></li>
+                <li><h5>Integrated function like video, custom animations etc.</h5></li>
+                <li><h5>Designed the Employers details and updates of their work in website.</h5></li>
+              </ul>
+          </div>
+	  			<div class="col-md-5 projectscreenshot">
+	  			<img src="img/greenvironment.png" class="img-responsive">
+	  			</div>
+	  		</div>
+  		</div>
+  	</div>
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>New Steps</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="http://newsteps.xyz/" target="_blank">
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-1 col-md-6 projdescription">
+              <h4>Technologies used: HTML, CSS, Bootstrap, Payment API, jQuery, PHP, SQL.</h4>
+              <h4>Category: Work Project.</h4>
+              <h5>Description: This website allows the user to select a plan and accordingly a test will be initiated to get a detailed evaluation of the interest and helps user to choose their career.</h5>
+              <h5>Features:</h5>
+              <ul class="ulclass">
+                <li><h5>Designed and Developed the frontend and Backend.</h5></li>
+                <li><h5>Integrated Payment API which makes the payment from the user to the company.</h5></li>
+              </ul>
+          </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/newsteps.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Cognit Main</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/cognitmain/index.html" target="_blank">          
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, Parallax.js, PHP Mailer, PHP, SQL.</h4>
+                   <h4>Category: College Project.</h4>
+                   <h5>Description: This is the official Symposium website for CSE Department,MNMJEC of the year 2016.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>This website has one of the cleanest design, all images uses parallax js and moves with mouse movements.</h5></li>
+                    <li><h5>For navigation for the pages jQuery is used and each pages are placed one behind the other and moves accordingly to the user selection.</h5></li>
+                    <li><h5>Used background animations, gifs and custom animations for smooth effects.</h5></li>
+                  </ul>
+                  </div>
+
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/cognitmain.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Cognit Coming</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/cognitcoming/index.html" target="_blank">        
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-1 col-md-6 projdescription">
+            <h4>Technologies used: HTML, CSS, jQuery.</h4>
+            <h4>Category: College Project.</h4>
+            <h5>Description: This is the official Symposium website for CSE Department,MNMJEC of the year 2016.</h5>
+            <h5>Features:</h5>
+            <ul class="ulclass">
+              <li><h5>Initial page has a timer function with changes the whole web interface with every 10 seconds all the elements will altered. <h5></li>
+              <li><h5>Main page has jQuery function which works with user scroll, with the scroll the elements in the website has the animations. </h5></li>
+            </ul>
+          </div>
+          <div class="col-md-5 projectscreenshot">
+            <img src="img/cognitcoming.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>ROI Calculator</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="http://www.greenvironmentindia.com/ROIindex.html" target="_blank">       
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, Advanced jQuery functions.</h4>
+                   <h4>Category: Work Project.</h4>
+                   <h5>Description: This Page allows users to calculate the ROI of the water which gives the cost of treating waste water in their home or commercial space.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Used jQuery to calculate values from the user input and calculations are performed based on them to give out the desired output dynamically.</h5></li>
+                  </ul>
+                  </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/roiwater.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Scroll Reveal</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/scrollreveal/index.html" target="_blank">   
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery.</h4>
+                   <h4>Category: Freelance Project.</h4>
+                   <h5>Description: This is the company's website to get the user details about their web hosting plan.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Each page contents changed dynamically with the user input values.<h5></li>
+                    <li><h5>It stores all the values from the user on each page and send as a email to the client.</h5></li>
+                  </ul>
+                  </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/scrollreveal.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Auction Site</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/auction/index.html" target="_blank">  
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, AJAX, PHP, SQL.</h4>
+                   <h4>Category: I-Expo Project.</h4>
+                   <h5>Description: This website is used to sell products through auction, whoever pays the highest will get the product from online.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>This uses AJAX function which alters the page everytime from each of the user inputs dynamically.<h5></li>
+                    <li><h5>The user who has given the highest payment and the price also will be stored in database.</h5></li>
+                    <li><h5>As one product is sold the next will be retrieved immediately and will be upto auction.</h5></li>
+                  </ul>
+                  </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/auction.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Facebook Integrated</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/fbsite/index.html" target="_blank">
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+        <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Facebook API, PHP, SQL.</h4>
+                   <h4>Category: Freelance Project.</h4>
+                   <h5>Description: This website get the users to login to facebook and get the details and stores in the client database.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>As user logins through facebook, using Facebook API the details of them is retrieved and used.<h5></li>
+                    <li><h5>In the form the user quote and a image can be selected and the image will be uploaded to the database.</h5></li>
+                  </ul>
+                  </div>          
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/fbsite.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Incredible India</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/incredibleindia/index.html" target="_blank">
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL. </h4>
+                   <h4>Category: Smart India Hackathon'17 Project.</h4>
+                   <h5>Description: This website is a improved version of the existing incredible india tourism website handled by government of india. </h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Implemented a tour planning system which allows user to plan their tour.</h5></li>
+                    <li><h5>Used AJAX PHP to support backend features such as filter and search query results.<h5></li>
+                    <li><h5>Enabled guides ,hotels and agents to interact with tourists using a request-response mechanism.</h5></li>
+                  </ul>
+                  </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/incredibleindia.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Allo Chat UI Design</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/alloui/index.html" target="_blank">
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap.</h4>
+                   <h4>Category: Freelance Project.</h4>
+                   <h5>Description: UI Design Recreation for the Google Allo App.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Each properties in the allo app is redesigned for website which is fully responsive.<h5></li>
+                  </ul>
+                  </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/alloui.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>Final Year Project</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+          <a href="./myprojects/fnlyrprjt/index.html" target="_blank">
+          <button class="btn btn-md btn-websitenavbutton">View Website</button>
+          </a>
+          </div>
+        </div>
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL. </h4>
+                   <h4>Category: College Project.</h4>
+                   <h5>Description: Website for booking appointments for saloon, hotels, service centers and clinics.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Large details about the places to book are handled using advanced PHP functions.<h5></li>
+                    <li><h5>Each bookings will be alloted with timeslots while appointments.<h5></li>
+                    <li><h5>Confirmation with the user and the booking place will be done.<h5></li>
+                  </ul>
+                  </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/finalyear.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="projectexplain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 projectheading">
+          <h3>E-Commerce Site</h3>
+          </div><br><br><br>
+          <div class="col-md-2 ">
+            <button class="btn btn-md btn-websitenavbutton">Under Progress</button>
+          </div>
+        </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL. </h4>
+                   <h4>Category: Client Project.</h4>
+                   <h5>Description: An E-Commerce Website dedicated to the selling of Books.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Built a scalable Backend architecture for handling large volume of data.<h5></li>
+                    <li><h5>Developed inventory management to handle the database values in frontend.</h5></li>
+                    <li><h5>E-commerce functions like wish list, user review, user profile and cart are integrated. <h5></li>
+                  </ul>
+                  </div>
+          <div class="col-md-5 projectscreenshot">
+          <img src="img/ecommerce.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+<br><br>
+<div class="slider slider-nav center">
+  <div class="projectdisplay"><h2>Greenvironment </h2></div>
+  <div class="projectdisplay"><h2>NewSteps</h2></div>
+  <div class="projectdisplay"><h2>Cognit Main</h2></div>
+  <div class="projectdisplay"><h2>Cognit Coming</h2></div>
+  <div class="projectdisplay"><h2>ROI Calculator</h2></div>
+  <div class="projectdisplay"><h2>Scroll Reveal</h2></div>
+  <div class="projectdisplay"><h2>Auction Site </h2></div>
+  <div class="projectdisplay"><h2>Facebook Integrated</h2></div>
+  <div class="projectdisplay"><h2>Incredible India</h2></div>
+  <div class="projectdisplay"><h2>Allo Chat UI Design</h2></div>
+  <div class="projectdisplay"><h2>Final Year Project</h2></div>
+  <div class="projectdisplay"><h2>E-Commerce Site</h2></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" style="margin-left: 5%;" id="contactpage">
+  	<div class="row" style="margin-top: -3%;">
+  		<div class="col-md-3 animated fadeIn" style="text-align: right;  border-style: none none solid none; border-color: #FFD700;">
+  			<h3>Contact Details</h3>
+  		</div>
+  		<div class="col-md-offset-6 col-md-3 animated fadeIn" style="text-align: left;  border-style: none none solid none; border-color: #FFD700;">
+  			<h3>Get in touch</h3>
+  		</div>
+  	</div>
+  	<div class="row" style="padding-left: 4%;padding-top: 2%;">
+  		<div class="col-md-5 animated fadeInLeft">
+  			<h3>+91 9176860631</h3>
+  			<h3>srikanth.ajith@gmail.com</h3>
+        <br><br>
+  		</div>
+  		<div class="col-md-offset-2 col-md-5 animated fadeInRight">
+  		<form action="update.php" method="post" >
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Name</label>
+                      <input type="text" class="mat-input" name="username" required>
+                  </div>
+                </div>               
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Email</label>
+                      <input type="email" class="mat-input" name="emailid" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Message</label>
+                      <textarea rows="4" cols="50" class="mat-input" name="message" required></textarea>
+                  </div>                <br><br>
+                </div>
+                <center>
+                  <button type="submit" class="btn  btn-lg btn-defaultsubmit">Submit</button>
+              </form>
+  		</div>
+  	</div>
+</div>
+
+
+
+</body>
+
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/slick.js"></script>
+<script src="https://cdn.rawgit.com/davatron5000/Lettering.js/5a4897f9/jquery.lettering.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+
+
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");
+  });
+
+
+$(document).ready(function() {
+
+      if($(window).width() <= 950) {
+    window.location = "./mindex.html";
+}
+});
+
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+  adaptiveHeight: true
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  arrows:true,
+  centerMode: true,
+  focusOnSelect: true,
+
+
+});
+
+
+$(document).ready(function() {
+
+
+	$(".flag").lettering();
+
+        $("#liforwork").removeClass("active-navbar");
+        $("#liforabout").addClass("active-navbar");
+        $("#liforcontact").removeClass("active-navbar");
+
+        $("#headertext").html("ABOUT ME");
+        $("li").tooltip();
+
+        $(".computertext").hide();
+        $(".phonetext").hide();
+        $(".papertext").hide();
+        $(".paper2text").hide();
+        $(".clipboardtext").hide();
+        $(".headphonetext").hide();
+
+
+});
+
+    $("#liforabout").on('click',function(){
+    	//for navbar color change
+        $("#liforabout").addClass("active-navbar");
+        $("#liforcontact").removeClass("active-navbar");
+        $("#liforwork").removeClass("active-navbar");
+        $("#spanforabout").addClass("spanclass-addition");
+        $("#spanforcontact").removeClass("spanclass-addition");
+        $("#spanforwork").removeClass("spanclass-addition");
+
+        
+        $("#aboutpage").show();
+		$("#workpage").hide();
+        $("#contactpage").hide();
+
+        $("#headertext").html("ABOUT ME");
+
+    });
+
+    $("#liforcontact").on('click',function(){
+    	//for navbar color change
+        $("#liforcontact").addClass("active-navbar");
+        $("#liforabout").removeClass("active-navbar");
+        $("#liforwork").removeClass("active-navbar");
+        $("#spanforabout").removeClass("spanclass-addition");
+        $("#spanforcontact").addClass("spanclass-addition");
+        $("#spanforwork").removeClass("spanclass-addition");
+
+        $("#aboutpage").hide();
+		$("#workpage").hide();
+        $("#contactpage").show();
+
+        $("#headertext").html("CONTACTS");
+
+    });
+
+    $("#liforwork").on('click',function(){
+    	//for navbar color change
+        $("#liforwork").addClass("active-navbar");
+        $("#liforabout").removeClass("active-navbar");
+        $("#liforcontact").removeClass("active-navbar");
+        $("#spanforabout").removeClass("spanclass-addition");
+        $("#spanforcontact").removeClass("spanclass-addition");
+        $("#spanforwork").addClass("spanclass-addition");
+
+        $("#aboutpage").hide();
+        $("#workpage").show();
+        $("#contactpage").hide();
+
+        $("#headertext").html("PORTFOLIO");
+
+    });
+
+// $('.slider-nav').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+// });
+// $('.slider-nav').on('afterChange', function(event, slick, currentSlide){
+// });
+
+
+$(".mat-input").focus(function(){
+  $(this).parent().addClass("is-active is-completed");
+});
+
+$(".mat-input").focusout(function(){
+  if($(this).val() === "")
+    $(this).parent().removeClass("is-completed");
+  $(this).parent().removeClass("is-active");
+})
+
+
+
+
+    $(".computerimage").mouseover(function(){
+        $(".computertext").show();
+    });
+    $(".computerimage").mouseout(function(){
+        $(".computertext").hide();
+    });
+
+
+    $(".phoneimage").mouseover(function(){
+        $(".phonetext").show();
+    });
+    $(".phoneimage").mouseout(function(){
+        $(".phonetext").hide();
+    });
+
+
+    $(".paperimage").mouseover(function(){
+        $(".papertext").show();
+    });
+    $(".paperimage").mouseout(function(){
+        $(".papertext").hide();
+    });
+
+    $(".phone2image").mouseover(function(){
+        $(".paper2text").show();
+    });
+    $(".phone2image").mouseout(function(){
+        $(".paper2text").hide();
+    });
+
+    $(".headphoneimage").mouseover(function(){
+        $(".headphonetext").show();
+    });
+    $(".headphoneimage").mouseout(function(){
+        $(".headphonetext").hide();
+    });
+
+
+    $(".clipboardimage").mouseover(function(){
+        $(".clipboardtext").show();
+    });
+    $(".clipboardimage").mouseout(function(){
+        $(".clipboardtext").hide();
+    });
+
+
+
+
+
+
+
+
+
+</script>
 </html>

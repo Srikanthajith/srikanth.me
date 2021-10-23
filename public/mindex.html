@@ -1,0 +1,798 @@
+<html>
+<head>
+	<title>Srikanth Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+      body{
+        font-family: Montserrat;
+        background: #141414;
+        color: white;
+      }
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(img/loading.gif) center no-repeat #ffca03;
+
+}
+
+
+
+/* for form */
+
+
+.mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color:white; 
+  transition: all 0.5s;
+}
+
+.mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 2px 0;
+  font-size: 16px;
+  color:white;
+}
+
+.mat-div {
+  padding: 10px 0 0 0;
+  position: relative;
+}
+
+.mat-div:after, .mat-div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2; 
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.mat-div::after {
+  background-color: #FFD700;
+  transform: scaleX(0);
+}
+
+.is-active::after {
+  transform: scaleX(1);
+}
+
+.is-active .mat-label {
+  color: #FFD700;
+}
+
+.is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+.btn-defaultsubmit
+{
+	background-color: #FFD700;
+	color: black;
+}
+/*form ends*/
+
+.footer{
+  position: fixed;
+  background-color: #ffd700;
+  height: 10%;
+  width: 100%;
+  bottom: 0%;
+}
+
+.topsociallink 
+{
+  position: absolute;
+  color:#fff;
+  margin-top:25%;
+  margin-left: 30%;
+  font-size: 1.5em;
+  z-index: 100;
+  background-color: transparent;
+  color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a
+{
+  color: black;
+}
+.navbar-inverse .navbar-brand {
+    color: black;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black;
+}
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #ffd700;
+}
+.navbar-inverse
+{
+  background-color: #ffd700;
+  color: black;
+}
+
+.textaboutme>h1
+{
+  text-align: center;
+text-shadow: 0px 4px 3px rgba(255,215,0,0.4),
+             0px 8px 13px rgba(255,215,0,0.1),
+             0px 18px 23px rgba(255,215,0,0.1);
+}
+
+.headerclass{
+  text-align:center;  
+  border-style: solid none solid none; 
+  border-color: #FFD700;
+  color: #ffd700;
+}
+/*for the project display in slick starts*/
+.projectheading
+{
+  margin-top: 3%;
+  text-align: right;  
+  border-style: none none solid none; 
+  border-color: #FFD700;
+}
+.projdescription
+{
+  margin-top: 5%;
+  text-align: left;
+}
+.ulclass>li {
+  padding-left: 1em; 
+  text-indent: -.7em;
+  color: #FFD700;
+}
+.ulclass>li>h5 {
+  color: #ffffff;
+}
+
+.projectscreenshot
+{
+  margin-top: 5%;
+}
+.btn-websitenavbutton
+{
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  color: black;
+  background-color: #ffd700;
+}
+.slider{
+  margin-left:5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+.projectexplain
+{
+  height: auto;
+  display: block;
+  padding-bottom: 2%;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: black; 
+    background-color: #ffd700;
+}
+
+.arrowmark{
+  padding-right: 5%;
+  color: #ffd700;
+}
+
+.desctext{
+  text-align: left;
+}
+/* for project display ends */
+</style>
+</head>
+<body>
+
+  <div class="se-pre-con"></div>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Srikanth Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" style="text-align: center;">
+        <li class="active"><a href="#aboutme">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid" id="aboutme" style="padding-top: 50px;">
+    <div class="row">
+      <div class="col-md-offset-6 col-md-3 animated fadeIn headerclass" style="">
+        <h2>About Me</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 textaboutme">
+        <h1 class="animated fadeInUp">SRIKANTH</h1>
+        <h4 style="text-align: center;" class="animated fadeInUp">I am a 21 year old Chennai-based innovative FULL STACK WEB DEVELOPER. Developed visually appealing and user friendly websites.Experienced with all stages from front-end and back-end of the development for dynamic web projects.</h4>
+        <h4 class="desctext animated fadeInRight"><span class="fa fa-arrow-circle-right arrowmark"></span>Developed Creative, Dynamic and Interactive Websites</h4>
+        <h4 class="desctext animated fadeInLeft"><span class="fa fa-arrow-circle-right arrowmark"></span>Responsive, Cross Browser Websites</h4>
+        <h4 class="desctext animated fadeInRight"><span class="fa fa-arrow-circle-right arrowmark"></span>Can deliver backend solutions for web applications</h4>
+        <h4 class="desctext animated fadeInLeft"><span class="fa fa-arrow-circle-right arrowmark"></span>Perfectionist Hard to accept short of perfection</h4>
+        <h4 class="desctext animated fadeInRight"><span class="fa fa-arrow-circle-right arrowmark"></span>Passionate about Exploring, Driving and Extra curriculars</h4>
+        <h4 class="desctext animated fadeInLeft"><span class="fa fa-arrow-circle-right arrowmark"></span>Concentrates on every details in the design</h4>
+      </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" id="portfolio" style="padding-top: 50px;">
+
+<h5 style="text-align: right;color: #ffd700;">View in desktop for better version</h5>
+    <div class="row">
+      <div class="col-md-offset-6 col-md-3 animated fadeIn headerclass">
+        <h2>Portfolio</h2>
+      </div>
+    </div>
+
+      <div class="totalslider" >
+        <div class="slider slider-for">
+
+
+            <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>Greenvironment</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="http://www.greenvironmentindia.com/" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/greenvironment.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL.</h4>
+                   <h4>Category: Work Project.</h4>
+                   <h5>Description: This is the official website for Greenvironment Innovation & Marketing India (P) Ltd, where details about their product and the informations to their clients are provied.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Developed and Designed the front-end and back-end also responsive pages for viewing in mobiles.</h5></li>
+                    <li><h5>Integrated function like video, custom animations etc.</h5></li>
+                    <li><h5>Designed the Employers details and updates of their work in website.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>New Steps</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="http://newsteps.xyz/" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/newsteps.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, Payment API, jQuery, PHP, SQL.</h4>
+                   <h4>Category: Work Project.</h4>
+                   <h5>Description: This website allows the user to select a plan and accordingly a test will be initiated to get a detailed evaluation of the interest and helps user to choose their career.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Designed and Developed the frontend and Backend.</h5></li>
+                    <li><h5>Integrated Payment API which makes the payment from the user to the company.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>Cognit Main</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/cognitmain/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/cognitmain.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, Parallax.js, PHP Mailer, PHP, SQL.</h4>
+                   <h4>Category: College Project.</h4>
+                   <h5>Description: This is the official Symposium website for CSE Department,MNMJEC of the year 2016.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>This website has one of the cleanest design, all images uses parallax js and moves with mouse movements.</h5></li>
+                    <li><h5>For navigation for the pages jQuery is used and each pages are placed one behind the other and moves accordingly to the user selection.</h5></li>
+                    <li><h5>Used background animations, gifs and custom animations for smooth effects.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>Cognit Coming</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/cognitcoming/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/cognitcoming.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, jQuery.</h4>
+                   <h4>Category: College Project.</h4>
+                   <h5>Description: This is the official Symposium website for CSE Department,MNMJEC of the year 2016.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Initial page has a timer function with changes the whole web interface with every 10 seconds all the elements will altered. <h5></li>
+                    <li><h5>Main page has jQuery function which works with user scroll, with the scroll the elements in the website has the animations. </h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>ROI Calculator</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="http://www.greenvironmentindia.com/ROIindex.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/roiwater.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, Advanced jQuery functions.</h4>
+                   <h4>Category: Work Project.</h4>
+                   <h5>Description: This Page allows users to calculate the ROI of the water which gives the cost of treating waste water in their home or commercial space.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Used jQuery to calculate values from the user input and calculations are performed based on them to give out the desired output dynamically.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>Scroll Reveal</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/scrollreveal/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/scrollreveal.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery.</h4>
+                   <h4>Category: Freelance Project.</h4>
+                   <h5>Description: This is the company's website to get the user details about their web hosting plan.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Each page contents changed dynamically with the user input values.<h5></li>
+                    <li><h5>It stores all the values from the user on each page and send as a email to the client.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>Auction Site</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/auction/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/auction.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, AJAX, PHP, SQL.</h4>
+                   <h4>Category: I-Expo Project.</h4>
+                   <h5>Description: This website is used to sell products through auction, whoever pays the highest will get the product from online.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>This uses AJAX function which alters the page everytime from each of the user inputs dynamically.<h5></li>
+                    <li><h5>The user who has given the highest payment and the price also will be stored in database.</h5></li>
+                    <li><h5>As one product is sold the next will be retrieved immediately and will be upto auction.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-12 projectheading">
+                  <h3>Facebook Integrated</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/fbsite/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/fbsite.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Facebook API, PHP, SQL.</h4>
+                   <h4>Category: Freelance Project.</h4>
+                   <h5>Description: This website get the users to login to facebook and get the details and stores in the client database.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>As user logins through facebook, using Facebook API the details of them is retrieved and used.<h5></li>
+                    <li><h5>In the form the user quote and a image can be selected and the image will be uploaded to the database.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>Incredible India</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/incredibleindia/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/incredibleindia.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL. </h4>
+                   <h4>Category: Smart India Hackathon'17 Project.</h4>
+                   <h5>Description: This website is a improved version of the existing incredible india tourism website handled by government of india. </h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Implemented a tour planning system which allows user to plan their tour.</h5></li>
+                    <li><h5>Used AJAX PHP to support backend features such as filter and search query results.<h5></li>
+                    <li><h5>Enabled guides ,hotels and agents to interact with tourists using a request-response mechanism.</h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-12 projectheading">
+                  <h3>Allo Chat UI Design</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/alloui/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/alloui.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap.</h4>
+                   <h4>Category: Freelance Project.</h4>
+                   <h5>Description: UI Design Recreation for the Google Allo App.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Each properties in the allo app is redesigned for website which is fully responsive.<h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+
+
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>Final Year Project</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6">
+                  <a href="./myprojects/fnlyrprjt/index.html" target="_blank">
+                  <button class="btn btn-md btn-websitenavbutton">View Website</button>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/finalyear.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL. </h4>
+                   <h4>Category: College Project.</h4>
+                   <h5>Description: Website for booking appointments for saloon, hotels, service centers and clinics.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Large details about the places to book are handled using advanced PHP functions.<h5></li>
+                    <li><h5>Each bookings will be alloted with timeslots while appointments.<h5></li>
+                    <li><h5>Confirmation with the user and the booking place will be done.<h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+
+          <div class="projectexplain">
+                <div class="row">
+                  <div class="col-xs-9 projectheading">
+                  <h3>E-Commerce Site</h3>
+                  </div>
+                  <div class="col-xs-offset-3 col-xs-6"> 
+                  <button class="btn btn-md btn-websitenavbutton">Under Progress</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 projectscreenshot">
+                  <img src="img/ecommerce.png" class="img-responsive">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-6 projdescription">
+                   <h4>Technologies used: HTML, CSS, Bootstrap, jQuery, PHP, SQL. </h4>
+                   <h4>Category: Client Project.</h4>
+                   <h5>Description: An E-Commerce Website dedicated to the selling of Books.</h5>
+                   <h5>Features:</h5>
+                  <ul class="ulclass">
+                    <li><h5>Built a scalable Backend architecture for handling large volume of data.<h5></li>
+                    <li><h5>Developed inventory management to handle the database values in frontend.</h5></li>
+                    <li><h5>E-commerce functions like wish list, user review, user profile and cart are integrated. <h5></li>
+                  </ul>
+                  </div>
+                </div>
+          </div>
+
+
+      </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<div class="container-fluid" id="contacts" style="padding-top: 50px;">
+    <div class="row">
+      <div class="col-md-offset-6 col-md-3 animated fadeIn headerclass">
+        <h2>Get in touch</h2>
+      </div>
+    </div>
+    <div class="row">
+  		<div class="col-md-offset-2 col-md-5 animated fadeIn">
+              <h3>+91 9176860631</h3>
+        <h3 >srikanth.ajith@gmail.com</h3><br><br>
+        <h4 style="text-align: center;">Leave a comment</h4>
+      <form action="update.php" method="post" >
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Name</label>
+                      <input type="text" class="mat-input" name="username" required>
+                  </div>
+                </div>               
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Email</label>
+                      <input type="email" class="mat-input" name="emailid" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Message</label>
+                      <textarea rows="4" cols="50" class="mat-input" name="message" required></textarea>
+                  </div>                <br><br>
+                </div>
+                <center>
+                  <button type="submit" class="btn  btn-lg btn-defaultsubmit">Submit</button>
+              </form>
+  		</div><br><br><br><br><br>
+  	</div>
+</div>
+
+<div class="container-fluid footer" id="footer">
+  <div class="row">
+    <div class="col-xs-3">
+      <a href="https://www.facebook.com/srikanthajith.b" target="_blank"><span class="topsociallink fa fa-facebook"></span></a>
+    </div>
+    <div class="col-xs-3">
+      <a href="https://github.com/Srikanthajith" target="_blank"><span class="topsociallink fa fa-github"></span></a>
+    </div>
+    <div class="col-xs-3">
+      <a href="https://www.linkedin.com/in/srikanth-ajith-b9855569/" target="_blank"><span class="topsociallink fa fa-linkedin"></span></a>
+    </div>
+    <div class="col-xs-3">
+      <a href="https://www.instagram.com/srikanthajith/" target="_blank"><span class="topsociallink fa fa-instagram"></span></a>
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+
+
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");;
+  });
+
+$(document).ready(function(){
+      if($(window).width() > 950) {
+window.location = "./index.html";
+}
+});
+
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  adaptiveHeight: true
+});
+
+
+$(document).ready(function() {
+
+});
+
+
+
+$(".mat-input").focus(function(){
+  $(this).parent().addClass("is-active is-completed");
+});
+
+$(".mat-input").focusout(function(){
+  if($(this).val() === "")
+    $(this).parent().removeClass("is-completed");
+  $(this).parent().removeClass("is-active");
+})
+
+
+
+$('.nav a').on('click', function(){
+    $('.btn-navbar').click(); //bootstrap 2.x
+    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+});
+
+
+
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+
+</script>
+</html>

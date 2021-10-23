@@ -1,0 +1,17 @@
+1. mccullum
+2. dhoni
+3. mitchell johnson
+4.kieron pollard
+5.kohli
+6.morne morkel
+7.ashwin
+8. ab de villiers
+9.chris gayle
+10.glenn maxwell
+11.yuvraj
+
+
+INSERT INTO `ipl`.`playlist` (`id`, `name`) VALUES ('1', 'Brendon Mccullum'),('2', 'MS Dhoni'),
+('3', 'Mitchell Johnson'),('4', 'Kieron Pollard'),('5', 'Virat Kohli'),('6', 'Morne Morkel'),
+('7', 'R Ashwin'),('8', 'AB de Villiers'),('9', 'Chris Gayle'),('10', 'Glenn Maxwell'),
+('11', 'Yuvraj Singh') ;

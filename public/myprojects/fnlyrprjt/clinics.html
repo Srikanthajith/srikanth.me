@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Increadible India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  
+</head>
+<style>
+@font-face {
+    font-family: Brandon_reg;
+    src: url(Brandon_reg.otf);
+}
+body{
+  overflow-x:hidden;
+  overflow-y:scroll;  
+}
+.navbar-default .navbar-nav > li > a {
+   color: white;
+   font-family:brandon_reg;
+   font-size:15px;
+    }
+.effect1{
+     box-shadow: 0 10px 6px -6px #808080;
+}
+.hover-nav{
+  position: relative;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.hover-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+}
+
+.hover-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+.navbar-default{
+    background:#fb4559;
+    border:none !important;
+}
+.navbar-nav>li>a:hover{
+    color:#1a1a1a;
+} 
+.hover-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+ }
+ .content p{
+  font-family: brandon_reg;
+  color: #808080;
+  font-size: 15px;
+}
+.footer p{
+  font-family: brandon_reg;
+ }
+ .footer h4{
+  font-family: brandon_reg;
+ }
+ .navbar-brand{
+  margin-top: 6%;
+ }
+ .navbar{
+  height: 60px;
+ }
+ .card-title{
+  font-family: brandon_reg;
+  color: black;
+  margin-bottom: 0px;
+ }
+ .card-text{
+  font-family: brandon_reg;
+  color: #808080;
+  font-size: 15px;
+ }
+ .card{
+  border-radius: 10px;
+ }
+ .checkbox{
+  font-family: brandon_reg;
+ }
+ .checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+.effect{
+   box-shadow: 0 10px 6px -6px #777;
+}
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+    color: #fb4559;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .2s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+.checkbox{
+  font-size: 15px;
+}
+</style>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="col-md-3">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" style="color:white;font-size:25px">INLINE</a>
+    </div>
+  </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="col-md-6">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="saloon.html">Saloon & Spa</a>
+        </li>
+        <li><a href="service_center.html">Service Center</a></li>
+        <li><a href="clinics.html">Clinics</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="col-md-offset-1 col-md-2">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color:white;font-family:brandon_reg"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#" style="color:white;font-family:brandon_reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid">
+<div class="content" style="margin-top:7%">
+  <div class="row genere">
+    <div class="col-md-2" style="padding-left:2%">
+      <div class="col-md-12">
+      
+      <br>
+      <p style="font-size:20px;margin-left:0px;color:#280459">Search By City</p>
+      
+       <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Chennai
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Mumbai
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Bangalore
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Kerela
+          </label>
+        </div>
+        <br>
+      <br>
+      <p style="font-size:20px;margin-left:0px;color:#280459">Search By Area</p>
+     <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Thiruvanmiyur
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Saidapet
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Nungambakkam
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Adayar
+          </label>
+        </div>
+        <br>
+      <br>
+      <!--<p style="font-size:20px;margin-left:0px;color:#280459">Search By Budget</p>
+     <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Budget Saloon
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+            Deluxe Saloon
+          </label>
+        </div>-->
+    </div>
+  </div>
+  <div class="col-md-9" style="padding-left:5%">
+    <div class="col-md-3">
+    <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+     <br>
+     <br> 
+    </div>
+    <div class="col-md-3">
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+     <br>
+     <br> 
+    </div>
+    <div class="col-md-3">
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+     <br>
+     <br> 
+    </div>
+    <div class="col-md-3">
+    <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+      <br>
+      <br>
+      <center>
+      <div class="card effect" style="width: 15rem">
+        <img class="card-img-top" src="e1.png" style="height:175px;width:238px" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Clinic Name</h4>
+              <p class="card-text">Area Name, Chennai</p>
+                <a href="#" class="btn btn-default effect" style="background-color:#280459;color:white">View Services</a>
+          </div>
+      </div>
+    </center>
+     <br>
+     <br> 
+    </div>
+  </div>
+  </div>
+</div><!--End of Content-->
+</div><!--End of Container-->  
+
+
+<div class="container-fluid">
+<div class="footer WOW slidInLeft" style="background-color:#3F403F">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" style="padding-top:3%">
+  <h4 style="color:white">INLINE</h4>
+  <p style="color:white">A new place to Book Appointments Online.</p>
+  <p style="color:#ECECEC">What is INLINE?Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+<div class="col-md-offset-1 col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">About</p>
+  <p style="color:#ECECEC;margin-bottom:0">Legal</p>
+  <p style="color:#ECECEC;margin-bottom:0">Saloon and Spa</p>
+  <p style="color:#ECECEC;margin-bottom:0">Clinics</p>
+  <p style="color:#ECECEC">Service Center</p>
+</div>
+
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">Hotels</p>
+  <p style="color:#ECECEC;margin-bottom:0">Review</p>
+  <p style="color:#ECECEC;margin-bottom:0">Contact us</p>
+  <p style="color:#ECECEC;margin-bottom:0">Terms</p>
+</div>
+
+<div class="col-md-3" style="padding-top:4%">
+  <p style="color:#ECECEC;font-size:20px">2,789 Appointments to Book</p>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <a href="#"><img src="fb.png" style="height:40px;width:40px;"></a>&nbsp&nbsp
+    <a href="#"><img src="twitter.png" style="height:40px;width:40px;"></a>
+  </div>
+  <p style="color:white">Copyright &copy; 2016-2017  Inline Private Limited</p>
+  <div class="col-md-offset-1 col-md-4">
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>

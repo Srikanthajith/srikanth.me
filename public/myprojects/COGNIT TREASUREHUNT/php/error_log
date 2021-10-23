@@ -1,0 +1,132 @@
+[09-Aug-2016 13:53:55 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:54:03 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:54:09 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:54:13 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:54:18 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:54:50 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:55:46 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:55:52 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[09-Aug-2016 13:55:56 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/updatedatabase.php on line 19
+[12-Aug-2016 05:59:20 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[12-Aug-2016 10:12:01 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[12-Aug-2016 10:12:01 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[12-Aug-2016 10:12:01 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[12-Aug-2016 10:12:01 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 42
+[12-Aug-2016 10:12:01 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[12-Aug-2016 10:12:09 Etc/GMT] PHP Notice:  Undefined index: username in /home/mnmcoito/public_html/treasurehunt/php/updatequestion.php on line 3
+[12-Aug-2016 10:12:11 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[12-Aug-2016 10:12:19 Etc/GMT] PHP Notice:  Undefined index: answer in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 14
+[12-Aug-2016 10:12:19 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[12-Aug-2016 14:31:14 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[12-Aug-2016 14:42:22 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[12-Aug-2016 14:58:38 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[12-Aug-2016 15:27:12 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[12-Aug-2016 15:27:17 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[13-Aug-2016 17:01:47 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[13-Aug-2016 17:01:47 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[13-Aug-2016 17:01:54 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[13-Aug-2016 17:01:54 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[13-Aug-2016 17:01:57 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[13-Aug-2016 17:01:57 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[13-Aug-2016 17:01:58 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[13-Aug-2016 17:01:58 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[14-Aug-2016 06:49:47 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[14-Aug-2016 12:20:32 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[16-Aug-2016 06:56:00 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[16-Aug-2016 06:56:00 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[16-Aug-2016 06:56:00 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[16-Aug-2016 06:56:00 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[16-Aug-2016 06:56:03 Etc/GMT] PHP Notice:  Undefined index: username in /home/mnmcoito/public_html/treasurehunt/php/updatequestion.php on line 3
+[16-Aug-2016 06:56:04 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[16-Aug-2016 06:56:10 Etc/GMT] PHP Notice:  Undefined index: answer in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 14
+[16-Aug-2016 06:56:10 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[16-Aug-2016 17:34:08 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[16-Aug-2016 17:34:08 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[16-Aug-2016 17:34:08 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[16-Aug-2016 17:34:08 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[17-Aug-2016 08:31:15 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 08:31:15 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 08:31:15 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[17-Aug-2016 08:31:15 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[17-Aug-2016 08:47:50 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 08:47:50 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 08:47:50 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[17-Aug-2016 08:47:50 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[17-Aug-2016 11:06:09 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 11:06:09 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 11:06:09 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[17-Aug-2016 11:06:09 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[17-Aug-2016 11:06:19 Etc/GMT] PHP Notice:  Undefined index: username in /home/mnmcoito/public_html/treasurehunt/php/updatequestion.php on line 3
+[17-Aug-2016 11:06:20 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[17-Aug-2016 18:20:46 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 18:20:46 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[17-Aug-2016 18:20:46 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[17-Aug-2016 18:20:46 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[17-Aug-2016 20:19:17 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[17-Aug-2016 20:19:27 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[18-Aug-2016 05:18:58 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[18-Aug-2016 05:18:58 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[18-Aug-2016 05:18:58 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[18-Aug-2016 05:18:58 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[18-Aug-2016 05:19:00 Etc/GMT] PHP Notice:  Undefined index: username in /home/mnmcoito/public_html/treasurehunt/php/updatequestion.php on line 3
+[18-Aug-2016 05:19:01 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[18-Aug-2016 14:13:52 Etc/GMT] PHP Notice:  Undefined index: answer in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 14
+[18-Aug-2016 14:13:52 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[18-Aug-2016 14:14:25 Etc/GMT] PHP Notice:  Undefined index: answer in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 14
+[18-Aug-2016 14:14:25 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[18-Aug-2016 14:17:15 Etc/GMT] PHP Notice:  Undefined index: answer in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 14
+[18-Aug-2016 14:17:15 Etc/GMT] PHP Notice:  Undefined index: level in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 15
+[18-Aug-2016 16:23:14 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[18-Aug-2016 16:23:14 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[18-Aug-2016 16:23:14 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[18-Aug-2016 16:23:14 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[19-Aug-2016 06:04:22 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[19-Aug-2016 06:04:22 Etc/GMT] PHP Notice:  Undefined variable: pass in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 24
+[19-Aug-2016 06:04:22 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 36
+[19-Aug-2016 06:04:22 Etc/GMT] PHP Notice:  Undefined variable: name in /home/mnmcoito/public_html/treasurehunt/php/signin.php on line 55
+[19-Aug-2016 06:04:39 Etc/GMT] PHP Notice:  Undefined index: username in /home/mnmcoito/public_html/treasurehunt/php/updatequestion.php on line 3
+[19-Aug-2016 06:04:40 Etc/GMT] PHP Notice:  Undefined index: no in /home/mnmcoito/public_html/treasurehunt/php/next.php on line 14
+[19-Aug-2016 07:31:02 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 07:31:02 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 07:33:33 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 07:33:34 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:37 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:38 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:38 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:38 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:56 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:58 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:43:59 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:44:09 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:44:10 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:36 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:36 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:36 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:37 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:37 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:38 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:40 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 08:55:46 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:27 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:27 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:30 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:03:42 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:58:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 09:58:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 10:10:18 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 10:19:48 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 10:19:49 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19
+[19-Aug-2016 10:19:49 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mnmcoito/public_html/treasurehunt/php/nextpage.php on line 19

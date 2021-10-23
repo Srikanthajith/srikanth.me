@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BUKZE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+<style>
+@font-face {
+    font-family: Brandon_reg;
+    src: url(Brandon_reg.otf);
+}
+.navbar-inverse{
+  background-color: #FFFFFF;
+  border: none;
+}
+.effect1{
+     box-shadow: 0 10px 6px -6px #777;
+     display: block;
+}
+.effect3{
+   box-shadow: 0 10px 6px -6px #777;
+}
+.second-nav{
+  position: relative;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.second-nav .navbar-fixed-top{
+  top: 15px;
+}
+.second-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+}
+
+.second-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #248CCB;
+    transition: width .3s;
+}
+
+.second-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.slider-size {
+height: 500px; /* This is your slider height */
+
+}
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+ }
+ .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  right: 15px;  //or you can increase this
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  left: 0px; //or you can increase this
+}
+.glyphicon.glyphicon-chevron-right{
+   color:white;
+}
+.glyphicon.glyphicon-chevron-left{
+   color:white;
+}
+ .four_services{
+  box-shadow: 10px 10px 5px #EEEEEE;
+  z-index: 10;
+ }
+ .carousel-inner p{
+  font-family: brandon_reg;
+ }
+ .feedback p{
+  font-family: brandon_reg;
+ }
+ .feedback h4{
+  font-family: brandon_reg;
+ }
+ .footer p{
+  font-family: brandon_reg;
+ }
+ .footer h4{
+  font-family: brandon_reg;
+ }
+ .navbar-fixed-top2
+ {
+
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 500;
+ }
+
+ .searchbutton
+ {
+  position: absolute;
+  z-index: 1000;
+    color: #eeeeee;
+ }
+ .searchbutton:hover
+ {
+  color: red;
+  background-color: red;
+    display: block;
+ }
+ .navbar-fixed-top2
+ {
+
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 500;
+ }
+
+ .searchbutton
+ {
+  position: absolute;
+  z-index: 1000;
+    color: #eeeeee;
+ }
+ .searchbutton:hover
+ {
+  color: red;
+  background-color: red;
+    display: block;
+ }
+</style>
+<body>
+  <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top effect1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img src="logo.png" style="height:40px;width:100px;margin-left:60%;"></img></a>
+        </div>
+      </div>
+      <div class="col-md-offset-2 col-md-4">
+        <form class="navbar-form">
+          <div class="input-group has-feedback has-feedback-left">
+            <input type="text" class="form-control" placeholder="Search among 17,465 Books" style="padding-top:3%;padding-bottom:3%;border-radius:20px;width:700px;font-family:brandon_reg;border: 2px solid #eeeeee" />
+            <span class="glyphicon glyphicon-search form-control-feedback searchbutton" style=
+            "padding-top:1%;"></span>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-offset-3 col-md-2">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><img src="user.png" style="height:20px;width:20px"></img></a></li>
+          <li><a href="#"><img src="bag.png" style="height:20px;width:20px"></img></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-menu-hamburger" style="color:black;padding-top:3px"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container-fluid">
+<div class="second-nav">
+<nav class="navbar navbar-inverse navbar-fixed-top2 effect1" style="margin-top:4%;padding-top:2%;background-color:#FFFFFF">
+  <div class="container-fluid">
+
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="myNavbar1">
+    <div class="row" style="padding-left:30%">
+  <ul class="nav navbar-nav">
+    <li><a href="page2.html" style="color:black;font-family:brandon_reg;font-size:20px">Education</a></li>
+    <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Fiction</a></li>
+    <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Non-Fiction</a></li>
+    <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Kid's Zone</a></li>
+    <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Health</a></li>
+    <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">General</a></li>
+  </ul>
+</div>
+</div>
+</nav><!--End of Navbar-->
+</div>
+</div>
+<br>
+<div class="banner">
+</div>
+
+<div class="container" style="margin-top:12%">
+
+  <div class="row">
+    <div class="col-md-offset-1 col-md-4">
+      <h4 style="font-family:brandon_reg;padding-bottom:15px;border-bottom:1px solid black;font-size:15px">CHOOSE A COUPON</h4>
+      <br>
+        <div class="col-md-5">
+          <img src="coupon.png" style="height:75px;width:125px">
+          <center>
+            <p style="font-family:brandon_reg;padding-top:10%">Coupon 1</p>
+          </center>
+          <br>
+          <img src="coupon.png" style="height:75px;width:125px">
+          <center>
+            <p style="font-family:brandon_reg;padding-top:10%">Coupon 2</p>
+          </center>
+          <br>
+        </div>
+        <div class="col-md-offset-2 col-md-5">
+          <img src="coupon.png" style="height:75px;width:125px">
+          <center>
+            <p style="font-family:brandon_reg;padding-top:10%">Coupon 3</p>
+          </center>
+          <br>
+          <img src="coupon.png" style="height:75px;width:125px">
+          <center>
+            <p style="font-family:brandon_reg;padding-top:10%">Coupon 4</p>
+          </center>
+          <br>
+        </div>
+    </div>
+    <div class="col-md-offset-2 col-md-4">
+      <h4 style="font-family:brandon_reg;padding-bottom:15px;border-bottom:1px solid black;font-size:15px">PAYMENT METHOD</h4>
+      <br>
+      <div class="col-md-3">
+        <center>
+          <div class="icons" style="height:80px;width:80px;background-color:#1B8CCE;border-radius:5px">
+        <img src="user.png" style="height:20px;width:20px;margin-top:15px">
+        <p style="color:white;font-family:brandon_reg;line-height:90%;padding-top:6px">credit card</p>
+          </div>
+      </center>
+      </div>
+      <div class="col-md-3">
+        <center>
+        <div class="icons" style="height:80px;width:80px;background-color:#F1F1F1;border-radius:5px">
+        <img src="user.png" style="height:20px;width:20px;margin-top:15px">
+        <p style="color:black;font-family:brandon_reg;line-height:90%;padding-top:6px">credit card</p>
+          </div>
+        </center>
+      </div>
+      <div class="col-md-3">
+        <center>
+        <div class="icons" style="height:80px;width:80px;background-color:#F1F1F1;border-radius:5px">
+        <img src="user.png" style="height:20px;width:20px;margin-top:15px">
+        <p style="color:black;font-family:brandon_reg;line-height:90%;padding-top:6px">credit card</p>
+          </div>
+        </center>
+        <br>
+      <br>
+      </div>
+      <div class="col-md-12">
+         <div class="form-group">
+          <label for="name" style="font-family:brandon_reg;font-size:12px">NAME ON CARD</label>
+          <input type="text" class="form-control">
+         </div>
+       </div>
+       <br>
+       <div class="col-md-8">
+         <div class="form-group">
+          <label for="name" style="font-family:brandon_reg;font-size:12px">CARD NUMBER</label>
+          <input type="text" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX" style="font-size:12px">
+         </div>
+       </div>
+       <div class="col-md-4">
+         <div class="form-group">
+          <label for="name" style="font-family:brandon_reg;font-size:12px">CVV</label>
+          <input type="text" class="form-control">
+         </div>
+       </div>
+         <br>
+         <div class="col-md-6">
+         <div class="form-group">
+           <label for="Month">
+              <span class="label-text" style="font-family:brandon_reg;font-size:12px">MONTH</span> 
+              <span class="contact-error"></span>
+           </label>
+           <select class="form-control" placeholder="Select Month" id="month">
+            <option value="month">January</option>
+            <option value="month">February</option>
+            <option value="month">March</option>
+            <option value="month">April</option>
+            <option value="month">May</option>
+            <option value="month">June</option>
+            <option value="month">July</option>
+            <option value="month">August</option>
+            <option value="month">September</option>
+            <option value="month">October</option>
+            <option value="month">November</option>
+            <option value="month">December</option>
+           </select>
+         </div>
+       </div>
+       <div class="col-md-6">
+         <div class="form-group">
+           <label for="Month">
+              <span class="label-text" style="font-family:brandon_reg;font-size:12px">YEAR</span> 
+              <span class="contact-error"></span>
+           </label>
+           <select class="form-control" placeholder="Select Month" id="month">
+            <option value="year">2017</option>
+            <option value="year">2018</option>
+            <option value="year">2019</option>
+            <option value="year">2020</option>
+            <option value="year">2021</option>
+            <option value="year">2022</option>
+            <option value="year">2023</option>
+            <option value="year">2024</option>
+            <option value="year">2025</option>
+           </select>
+         </div>
+         <br>
+       </div>
+       <div class="col-md-offset-4 col-md-*">
+        <button type="button" class="btn btn-default effect3" style="border-radius:20px;background-color:#1B8CCE;color:white">PLACE ORDER</button>
+       </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+<div class="footer" style="background-color:#248CCB;padding-bottom:3%;">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" style="padding-top:3%">
+  <h4 style="color:white">BUKZE</h4>
+  <p style="color:white">A new place to find books</p>
+  <p style="color:#ECECEC">What is Buzke?Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">About</p>
+  <p style="color:#ECECEC;margin-bottom:0">Legal</p>
+  <p style="color:#ECECEC">Testimonials</p>
+</div>
+
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">Contact us</p>
+  <p style="color:#ECECEC;margin-bottom:0">Terms</p>
+</div>
+<div class="col-md-1" style="padding-top:3%">
+  <img src="book.png" style="height:75px;width:75px">
+</div>
+<div class="col-md-3" style="padding-top:4%">
+  <p style="color:#ECECEC;font-size:30px">12,789 Pages Turned</p>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <a href="#"><img src="fb.png" style="height:40px;width:40px;"></a>&nbsp&nbsp
+    <a href="#"><img src="twitter.png" style="height:40px;width:40px;"></a>
+  </div>
+  <p style="color:white">Copyright &copy; 2016-2017  Thoutz Technologies Private Limited</p>
+  <div class="col-md-offset-1 col-md-4">
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="jquery-2.0.2.js"></script>
+<script src="bootstrap.js"></script>
+</html>
+

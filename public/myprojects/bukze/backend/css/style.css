@@ -1,0 +1,148 @@
+@font-face {
+    font-family: lato-bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato-reg;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+
+body{
+	background-color: #dde8ed;
+}
+
+
+
+.accordion{
+		margin-left: 10%;
+
+
+}
+
+.why_head{
+	color: #10abed;
+	font-family: lato-reg;
+	margin-bottom: 10%;
+}
+
+
+li{
+	font-family: lato-reg;
+	color: #4c5b61;
+	list-style: none;
+	margin-bottom: 4%;
+	font-size: 1.35em;
+}
+
+
+.selected_feature{
+
+	background-color: white;
+	border-radius: 10px;
+	color: #d1005d;
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(87,167,201,0.35);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(87,167,201,0.35);
+	box-shadow: 2px 2px 4px 0px rgba(87,167,201,0.35);
+	padding-top: 10px;
+	padding-bottom: 6px;
+	padding-right: 6px;
+
+}
+
+.movie_card{
+	height: 38vh;
+	width: 12vw;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 60px;
+    margin-top: 12%;
+    margin-bottom: 2%;
+    display: inline-block;
+
+
+}
+
+li{
+	font-family: lato-bold;
+	font-size: medium;
+}
+
+.movie_pic{
+	height: 32vh;
+	width: inherit;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.movie_list li{
+	display: inline-block;
+	margin-left: 4%;
+}
+
+.movie_name{
+	text-align: center;
+	font-family: lato-bold;
+	margin-top: 4%;
+
+}
+
+.fa{
+	font-size: small;
+	color: #536268;
+}
+
+
+.icon{
+	width: 15%;
+	margin-left: 10%;
+	margin-right: 2%;
+
+}
+
+.line{
+	width: 1px;
+	height: 6vh;
+	background-color: #9bbac7;
+	display: inline-block;
+	margin-left: 1vw;
+	vertical-align: middle;
+}
+
+.tag{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1vw;
+	font-family: lato-reg;
+	margin-top: 1%;
+}
+
+.hero{
+	font-family: lato-bold;
+	color: #ec4f47;
+	font-size: large;
+
+}
+
+.talkies{
+	font-family: lato-bold;
+	color: #333333;
+	font-size: large;
+}
+
+.tool + .tooltip > .tooltip-inner {
+    background-color: #a6afb3; 
+    color: #dde8ed;
+
+
+
+}
+
+
+.tool + .tooltip.bottom > .tooltip-arrow {
+   border-bottom: 5px solid #a6afb3;
+
+
+}

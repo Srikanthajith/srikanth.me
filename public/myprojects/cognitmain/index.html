@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>Cognit 2k16</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">        
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/mypagemain.css" rel="stylesheet" type="text/css">
+        <link href="css/ihover.css" rel="stylesheet" type="text/css">
+        <link href="css/mobilestyle.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/topicons/favicon.png">
+	<title></title>
+</head>
+<style type="text/css">
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: url(images/background/loading.jpg) center no-repeat #fff;
+}
+
+@font-face {
+    font-family: biko;
+    src: url(fonts/Biko_Regular.otf);
+}
+
+
+.mainpage {
+  position: absolute;
+  z-index: 16;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('images/background/main.jpg');
+}
+
+
+.techmain {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/techmain.jpg'); 
+
+	}
+
+  .nonmain {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/nonmain.jpg');
+  }
+  
+  .techevent {
+		height: 100%;
+		width: 100%;
+    bottom: 300%;
+		position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/techevent.png');
+	}
+
+
+
+    .nonevent {
+    height: 100%;
+    width: 100%;
+    bottom: 300%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/nonevent.png');
+  }
+
+    .onlinemain {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/onlinemain.jpg');
+  }
+
+    .onlineevent {
+    height: 100%;
+    width: 100%;
+    bottom: 500%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/onlineevent.jpg');
+  }
+
+    .aboutpage {
+    height: 100%;
+    width: 100%;
+    bottom: 500%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/aboutpagebg.jpg');
+  }
+    .blankdiv {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/blankback.jpg');
+  }
+
+  .register{
+    height: 100%;
+    width: 100%;
+    bottom: 300%;
+    position: absolute;
+    z-index: 10001;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('images/background/nonevent.png');
+  }
+
+
+.regisbut
+{
+  position: absolute;
+  z-index: 1000;
+  height: 8%;
+  width:  16%;
+  top:2%;
+  right:2%; 
+  background: transparent;
+  z-index: 1000;
+  position: fixed;
+  cursor: pointer;
+}
+
+
+.logo
+{
+  position: absolute;
+  height: 12%;
+  width:15%;
+  left:2%; 
+  background: transparent;
+  z-index: 1000;
+  position: fixed;
+
+}
+
+.backbut
+{
+  position: absolute;
+  z-index: 1001;
+  left: 5%;
+  top: 4%;
+}
+
+
+.codersages
+{
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  z-index: 30;
+  width: 30%;
+  height: 5%;
+}
+.datearri
+{
+  position: absolute;
+  top: 5%;
+  left: 38%;
+  z-index: 30;
+  width: 25%;
+  height: 15%;
+}
+
+
+.main-title {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  width: 35vw;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.shard 
+{
+  position: absolute;
+  height: 5%;
+  width: 3%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transition-duration: 3s;
+}
+.t1
+{
+  top: 18%;
+  left: 10%;
+}
+.t2
+{
+  top: 28%;
+  left: 80%;
+}
+.t3
+{
+  top: 85%;
+  left: 10%;
+}
+.t4
+{
+  top: 58%;
+  left: 30%;
+}
+.t5
+{
+  top: 68%;
+  left: 20%;
+}
+.t6
+{
+  top: 88%;
+  left: 40%;
+}
+.t7
+{
+  top: 18%;
+  left: 90%;
+}
+.t8
+{
+  top: 88%;
+  left: 90%;
+}
+.t9
+{
+  top: 71%;
+  left: 70%;
+}
+.t10
+{
+  top: 15%;
+  left: 70%;
+}
+.t11
+{
+  top: 38%;
+  left: 20%;
+}
+.t12
+{
+  top: 58%;
+  left: 10%;
+}
+
+.t13
+{
+  top: 78%;
+  left: 30%;
+}
+.t14
+{
+  top: 90%;
+  left: 60%;
+}
+.t15
+{
+  top: 45%;
+  left: 80%;
+}
+.t16
+{
+  top: 75%;
+  left: 82%;
+}
+.t17
+{
+  top: 90%;
+  left: 75%;
+}
+.t18
+{
+  top: 84%;
+  left: 18%;
+}
+.t19
+{
+  top: 20%;
+  left: 33%;
+}
+.t20
+{
+  top: 50%;
+  left: 93%;
+}
+.paralltech
+{
+    position: absolute;
+    top:0%;
+    left:5%;
+}
+.parallaxtech1
+{
+  height: 90%;
+  width: 90%;
+}
+.parallnon
+{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+.parallaxnon1
+{
+  height: 60%;
+  width: 60%;
+}
+.parallonline
+{
+    position: absolute;
+    top:0%;
+    left:5%;
+
+}
+.parallaxonline1
+{
+  height: 90%;
+  width: 90%;
+}
+
+
+.large-header
+{
+  margin-left: -2%;
+}
+
+
+.tilerow1
+{
+  margin-top: 7%;
+}
+.tilerow2
+{
+  margin-top: 5%;
+}
+
+
+
+.img-circle{
+  border-radius: 50%;
+}
+
+
+.aboutmaintop
+{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 15%;
+  width: 100%;
+  color: white;
+  font-size: 6vh;
+  font-family: biko;
+}
+
+
+.aboutmain
+{
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  top: 23%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  font-size: 3vh;
+  font-family: biko;
+}
+.footerwrap {
+  position: absolute;
+  text-align: center;
+  height: 30%;
+  width: 100%;
+  top: 78%;
+  left: 0%;
+  background-color: black;
+}
+.footerelem1
+{
+  left: 3%;
+  margin-top: 2%;
+  font-size: 3vh;
+  font-family: biko;
+  color:white;
+}
+.footerelem
+{
+  margin-top: 1%;
+  font-size: 3vh;
+  font-family: biko;
+  color:white;
+}
+.aboutimage
+{
+  height: 100%;
+  width: 100%;
+}
+.aboutmap
+{
+  height: 200px;
+  width: 100%;
+}
+
+.modal-header{
+  background-color: black;
+  color:white;
+}
+.modal-premed{
+  background-image: url("images/modal/prebg.jpg");
+  background-repeat: repeat-y;
+  color: black;
+  background-size: 100%;
+  font-size: 2vh;
+}
+.modal-med{
+  background-image: url("images/modal/medbg.jpg");
+  color: black;
+background-repeat: repeat-y;
+  background-size: 100%;
+  font-size: 2vh;
+}
+.modal-modern{
+  background-image: url("images/modal/modbg.jpg");
+  color: white;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-size: 2vh;
+}
+.modal-title{
+  font-size: 4vh;
+  text-align: center;
+  font-family: biko;
+}
+li{
+  font-family: biko;
+  font-size: 2vh;
+}
+.modal h3{
+  font-size: 3vhpx;
+}
+
+.modal-footer{
+  text-align: center;
+  background-color: black;
+  color:white;
+  font-family: biko;
+  font-size: 2vh;
+  font-weight: 400;
+}
+.close
+{
+color:white;
+opacity: 1;
+}
+
+
+
+.social-link
+{  position: absolute;
+  z-index: 3;
+  top: 85%;
+  left: 42%;
+
+  display:block;
+  overflow:hidden;
+  list-style:none;
+}
+.social-link li
+{
+  float:left;
+  margin-right:15px;
+}
+.social-link li a
+{
+  display:block;
+  width:4vw;
+  height:4vw;
+  text-align:center;
+  line-height:4vw;
+  font-size:2vw;
+  color:#fff;
+  background:#222222;
+  border-radius:50%;
+  transition:all 1s ease-in-out;
+}
+.social-link li a:hover, .social-link li a:focus
+{
+  text-decoration:none;
+}
+
+.social-link1
+{  position: absolute;
+  z-index: 3;
+  top: 85%;
+  left: 42%;
+  margin-top: 4%;
+  display:block;
+  overflow:hidden;
+  list-style:none;
+}
+.social-link1 li
+{
+  float:left;
+  margin-right:15px;
+}
+.transport
+{  border-radius:50%;
+    width:4vw;
+  height:4vw;
+  line-height:4vw;
+  font-size:2vw;
+    text-align:center;
+  color:#fff;
+  background:#222222;
+}
+.social-link1 li a
+{
+  display:block;
+  width:4vw;
+  height:4vw;
+  text-align:center;
+  line-height:4vw;
+  font-size:2vw;
+  color:#fff;
+  background:#222222;
+  border-radius:50%;
+  transition:all 1s ease-in-out;
+}
+.social-link1 li a:hover, .social-link1 li a:focus
+{
+  text-decoration:none;
+}
+..social-link li a facebook a
+{
+    background : #80d1e7;
+}
+.facebook a:hover
+{
+  color: #fff ;
+  background : #3b5998;
+}
+
+
+.youtube a:hover
+{
+  color: #fff ;
+  background :#cb2026;
+}
+
+small
+{
+  color: red;
+}
+</style>
+
+
+
+
+<body>
+
+
+  <div class="se-pre-con"></div>
+
+
+<div>
+
+  <img src="images/topicons/logo-color.png" class="logo img-responsive" id="mainlogo" >
+
+  <img src="images/topicons/register-white.png" class="regisbut img-responsive" id="registerbut" onclick="register()">
+
+
+              <button class="linkrightmainpage" onclick="mainleft()">
+                <i class="fa fa-chevron-right animated infinite bounce"></i>
+              </button>
+
+              <button class="linkrighttechmain" onclick="techmainleft()">
+                <i class="fa fa-chevron-right animated infinite bounce"></i>
+              </button>
+
+              <button class="linklefttechmain" onclick="techmainright()">
+                <i class="fa fa-chevron-left animated infinite bounce"></i>
+              </button>
+
+              <button class="linkdowntechmain" onclick="techmaindown()">
+                <i class="fa fa-chevron-down animated infinite bounce"></i>
+              </button>
+
+              <button class="linkuptechevent" onclick="techeventup()">
+                <i class="fa fa-chevron-up animated infinite bounce"></i>
+              </button>
+
+
+              <button class="linkrightnonmain" onclick="nonmainleft()">
+                <i class="fa fa-chevron-right animated infinite bounce"></i>
+              </button>
+
+              <button class="linkleftnonmain" onclick="nonmainright()">
+                <i class="fa fa-chevron-left animated infinite bounce"></i>
+              </button>
+
+              <button class="linkdownnonmain" onclick="nonmaindown()">
+                <i class="fa fa-chevron-down animated infinite bounce"></i>
+              </button>
+
+              <button class="linkupnonevent" onclick="noneventup()">
+                <i class="fa fa-chevron-up animated infinite bounce"></i>
+              </button>
+
+
+              <button class="linkrightonlinemain" onclick="onlinemainleft()">
+                <i class="fa fa-chevron-right animated infinite bounce"></i>
+              </button>
+
+              <button class="linkleftonlinemain" onclick="onlinemainright()">
+                <i class="fa fa-chevron-left animated infinite bounce"></i>
+              </button>
+
+              <button class="linkdownonlinemain" onclick="onlinemaindown()">
+                <i class="fa fa-chevron-down animated infinite bounce"></i>
+              </button>
+
+              <button class="linkuponlineevent" onclick="onlineeventup()">
+                <i class="fa fa-chevron-up animated infinite bounce"></i>
+              </button>
+
+
+              <button class="linkleftaboutpage" onclick="aboutpageright()">
+                <i class="fa fa-chevron-left animated infinite bounce"></i>
+              </button>
+
+</div>
+
+  <div class="mainpage">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div id="large-header" class="large-header" id="large-header">
+            
+              <ul class="social-link">
+                <li class="facebook"><a href="https://www.facebook.com/cognitmnm/"><i class="fa fa-facebook"></i></a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UCqpD2S2M00nJM9rPz68IS-w"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+
+
+
+            <canvas id="demo-canvas"></canvas>
+
+            <img src="images/piclogogif.gif" class="main-title img-responsive">
+            <img src="images/background/bottext.png" class="codersages img-responsive">
+            <img src="images/background/botdate.png" class="datearri img-responsive">
+
+
+            <img src="images/shard/non/shard1.png" class="shard t1 img-responsive " id="shard1">
+            <img src="images/shard/non/shard2.png" class="shard t2 img-responsive " id="shard2">
+            <img src="images/shard/non/shard3.png" class="shard t3 img-responsive " id="shard3">
+            <img src="images/shard/non/shard4.png" class="shard t4 img-responsive " id="shard4">
+            <img src="images/shard/non/shard5.png" class="shard t5 img-responsive " id="shard5">
+            <img src="images/shard/non/shard6.png" class="shard t6 img-responsive " id="shard6">
+            <img src="images/shard/non/shard7.png" class="shard t7 img-responsive " id="shard7">
+            <img src="images/shard/non/shard8.png" class="shard t8 img-responsive " id="shard8">
+            <img src="images/shard/non/shard9.png" class="shard t9 img-responsive " id="shard9">
+            <img src="images/shard/non/shard10.png" class="shard t10 img-responsive " id="shard10">
+            <img src="images/shard/tech/shard11.png" class="shard t11 img-responsive " id="shard11">
+            <img src="images/shard/tech/shard12.png" class="shard t12 img-responsive " id="shard12">
+            <img src="images/shard/tech/shard13.png" class="shard t13 img-responsive " id="shard13">
+            <img src="images/shard/tech/shard14.png" class="shard t14 img-responsive " id="shard14">
+            <img src="images/shard/tech/shard15.png" class="shard t15 img-responsive " id="shard15">
+            <img src="images/shard/tech/shard16.png" class="shard t16 img-responsive " id="shard16">
+            <img src="images/shard/tech/shard17.png" class="shard t17 img-responsive " id="shard17">
+            <img src="images/shard/tech/shard18.png" class="shard t18 img-responsive " id="shard18">
+            <img src="images/shard/online/shard19.png" class="shard t19 img-responsive " id="shard19">
+            <img src="images/shard/online/shard20.png" class="shard t20 img-responsive " id="shard20">
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="techmain" id="techmain">
+
+
+                      <div class="paralltech">
+                        <ul id="scene1" class="scene1">
+                            <li class="layer" data-depth="0.3">
+                                <img src="images/parallax/tech/layer3.png" class="parallaxtech1 img-responsive">
+                            </li>
+                            <li class="layer" data-depth="0.6">
+                                <img src="images/parallax/tech/layer1.png" class="parallaxtech1 img-responsive">
+                            </li>
+                            <li class="layer" data-depth="0.3">
+                                <img src="images/parallax/tech/layer2.png" class="parallaxtech1 img-responsive">
+                            </li>
+                        </ul>
+                     </div>
+
+
+
+  </div>
+
+  <div class="techevent" id="techevent">
+
+
+    <div class="container-fluid">
+
+        <div class="row tilerow1">
+
+          <div class="col-sm-offset-2 col-sm-2" id="teceve1">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#thwebdesign">
+                <div class="img"><img src="images/tile/tech/1.png" alt="img"></div>
+                <div class="info">
+                  <h3>Web Designing</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+          <div class="col-sm-2" id="teceve2">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#thcodecrypt">
+                <div class="img"><img src="images/tile/tech/2.png" alt="img"></div>
+                <div class="info">
+                  <h3>Code Encrypt</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>      
+
+          <div class="col-sm-2" id="teceve3">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#thcodedebug">
+                <div class="img"><img src="images/tile/tech/3.png" alt="img"></div>
+                <div class="info">
+                  <h3>Code Debugging</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+          <div class="col-sm-2" id="teceve4">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#thgoogleit">
+                <div class="img"><img src="images/tile/tech/4.png" alt="img"></div>
+                <div class="info">
+                  <h3>Google It</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+        </div>
+
+  
+    <!--second row-->
+
+        <div class="row tilerow2">
+
+          <div class="col-sm-offset-2 col-sm-2" id="teceve5">
+
+                <div class="ih-item square effect7"><a data-toggle="modal" href="#thmockinterview">
+                    <div class="img"><img src="images/tile/tech/5.png" alt="img"></div>
+                    <div class="info">
+                      <h3>Mock Interview</h3>
+                      <p>Check out the Rules!</p>
+                    </div></a>
+                </div>
+
+            </div>      
+
+          <div class="col-sm-2" id="teceve6">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#thpaperpresent">
+                <div class="img"><img src="images/tile/tech/6.png" alt="img"></div>
+                <div class="info">
+                  <h3>Paper Presentation</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+          <div class="col-sm-2" id="teceve7">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#thtechquiz">
+                <div class="img"><img src="images/tile/tech/7.png" alt="img"></div>
+                <div class="info">
+                  <h3>Technical Quiz</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>      
+          
+          <div class="col-sm-2 " id="teceve8"> 
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#thappdevelop">
+                <div class="img"><img src="images/tile/tech/8.png" alt="img"></div>
+                <div class="info">
+                  <h3>App Development</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="nonmain" id="nonmain">
+
+                      <div class="parallnon">
+                        <ul id="scene2" class="scene2">
+                            <li class="layer" data-depth="0.30">
+                                <img src="images/parallax/non/layer1.png" class="parallaxnon1 img-responsive">
+                            </li>
+                            <li class="layer" data-depth="0.6">
+                                <img src="images/parallax/non/layer2.png" class="parallaxnon1 img-responsive">
+                            </li>
+                            <li class="layer" data-depth="0.9">
+                                <img src="images/parallax/non/layer3.png" class="parallaxnon1 img-responsive">
+                            </li>
+                        </ul>
+                     </div>
+
+
+
+  </div>
+
+  <div class="nonevent" id="nonevent">
+
+
+    <div class="container-fluid">
+
+        <div class="row tilerow1">
+
+                     
+
+
+          <div class="col-sm-offset-1 col-sm-2" id="noneve1">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#ntadzap">
+                <div class="img"><img src="images/tile/nontech/1.png" alt="img"></div>
+                <div class="info">
+                  <h3>Adzap</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+          <div class="col-sm-2" id="noneve2">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#nttreasure">
+                <div class="img"><img src="images/tile/nontech/2.png" alt="img"></div>
+                <div class="info">
+                  <h3>Treasure Hunt</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>      
+
+          <div class="col-sm-2" id="noneve3">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#ntdumbc">
+                <div class="img"><img src="images/tile/nontech/3.png" alt="img"></div>
+                <div class="info">
+                  <h3>Dumb C</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+          <div class="col-sm-2" id="noneve4">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#ntconnections">
+                <div class="img"><img src="images/tile/nontech/4.png" alt="img"></div>
+                <div class="info">
+                  <h3>Connections</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+            </div>
+
+          </div>
+
+          <div class="col-sm-2" id="noneve5">
+
+            <div class="ih-item square effect7"><a data-toggle="modal" href="#ntcasinopoker">
+              <div class="img"><img src="images/tile/nontech/5.png" alt="img"></div>
+              <div class="info">
+                <h3>Casino Poker</h3>
+                <p>Check out the Rules!</p>
+              </div></a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="row tilerow2">
+
+          <div class="col-sm-offset-2 col-sm-2" id="noneve6">
+
+                <div class="ih-item square effect7"><a data-toggle="modal" href="#ntshortfilm">
+                    <div class="img"><img src="images/tile/nontech/6.png" alt="img"></div>
+                    <div class="info">
+                      <h3>Short Film</h3>
+                      <p>Check out the Rules!</p>
+                    </div></a>
+                </div>
+
+            </div>      
+
+          <div class="col-sm-2" id="noneve7">
+
+              <div class="ih-item square effect7"><a data-toggle="modal" href="#ntgaming">
+                <div class="img"><img src="images/tile/nontech/7.png" alt="img"></div>
+                <div class="info">
+                  <h3>Gaming</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+              </div>
+
+          </div>
+
+          <div class="col-sm-2" id="noneve8">
+
+              <div class="ih-item square effect7"><a data-toggle="modal" href="#ntsurprise">
+                <div class="img"><img src="images/tile/nontech/8.png" alt="img"></div>
+                <div class="info">
+                  <h3>Surprise Event</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+              </div>
+
+          </div>      
+          
+          <div class="col-sm-2 " id="noneve9">
+
+              <div class="ih-item square effect7"><a data-toggle="modal" href="#ntiplauction">
+                <div class="img"><img src="images/tile/nontech/9.png" alt="img"></div>
+                <div class="info">
+                  <h3>IPL Auction</h3>
+                  <p>Check out the Rules!</p>
+                </div></a>
+                </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="onlinemain" id="onlinemain">
+
+
+
+                      <div class="parallonline">
+                        <ul id="scene3" class="scene3">
+                            <li class="layer" data-depth="0.30">
+                                <img src="images/parallax/online/layer1.png" class="parallaxonline1 img-responsive">
+                            </li>
+                            <li class="layer" data-depth="0.6">
+                                <img src="images/parallax/online/layer3.png" class="parallaxonline1 img-responsive">
+                            </li>
+                            <li class="layer" data-depth="0.9">
+                                <img src="images/parallax/online/layer2.png" class="parallaxonline1 img-responsive">
+                            </li>
+
+                        </ul>
+                     </div>
+
+
+
+
+  </div>
+
+  <div class="onlineevent" id="onlineevent">
+
+
+      <div class="container-fluid" >
+
+        <div class="row tilerow1">
+
+            <div class="col-sm-offset-3 col-sm-2" id="onevent1">
+
+              <div class="ih-item square effect7" ><a data-toggle="modal" href="#onlinehunt">
+                  <div class="img"><img src="images/tile/online/1.png" alt="img"></div>
+                  <div class="info">
+                    <h3>Online Treasure Hunt</h3>
+                    <p>Check out the Rules!</p>
+                  </div></a>
+              </div>
+            </div>
+
+            <div class="col-sm-2" id="onevent2">
+
+              <div class="ih-item square effect7"><a data-toggle="modal" href="#onlinephoto">
+                  <div class="img"><img src="images/tile/online/2.png" alt="img"></div>
+                  <div class="info">
+                    <h3>Online Photography</h3>
+                    <p>Check out the Rules!</p>
+                  </div></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-2 " id="onevent3">
+
+              <div class="ih-item square effect7"><a data-toggle="modal" href="#worknetworksecurity">
+                  <div class="img"><img src="images/tile/online/3.png" alt="img"></div>
+                  <div class="info">
+                    <h3>Network Security Workshop</h3>
+                    <p>Check out the Rules!</p>
+                  </div></a>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+
+    
+  </div>
+
+
+
+
+  <div class="blankdiv">
+  </div>
+
+
+
+<div class="register">
+
+    <button onclick="registerback()" class="backbut btn btn-danger">Back</button>
+      <center>
+        <br>
+        <ppp style="font-size:5vh; font-family:biko;">REGISTRATION</ppp>
+        <hr>
+      </center>
+
+    <form action="backend/backend.php" method="post" name='registration'>
+      <div class="container">  
+
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="username" >First Name:</label>
+              <input name="username" id="username" type="text" class="form-control" placeholder="Enter Your Name">
+              <small id="user" class="form-text text-red"></small>
+            </div>
+          </div>
+
+
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="exampleSelect1">Select Your Gender:</label>
+              <select class="form-control"  name="gender">
+                <option value="Default" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select>
+              <small id="gend" class="form-text text-red"></small>
+            </div>
+           </div> 
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input name="email" id="email" type="email" class="form-control" placeholder="Enter Your Email-Id" >
+              <small id="mail" class="form-text text-red"></small>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="password">Create Password:</label>
+              <input name="passid" id="password" type="password" class="form-control" placeholder="Enter Password">
+              <small id="pass" class="form-text text-red"></small>
+              <small class="form-text text-muted">Password Will Used For Online Treasure Hunt And Cognit App</small>
+            </div>
+          </div>
+
+
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="rpassword">Re-Enter Password:</label>
+              <input name="rpassword" id="rpassword" type="password" class="form-control" placeholder="Re-Enter Password">
+              <small id="rpass" class="form-text text-red"></small>
+            </div>
+           </div> 
+
+        </div>
+
+
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="mobilenumber">Enter Your Mobile number:</label>
+              <input  name="mobnum" id="mobilenumber" type="text" class="form-control" placeholder="Enter Mobile Number">
+              <small id="mob" class="form-text text-red"></small>
+            </div>
+          </div>
+
+
+          <div class="col-xs-6">
+            <div class="form-group">
+              <label for="collegename">College Name:</label>
+              <input name="collegename" id="collegename" type="text" class="form-control" placeholder="Enter College Name">
+              <small id="colnam" class="form-text text-red"></small>
+            </div>
+           </div> 
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="department">Select The Department:</label>
+              <select name="country" class="form-control" id="department">
+                    <option value="Default" disabled selected>Choose your department</option>
+                      <option value="1">Computer Science</option>
+                      <option value="2">Electrical Communications</option>
+                      <option value="3">Electrical and Electronics</option>
+                      <option value="4">Mechanical</option>
+                      <option value="5">Civil</option>
+                      <option value="6">Information Technology</option>
+                      <option value="7">Others</option>
+              </select>
+              <small id="depnam" class="form-text text-red"></small>
+            </div>
+           </div> 
+
+          </div>
+
+        <br><br>
+
+        <center>
+          <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+          <br>
+          <small id="subtext" class="form-text text-muted">Fill the values properly to submit</small>
+        </center>
+      </div>
+    </form>
+
+
+
+</div>
+
+
+
+
+ 
+  <div class="modal fade" id="thwebdesign" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Web Designing</h4>
+        </div>
+        <div class="modal-body modal-premed" >
+<ol>
+<li>There will be 2 rounds.</li>
+<li>A team can have a maximum of 3 members.</li>
+</ol>
+<h3>Round1:</h3>
+<ol>
+<li>Technical, 25 technical questions will be asked in a questionnaire.</li> 
+<li>Questions will be from HTML5, CSS, javascript, jquery, PHP and MySql.</li>
+<li>Top 8 teams will be selected for round 2.</li>
+</ol>
+<h3>Round2:</h3> 
+<ol>
+<li>Finals-Each team will be given a theme.</li>
+<li>Each team has to design a website within 30 minutes based on the given theme.</li>
+<li>Judges decision will be final</li>
+<li>Usage of mobile phones is prohibited.</li>
+<li>Malpractice will lead to disqualification.</li>
+</ol>
+</div>
+      <div class="modal-footer">
+          Vasudev:9962424377<br>
+      </div>
+</div>
+</div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="thcodecrypt" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Code Crypt</h4>
+        </div>
+        <div class="modal-body modal-med">
+          <h3>Decrypt your BRAIN to decrypt our CODE!!!</h3>
+          <h3>PRELIMS :</h3>
+          <ol>
+            <li>Each team can have a maximum of 2 members.</li>
+            <li>A set of questions will be asked  to test your basic knowledge on coding and ciphering.</li>
+            <li>Best teams will be selected for the next round.</li>
+          </ol>
+          <h3>FINAL ROUND:</h3>
+          <ol>
+          <li>The final round shall be decrypted when you come here.</li>
+          <li>The hunt for the final decrypted code will make you CRACK this ENIGMA!!!</li>
+          </ol>
+        </div>
+      <div class="modal-footer">
+           Gayathri:9566069324<br>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="thcodedebug" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Code Debugging</h4>
+        </div>
+        <div class="modal-body modal-med">
+          <h3>VOYINCH DECODERS</h3>
+          <h3>DESCRIPTION:  It is a battle between coders to conquer the throne.</h3>
+          <ol>
+            <li>A team should consist of 2 members only.</li>
+            <li>Use of mobile phone is strictly prohibited.</li>
+            <li>Team involving in any kind of malpractices will be disqualified.</li>
+            <li>The event consists of 2 rounds.</li>
+            <li>The participants should strictly adhere to the time limits.</li>
+            <li>The decision of the judges will be final.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+           Madhan Raj K C:9092320976<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="modal fade" id="thgoogleit" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Google It</h4>
+        </div>
+        <div class="modal-body modal-modern">
+        <h3>DESCRIPTION :</h3>
+        <ol>
+        <li>Participants are provided with a weapon(search engine) to frisk & triumph the contest. </li>
+        <li>Infoseek  consist of two rounds. First round is prelims where entities(such as images,..) are projected & participants must  analyze the answer by Googling it.Second round is finals this  is based on how well the participants makes use of their weapon(search engine).</li>
+        </ol>
+        <h3>RULES:</h3>
+        <ol>
+        <li> Contestants  can participate individually or as a team of two. (Contestants of a team  need not be from the same college)</li>
+        <li>Time limit:
+           prelims: 10mins
+           finals :15 mins</li>
+        <li>Use of mobile phones during the contest is strictly prohibited.</li>
+        <li>Incase of a tie, tie-breaker round will be conducted.</li>
+        <li> Judges decision is final .</li>
+        </ol>
+        </div>
+        <div class="modal-footer">
+           Christa glady:9677094385<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+<div class="modal fade" id="thmockinterview" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Mock Interview</h4>
+        </div>
+        <div class="modal-body modal-modern">
+            <h3>PRELIMS</h3>
+            <ol>
+            <li>Aptitude test</li>
+          </ol>
+           <p> Timings- 30 minutes 30 questions</p>
+<p>Pattern-  10 Quantitative
+          10 Logical
+          10 Reasoning</p>
+            <h3>FINALS</h3>
+        
+            <h2> HR and Stress Interview</h2>
+        
+            <h3>RULES </h3>
+            <ol>
+            <li>No Electronic Devices are allowed (eg. Mobile Phones , Calculator etc.,) </li>
+            <li>Individual participation.</li>
+            <li>College id is must</li>
+            <li>No Negative marking.</li>
+            <li> Behavioural Monitoring.</li>
+            </ol>
+        </div>
+        <div class="modal-footer">
+          Akshaya-9486977558.<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+ <div class="modal fade" id="thpaperpresent" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">PAPER PRESENTATION</h4>
+        </div>
+        <div class="modal-body modal-premed">
+          <ol>
+
+           <li> Number of participants can be 1 or 2. </li>
+           <li>Paper should in IEEE format and abstract should not exceed one page and paper should not exceed ten pages.</li>
+      
+            <li>Please Mail your paper to cognit16pp@gmail.com on or before 15-08-2016.</li>
+            <li>The mail should contain Title, college name, Abstract, e-mail id and mobile number.</li>
+             <li>On receiving the soft copy of the abstract, we will go through the material and if the paper is selected for presentation, you will be notified.</li>
+            <li>Paper should be mailed in .doc or PDF format.</li>
+            <li>Please bring your PowerPoint presentation on a CD and on a pen-drive.</li>
+            <li>Please bring 2 hardcopies and 1 soft copy of the paper to be presented on the day of the event.</li>
+           <li>Only LCD projectors will be provided .If microphone is needed prior information should be given. </li>
+           <li>The teams will get 10 minutes for presentation followed by question and answer session.</li>
+           <li>Even applications can be introduced for implementing the conclusion of the paper.</li>
+          <li>The decision of the judges will be final and no arguments or appeal will be entertained.</li>
+          <br>
+         
+
+
+          </ol>
+           <p>The topics are</p>
+           <ol>
+            <li>Network Security</li>
+            <li>Wireless/Adhoc Networks</li>
+            <li>Mobile Communication</li>
+            <li>Image Processing</li>
+            <li>Grid Computing</li>
+            <li>Cloud Computing</li>
+            <li>Big Data</li>
+            <li>Machine Learning Techniques</li>
+            <li>Artificial Intelligence and Neural Networks</li>
+            <li>Web Services</li>
+          </ol>
+          <p>Any other papers related to new Innovative ideas are Welcome.!!!</p>
+        </div>
+        <div class="modal-footer">
+           Sanket: 9840459210,Nishanthini-9790798431<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+  <div class="modal fade" id="thtechquiz" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Technical Quiz</h4>
+        </div>
+        <div class="modal-body modal-modern">
+          <h3>General Rules</h3>
+          <ol>
+          <li>A team of 2 members are eligible to participate.</li>
+          <li>Registration will be closed at 12 noon.</li>
+          <li>Replacement of any participant after registration is not allowed.</li>
+          <li>Strictly prohibit the usage of electronic gadgets.</li>
+          <li>No time extension will be provided for each round.</li>
+          <li>Audience shall not give any hints or clues to the competitors.</li>
+          <li>The decision of the judge will be final and will not be subject to any change.</li>
+          </ol>
+
+          <h3>Prelims</h3>
+          <ol>
+          <li>Registered participants are only eligible to participate before or at 12 noon.</li>
+          <li>Total of 20 questions will be provided with multiple choices.</li>
+          <li>Time limit is 15 minutes for this session.</li>
+          <li>There will be no negative marking in this session.</li>
+          </ol>
+
+          <h3>Visual Round</h3>
+          <ol>
+          <li>Images will be provided to find the related names.</li>
+          <li>Time limit for each question is 15 seconds.</li>
+          <li>Questions can be passed to other team.</li>
+          <li>Half of the points will be provide for the question which is passing to other team.</li>
+          <li>There will be no negative marking in this session.</li>
+          </ol>
+          <h3>Rapid Fire Round</h3>
+          <ol>
+          <li>Time limit for each team is 150 seconds.</li>
+          <li>There will be negative marking in this session.</li>
+          <li>Questions are not passed to another team.</li>
+          </ol>
+          <h3>Taboo Round</h3>
+          <ol>
+          <li>For each question 3 clues will be provided to find the answers. </li>
+          <li>Time limit for each question is 15 seconds.</li>
+          <li>Questions are passed to other team.</li>
+          <li>There will be negative marking in this session.</li>
+          </ol>
+
+
+        </div>
+      <div class="modal-footer">
+           Vijaya:9841524981<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+     
+  <div class="modal fade" id="thappdevelop" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">App Development</h4>
+        </div>
+        <div class="modal-body modal-modern">
+         <h3> Prelims:</h3>
+          <ol>
+          <li> Each team can have maximum 2 members</li>
+          <li>Only Android apps are allowed</li>
+          <li>If plagiarism is found, then the team will be eliminated</li>
+          <li>Participants must bring all necessary requirements</li>
+          <li>Internet will not be provided for web based apps</li>
+          <li>Participants must present the app with a presentation and live demo</li>
+          <li>Time limit: Presentation-10 minutes, Live demo- 5 minutes</li>
+          <li>Top 4 teams will qualify for finals</li>
+          </ol>
+          <h3>Finals:</h3>
+          <ol>
+          <li>Participants should explain the source code to the judge</li>
+          <li> Judge will ask participants to modify the components of the app</li>
+          <li>Judge’s decision will be final</li>
+          </ol>
+        </div>
+          <div class="modal-footer">
+          Manoj:7845639909<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<!--non-tech events-->
+
+
+ <div class="modal fade" id="ntadzap" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Adzap</h4>
+        </div>
+        <div class="modal-body modal-med">
+          <h3>GENERAL RULES:</h3>
+          <ol>
+          <li>Maximum of 4-5 members</li>  
+          <li>Competition will be conducted in 2 rounds</li> 
+          <li>Team should adhere to the rules and regulations of the event.</li>
+          <li>Strictly prohibit the usage of electronic gadgets.</li>  
+          </ol>  
+          <h3>PRELIM ROUND:</h3>
+          <ol>  
+          <li>The first round is based on company names, logos and slogans.</li>
+          <li>Time  limit is 10​  ​ minutes.</li>
+          <li>A set of 15 questions will be given.</li>
+          <li>The questions are categorized into 3:</li>
+          Finding the name of the product for the given slogan.<br>  
+          Finding the name of the product for the given logo. <br>
+          Finding the name of the product for the given brand ambassador.
+          </ol>    
+          <h3>FINAL ROUND:</h3>
+          <ol>
+          <li>Product will be given to the team to which they have to advertise.</li>
+          <li>Time limit will be approximately 3-5 minutes.</li>
+          <li>Product can be advertised in a funny fashion.</li> 
+          <li>Speaking skills will be judged.</li>
+          <li>Judges decision is final.</li>
+          </ol>
+        </div>
+      <div class="modal-footer">
+           Kanaga Valli M:9791530661<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="nttreasure" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Treasure Hunt</h4>
+        </div>
+        <div class="modal-body modal-med">  
+          <h3>GENERAL RULES:</h3>
+          <ol>  
+          <li>A team consists of 3-4 members.</li>
+          <li>The team members need not be of same college</li>
+          <li>Time is the main factor in final round.</li>
+          </ol>    
+          <h3>ROUND 1 : PRE-ELIMNATION:</h3>
+          <ol>
+          <li>Round 1 consists of multiple choice questions.</li>
+          <li>Time limit will be provided during the contest </li>
+          </ol>
+          <h3>ROUND 2 : FINALS :</h3>
+          <ol>
+            <li>Selected  teams will be given a task for each clue.</li>
+            <li>After completing the task successfully, the team will be able to find the clue.</li>
+            <li>The team which finds the treasure first will be the winner.</li>
+          </ol>
+          <h3>IMPORTANT NOTE :</h3>
+          <ol>
+            <li>Use of mobile phones is strictly prohibited.</li>
+            <li>No clues or tasks  can be skipped.</li>
+            <li>Judges decision will be final.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          Dharan: 8012084546<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="modal fade" id="ntdumbc" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Dumb C</h4>
+        </div>
+        <div class="modal-body modal-premed">
+          <h3>DESCRIPTION:</h3>
+                <p style="font-size:20px;font-family:biko;margin-left: 3%"> Pantomime quiz requires the participant to blend their enacting skills and intelligence. In prelims contestants will have to act out objects. Round 1 includes acting of proverbs and adages. Round 2 has two subrounds. Subround 1 includes identification of personality and enacting it. Subround 2 includes acting of movies. Final round includes enacting and solving a crossword.</p>
+        <h3>RULES: </h3>
+        <ol>
+        <li>  Excluding prelims, there will be 3 rounds.</li> 
+         <li>  This is a team event, each team can have 2 or 3 members.</li> 
+          <li> There will be a time limit for each round.</li> 
+          <li> Use of mobile phones by the participants is strictly prohibited.</li> 
+          <li> Qualification to the next round is purely based on the performance of the teams.</li> 
+          <li> Judges decision is final.</li> 
+        </ol>
+        </div>
+        <div class="modal-footer">
+           Haridha: 9159620212<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="modal fade" id="ntconnections" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Connections</h4>
+        </div>
+        <div class="modal-body modal-med">
+          <p>Get connected. A bond between various non-related things. fustion war consists of three rounds with rules given as:</p>
+          <ol>
+          <li>A Team should contain maximum of 3 members </li>
+          <li>Prelims will be a written test. Qualified participants will be called for preceding rounds</li>
+          <li>Timing is considered to be a major role in each rounds</li>
+          <li>Finals will be buzzer round. Participants found any malacious activities or engaged in malpractice will be disqualified</li>
+          <li>Judges decision will be final </li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          Abinaya M:9841849401 <br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="modal fade" id="ntcasinopoker" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Casino Poker</h4>
+        </div>
+        <div class="modal-body modal-modern">
+          
+          <h3>JACK OF ALL TRADES(fun with cards)</h3>
+          <ol>
+          <li>As name says it's a game those who can do anything.</li>
+          <li>So let's see who wins this title...</li>
+          <li>This is a non technical event filled with fun of cards</li>
+          <li>It has 3rounds based on time limit and your talent .</li>
+          <li>Detailed description of the event will be given on the spot .</li>
+          </ol>
+          <h3>General rules : </h3>
+          <ol>
+          <li>Limitations : 2 members per team .</li>
+          <li>Replacement of any participant after registration is not allowed .</li>
+          <li>One person may not be a part of multiple teams of the event .</li>
+          <li>No time extension will be provided for each round .</li>
+          <li>Audience shall not give any hints or clues to the competitors.</li>
+          </ol>
+          <h3>Round 1 :</h3>
+          <ol>
+          <li>This is a preliminary round .</li>
+          <li>You will be given a set of questions .</li>
+          <li>Find answers for each questions.</li>
+          <li>Mobiles are allowed only after final answer is found.</li>
+          <li>Take klickz using objects based on your final answer .</li>
+          <li>Time limit : half n hour .</li>
+          </ol>
+          <h3>Round 2 :</h3>
+          <ol>
+          <li>Participants selected from first round are qualified for this round.</li>
+          <li>This round is full of fun ( mini games with cards ) and will be given a task , you must complete it .</li>
+          <li>This round is also based on time limit (2-3 mins ) and talent .</li>
+          <li>Co-ordination among a team is important</li>
+          </ol>
+          <h3>Round 3 :</h3>
+          <ol>
+          <li>This is the final round .</li>
+          <li>The task will be given on the spot .</li>
+          <li>15 mins for finishing the task.</li>
+          <li>Participants should finish the given task to win the title "JACK OF ALL TRADES " .</li>
+          <li>Decision of judges will be final and binding .</li>
+
+          </ol>
+
+
+        </div>
+      <div class="modal-footer">
+           Haritha J S:9042503260<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="ntshortfilm" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Short Film</h4>
+        </div>
+        <div class="modal-body modal-modern">
+          <h3>Description:</h3>
+          <p>Action , Drama , Sentiment, Emotion, Romance and much more.. all in 15minutes. Do you have it in you to excite the audience? Then this is the place for you…!</p>
+          <ol>
+            <li>There can be 2-3 members in a team.</li>
+            <li>Any genre with a good message.</li>
+            <li>Any language with  subtitle.</li>
+            <li>Subtitle is optional for tamil clips</li>
+            <li>Time limit is 10-15minutes.</li>
+            <li>Video must be brought in pen drive.</li>
+            <li>Video should be sent to the  email id provided below on or before 17-8-2016.</li>
+            <li>Judges decision will be final.</li>
+        </div>
+        <div class="modal-footer">
+          Email : minitalkies2k16@gmail.com Naveen:8682829940<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="modal fade" id="ntgaming" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Gaming</h4>
+        </div>
+        <div class="modal-body modal-modern">
+          <h3>Counter strike(team of 5 v 5)</h3>
+          <ol>
+          <li>In case a member is missing then they will be forced to play with the remaining 4 - no replacements and substitutions allowed 
+          Round limit would be:2 minutes </li>
+          <li>The first team to kill all the enemy combatants/Plant and detonate the bomb/defusing the bomb wins the round.</li>
+        </ol>
+          <h3>Fifa 13</h3>
+          <ol>
+          <li>Type:knockout match time:4minutes in case of a draw:Penalty Difficulty:world class</li>
+          <li>Allowed teams:Only club and international teams</li>
+
+          <li>Game Pause:Only allowed when the ball is out of bounds.Player to be disqualified if done intentionally otherwise(1 warning)</li>
+          <li>Top 16 participants will be selected to next round(knockout)</li>
+          <li>*Participants are requested to bring their own joysticks/</li>
+          </ol>
+          <h3>Split Second(Car Racing)</h3>
+          <ol>
+          <li>Type:Prelims - 1 lap simple track </li>
+          <li>Semi Finals- 3 laps Elimination game mode</li>
+
+          <li>Finals-Survival game mode </li>
+          </ol>
+      </div>
+      <div class="modal-footer">
+          Nikil kumar:9841123148<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="modal fade" id="ntsurprise" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Surprise Event</h4>
+        </div>
+        <div class="modal-body modal-premed">
+        <center>
+          <h3>Coming Soon</h3>
+        </center>
+        </div>
+      </div>
+      <div class="modal-footer">
+           <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ntiplauction" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">IPL Auction</h4>
+        </div>
+        <div class="modal-body modal-modern">
+          <h3>GENERAL RULES:</h3>
+          <ol>
+          <li> Maximum of 2-4 members per team.</li>
+          <li> The competition will be conducted in 2 rounds.</li>
+           <li>Teams which do not adhere to the rules and regulations will be disqualified at any phase of the event.</li>
+          </ol>
+           <h3>PRELIM ROUND:</h3>
+           <ol>
+          <li> Maximum of 2 members per team.</li>
+          <li> Preliminary round consist of 25 questions and 5 bonus questions. </li>
+          <li> Time duration - 25 min.</li>
+           <li>Top 8 teams will be selected for final round.</li>
+          </ol>
+          <h3>FINAL ROUND:</h3>
+          <ol>
+           <li>Each team will be given an equal amount of money for  bidding.</li>
+
+          <li> Each team should select a player of 11 man squad.</li>
+
+
+           <li>Team with highest star points at the end of the auction will be declared as the Winner.</li>
+         </ol>
+          <h3>IMPORTANT NOTE:</h3>
+          <p style="font-size:2vh;font-family:biko;"> Players should be off:</p>
+          <ol>
+               
+          <li> Maximum of 4 foreign players.</li>
+          <li> Minimum of 1 uncapped player.</li>
+           <li>Minimum of 1 wicket keeper.</li>
+           <li>Minimum of 4 batsman’s.</li>
+           <li>Minimum of 3 bowler’s.</li>
+           <li>Minimum of 2 all-rounder’s.</li>
+           <li>Minimum of 1 captain tagged player.</li>
+          </ol>
+
+        </div>
+        <div class="modal-footer">
+          Onil Lekshman:8281081186<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+ <!-- Modal content-->
+  <div class="modal fade" id="onlinephoto" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Online:Photography</h4>
+        </div>
+        <div class="modal-body modal-med">
+        <ol>
+                  <li> Each participant can send a Maxim. of Three photos. </li>
+                   <li> Add your Name,College name,Contact No and Caption to it (Exif details optional). </li>
+           <li> We recommend that you Submit High Resolution Photos (Any formats). </li>
+           <li> Basic editing , including colour Enchancement , the use of filters and croping of the photos is acceptable. </li>
+           <li>Advanced editing used to create illusions , deceptions , manipulation , adding and removing of Significants elements within the frame is prohibited. </li>
+           <li>Non DSLR photographs also acceptable. </li>
+          </ol>
+          <h3>The Judging</h3>
+          <ol>
+           <li> Cognit will appoint a Judge for this Online Photography contest. </li>
+           <li> Winners will not be selected based on likes </li>
+           <li>The results and winners will be announced on the FB page </li>
+          </ol>
+
+        </div>
+        <div class="modal-footer">
+          Sanath-8220588551<br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!--tech events-->
+  <div class="modal fade" id="onlinehunt" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Online:Treasure Hunt</h4>
+        </div>
+        <div class="modal-body modal-modern">
+          <center>
+            <h3>Rules</h3>
+            <ol>
+              <li>Hints and clues are provided on the Facebook page</li>
+              <li>Questions will be updated regularly</li>
+              <li>The person with the highest score as of 2100 hrs on August 19 will be declared as a winnner and the winner will be announced on Fb page</li>
+
+            <li><a href="/treasurehunt">CLICK HERE TO GO TO TREASURE HUNT WEBSITE</a></li>
+        </ol>
+        </center>
+        </div>
+        <div class="modal-footer">
+           Rakesh:8939735496<br>
+      </div>
+      </div>
+      </div>
+  </div>
+
+  <!--tech events-->
+  <div class="modal fade" id="worknetworksecurity" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Workshop: Network Security</h4>
+        </div>
+        <div class="modal-body modal-modern">
+        <center>
+          <h3>Contact : Keerthana - 8939498483</h3>
+        </center>
+        </div>
+        <div class="modal-footer">
+           <br>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.parallax.min.js"></script>
+   
+<script>
+
+        $('#scene1').parallax();
+        $('#scene2').parallax();
+        $('#scene3').parallax();
+
+
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");;
+  });
+
+
+$(document).ready(function(){
+  if($(window).width() <= 950) {
+window.location = "http://www.mnmcognit.com/mob";
+}
+});
+
+
+$(document).bind("contextmenu",function(e) {
+ e.preventDefault();
+});
+
+
+$(document).keydown(function(e){
+    if(e.which === 123){
+       return false;
+    }
+            if(event.shiftKey && event.ctrlKey && event.which == 73) {
+            console.log("ctrl+alt+up"); //never triggered
+            return false;
+        }
+});
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81811582-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+
+
+
+</script>
+        
+
+
+
+
+<script type="text/javascript" src="js/navigationscript.js"></script>
+<script src="js/mainbackTweenLite.min.js"></script>
+<script src="js/mainbackEasePack.min.js"></script>
+<script src="js/mainbackrAF.js"></script>
+<script src="js/mainbackanim.js"></script>
+<script src="js/registform.js"></script>
+<script src="js/shardscript.js"></script>
+
+</body>
+</html>
+
+

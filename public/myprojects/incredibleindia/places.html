@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Incredible India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">      
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+
+  <style type="text/css">
+  	@font-face {
+    	font-family: caviardreams;
+    	src: url(./fonts/caviarDreams.ttf);
+	}
+
+	body{
+		font-family: caviardreams
+	}
+
+  	.header {
+  		height: 10vh;
+  		-webkit-box-shadow: 0px 1px 7px 0px rgba(97,97,97,.1);
+        -moz-box-shadow: 0px 1px 7px 0px rgba(97,97,97,.1);
+		box-shadow: 0px 1px 7px 0px rgba(97,97,97,.1);
+  	}
+
+  	.logo{
+
+  		height: 2vh;
+  		margin-top: 4vh;
+
+
+  	}
+
+
+  	.searchbar{
+  		margin-top: 2.5vh;
+  		border-radius: 30px;
+  		height: 5vh;
+  		width: 100%;
+  		outline: none;
+  		border:1px solid #e4e4e4;
+  		padding-left: 5%;
+  	}
+
+  	.subheader{
+
+  		height: 6vh;
+  		background-color: #fcfcfc;
+  		box-shadow: 0px 5px 8px 0px rgba(36,36,36,0.35);
+  	}
+
+
+  	.control{
+  		padding-left: 2vw;
+  	}
+
+  	.control input {
+	
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+
+
+	.control input:checked ~ .control-select {
+	border-bottom: 2px solid #2aa1c0;
+}
+
+
+#plno{
+	color: #2aa1c0;
+}
+
+.filter-head{
+	margin-top: 4vh;
+	margin-left: 2vw;
+}
+
+.plan-link {
+	margin-top: 3.5vh;
+    text-align: center;
+    
+}
+
+.plan-link a{
+	color: #71b7b1;
+    text-decoration: none;
+}
+
+.plan-link a:hover{
+	color: #71b7b1;
+    text-decoration: none;
+    border-bottom: 2px solid #71b7b1;
+}
+
+.filters{
+	margin-left: 2vw;
+}
+
+.notify{
+	margin-top: 4vh;
+	color:#71b7b1;
+	cursor: pointer;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header">
+				<div class="col-md-2">
+					<img src="logo.png" class="logo">
+				</div>
+				<div class="col-md-5">
+					<form action="#">
+						<input type="text" name="search"  onkeypress="getnumber(event)" placeholder="Search for any place, guides, hotels and more...." class="searchbar">
+					</form>
+				</div>
+				<div class="col-md-2">
+					<div class="plan-link"><a href="plan.html" >Plan a Tour</a></div>
+				</div>
+
+				<div class="col-md-3">
+					<i class="fa fa-bell notify" aria-hidden="true"></i>
+				</div>
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="subheader">
+				<div class="col-md-offset-4 col-md-4">
+					<form>
+						<label class="control">
+							<input type="radio" id="placesradio" name="filter" checked="checked"/>
+							<div class="control-select">Places <span id="plno"></span></div>
+						</label>
+ 
+						<label class="control">
+							<input type="radio" id="guideradio" name="filter" />
+							<div class="control-select">Guides<span id=gulno"></span></div>
+						</label>
+
+						<label class="control">
+							<input type="radio" id="hotelradio" name="filter" />
+							<div class="control-select">Hotels<span id="hono"></span></div>
+						</label>
+
+						<label class="control">
+							<input type="radio" id="travelradio" name="filter" />
+							<div class="control-select">Travel<span id="tlno"></span></div>
+						</label>
+						
+					</form>
+
+
+				
+			</div>
+			
+		</div>	
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-3">
+			<h4 class="filter-head"><b>Filter</b></h4>
+			<div class="filters">
+
+			<div class="placesfilters">
+
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" class="places_art" value="ArtS">Art Galleries
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" class="places_divine" value="Divine">Divine Locations
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox"  class="places_engineering" value="Engineering">Engineering Locations
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox"   class="places_monuments" value="monuments">Monuments
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox"  class="places_memorials" value="Memorials">Memorials
+  					</label>
+				</div>
+
+			</div>
+
+			<div class="guidesfilters">
+			
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Chennai
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Mumbai
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Bangalore
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Kolkata
+  					</label>
+				</div>
+				
+
+			</div>
+
+
+			<div class="hotelfilters">
+			
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Nearby Hotel
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Star Hotel
+  					</label>
+				</div>
+
+				
+
+			</div>
+
+				<div class="travelfilters">
+			
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Inbound Operators
+  					</label>
+				</div>
+				<div class="checkbox">
+  					<label>
+   						<input type="checkbox" value="">Travel Agents
+  					</label>
+				</div>
+
+				
+
+			</div>
+				
+
+			</div>
+		
+
+			
+		</div>
+		<div class="col-md-9" id="output">
+			
+		</div>
+		
+	</div>
+
+
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+
+	var pfilter1,pfilter2,pfilter3,pfilter4,pfilter5;
+
+	 if($('#placesradio').is(':checked')) { 
+	 	$(".guidesfilters").hide();
+    	$(".hotelfilters").hide();
+    	$(".travelfilters").hide();
+	 }
+
+
+
+	$("#placesradio").change(function() {
+    	if(this.checked) {
+
+    		$(".guidesfilters").hide();
+    		$(".hotelfilters").hide();
+    		$(".travelfilters").hide();
+    		$(".placesfilters").show();
+
+
+    	}
+	});
+
+
+		$(".places_art").change(function() {
+    	if(this.checked) {
+
+    		pfilter1 = $(".places_art").val();
+
+    	}
+    	else{
+    		pfilter1 = " ";
+    	}
+
+    	filter();
+	});
+
+
+		$(".places_divine").change(function() {
+    	if(this.checked) {
+
+    		pfilter2 = $(".places_divine").val();
+
+    	}
+    	else{
+    		pfilter2 = " ";
+    	}
+
+    	filter();
+	});
+
+		$(".places_engineering").change(function() {
+    	if(this.checked) {
+
+    		pfilter3 = $(".places_engineering").val();
+    	}
+
+    	else{
+    		pfilter3 = " ";
+    	}
+
+    	filter();
+
+
+
+	});
+
+		$(".places_monuments").change(function() {
+    	if(this.checked) {
+
+    		pfilter4 = $(".places_monuments").val();
+    	}
+
+    	else{
+    		pfilter4 = " ";
+    	}
+
+    	filter();
+
+	});
+
+		$(".places_memorials").change(function() {
+    	if(this.checked) {
+
+    		pfilter5 = $(".places_memorials").val();
+    	}
+
+    	else{
+    		pfilter5 = " ";
+    	}
+
+    	filter();
+
+	});
+
+
+
+		function filter(){
+
+			key = pfilter1 + " " + pfilter2 + " " + pfilter3 + " " + pfilter4 + " " + pfilter5;
+
+			$.ajax({
+
+				url: "php/filter.php",
+				data:'id='+key,
+				type: "GET",
+				success:function(data){
+
+					$("#output").html(data);
+					console.log(data);
+  	
+				}
+			})
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	$("#guideradio").change(function() {
+    	if(this.checked) {
+
+    		$(".placesfilters").hide();
+    		$(".hotelfilters").hide();
+    		$(".travelfilters").hide();
+    		$(".guidesfilters").show();
+        	
+
+
+
+
+    	}
+	});
+
+
+	$("#hotelradio").change(function() {
+    	if(this.checked) {
+
+    		$(".guidesfilters").hide();
+    		$(".placesfilters").hide();
+    		$(".travelfilters").hide();
+    		$(".hotelfilters").show();
+   
+
+
+    	}
+	});
+
+
+		$("#travelradio").change(function() {
+    	if(this.checked) {
+
+    		$(".guidesfilters").hide();
+    		$(".placesfilters").hide();
+    		$(".hotelfilters").hide();
+    		$(".travelfilters").show();
+        	
+
+
+
+
+    	}
+	});
+
+
+
+
+	$( ".searchbar" ).keyup(function() {
+			var id= $(".searchbar").val();
+
+
+			$.ajax({
+
+				url:"php/getnumber.php",
+				data: 'id'+id,
+				type: "GET",
+				success: function(data){
+
+
+				}
+
+
+			})
+  		
+  		$.ajax({
+
+				url: "php/search.php",
+				data:'id='+id,
+				type: "GET",
+				success:function(data){
+
+					$("#output").html(data);
+					console.log(data);
+  	
+	}
+})
+  	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>

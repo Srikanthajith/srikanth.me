@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Increadible India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  
+</head>
+<style>
+@font-face {
+    font-family: Brandon_reg;
+    src: url(Brandon_reg.otf);
+}
+body{
+  overflow-x:hidden;
+  overflow-y:scroll;  
+}
+.navbar-default .navbar-nav > li > a {
+   color: white;
+   font-family:brandon_reg;
+   font-size:16px;
+   padding-right: 18px;
+    }
+.effect1{
+     box-shadow: 0 10px 6px -6px #808080;
+}
+.hover-nav{
+  position: relative;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.hover-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+}
+
+.hover-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.hover-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
+.slider-size {
+height: 550px; /* This is your slider height */
+
+}
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+ }
+ .slider{
+  background-color: #3F403F;
+ }
+ .container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+ }
+ .services p{
+  font-family: brandon_reg;
+  font-size: 20px;
+  color:#3F403F;
+  margin-top: 5%;
+ }
+ .icon3{
+  -webkit-transform: rotate(30deg);
+ }
+ .navbar .nav > li {
+z-index: 10000;
+}
+.form-inline {
+    position:absolute;
+    z-index:99;
+    top:41%;
+    left: 27%; /* change to whatever you want */ /* change to whatever you want */
+    right:auto; /* change to whatever you want */
+    bottom:auto; /* change to whatever you want */
+}
+#search{
+width:500px;
+height:40px;
+background-color:#3F403F;
+color: white;
+}
+.form{
+  margin-left: 50%;
+}
+#search-btn{
+  width:100px;
+  height:40px;
+  background-color:#FB4559;
+  color:white;
+  border: none;
+}
+#search placeholder{
+  color:white;
+}
+@media screen and (min-width:280px) and (max-width:714px){
+  .form-inline {
+    position:absolute;
+    z-index:99;
+    top:41%;
+    left:5%; /* change to whatever you want */ /* change to whatever you want */
+    right:auto; /* change to whatever you want */
+    bottom:auto; /* change to whatever you want */
+}
+  #search{
+width:180px;
+height:40px;
+background-color:#3F403F;
+color: white;
+}
+#search-btn{
+  width:70px;
+  height:40px;
+  background-color:#FF7F50;
+  color:white;
+}
+}
+.navbar-default{
+    background:transparent;
+    border:none !important;
+}
+.navbar-nav>li>a:hover{
+    color:#1a1a1a;
+} 
+.collapse.in{
+    
+    background-color:#fb4559 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
+.spacer{
+   background-color:#888;   
+}
+.content h3{
+  font-family: brandon_reg;
+  color: #fb4559;
+  text-align: center;
+}
+.content p{
+  font-family: brandon_reg;
+  color: #808080;
+  font-size: 15px;
+}
+.footer p{
+  font-family: brandon_reg;
+ }
+ .footer h4{
+  font-family: brandon_reg;
+ }
+ .navbar-brand{
+  margin-top: 3%;
+ }
+ .navbar{
+  height: 60px;
+ }
+ .card-title{
+  font-family: brandon_reg;
+  color: black;
+ }
+ .card{
+  border:2px solid #fb4559;
+  border-radius: 10px;
+ }
+ #three{
+  background-size: 80% 88%;
+  background-position-y: 96%;
+  background-repeat: no-repeat;
+
+ }
+
+
+
+.mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color:white; 
+  transition: all 0.5s;
+}
+
+.mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 2px 0;
+  font-size: 16px;
+  color:white;
+}
+
+.mat-div {
+  padding: 10px 0 0 0;
+  position: relative;
+}
+
+.mat-div:after, .mat-div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2; 
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.mat-div::after {
+  background-color: #8E8DBE;
+  transform: scaleX(0);
+}
+
+.is-active::after {
+  transform: scaleX(1);
+}
+
+.is-active .mat-label {
+  color: #8E8DBE;
+}
+
+.is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+.modal-content
+{
+ background-color: rgba(251,69,89,1);
+}
+</style>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="col-md-3">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html" style="color:white;font-size:25px">INLINE</a>
+    </div>
+  </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="col-md-6">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="saloon.html">Saloon & Spa</a>
+        </li>
+        <li><a href="service_center.html">Service Center</a></li>
+        <li><a href="clinics.html">Clinics</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="../incredible_india/places.html" style="color: black">Plan a Booking</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" style="cursor: pointer;">
+          <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> 
+            Sign Up
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#usersignup">User</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#usersignup">Guide</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#usersignup">Travel Agents</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#usersignup">Hotels</a>
+          </div>
+        </li>
+        <li><a href="#" data-toggle="modal" data-target="#loginalluser" style="color:white;font-family:brandon_reg"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="slider">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <div style="background:url(natural.jpg) center center;
+          background-size:cover;background-position-y:20%" class="slider-size">
+  </div>
+            </div>
+            <div class="item">
+                <div style="background:url(natural.jpg) center center;
+          background-size:cover;background-position-y:20%" class="slider-size">
+  </div>
+            </div>
+            <div class="item">
+                <div style="background:url(natural.jpg) center center;
+          background-size:cover;background-position-y:20%" class="slider-size">
+  </div>
+            </div>
+        </div><!-- /.END CAROUSEL DIV -->
+    </div><!-- /.END MYCAROUSEL DIV -->
+</div><!-- /.END BSEXAMPLE -->
+  </div>
+
+<br>
+<br>
+<div class="content" id="startchange">
+  <div class="container">
+    <center>
+      <h2 style="font-family:brandon_reg;color:#808080">SERVICES</h2>
+    </center>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+        <center>
+         <div class="card WOW zoomIn" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Search Nearest Saloon & Spa</h4>
+                 <p class="card-text">"Let your legs reach where your heart wishes to be". Choose your destination based on your personal attractions.</p>
+              </div>
+            </div>
+          </center>
+        </div>
+      <div class="col-md-3">
+        <center>
+         <div class="card WOW zoomIn" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Search Nearest Clinics</h4>
+                 <p class="card-text">Book heritage and classic hotels nearby your destination and feel the hospitality of the place.</p>
+              </div>
+            </div>
+          </center>
+      </div>
+      <div class="col-md-3">
+        <center>
+         <div class="card WOW zoomIn" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Search Nearest Hotels</h4>
+                 <p class="card-text">Have an hassle free journey by booking approved travel agents who provides you with the best packages.</p>
+              </div>
+            </div>
+          </center>
+      </div>
+      <div class="col-md-3">
+        <center>
+         <div class="card WOW zoomIn" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Search Nearest Service Center</h4>
+                 <p class="card-text">Know and hire guides according to your time of visit and get to know the natural and cultural significance of the place.</p>
+              </div>
+            </div>
+          </center>
+      </div>
+    </div>
+    <br>
+    <br>
+<div class="row">
+      <div class="col-md-3">
+        <center>
+         <div class="card WOW zoomIn" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Book Appointment</h4>
+                 <p class="card-text">Share your experiences in the social media and know what your peers say about your landing-place.</p>
+              </div>
+            </div>
+          </center>
+      </div>
+      <div class="col-md-3">
+        <center>
+         <div class="card" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Review System</h4>
+                 <p class="card-text">Keep your authorized and authenticated documents at home and travel throughout by generating your digital ID.</p>
+              </div>
+            </div>
+          </center>
+      </div>
+      <div class="col-md-3">
+        <center>
+         <div class="card" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Search By Locality</h4>
+                 <p class="card-text">Don't miss the speciality of the location and get notified about it as you go nearer.</p>
+              </div>
+            </div>
+          </center>
+      </div>
+      <div class="col-md-3">
+        <center>
+         <div class="card" style="width: 15rem;height:17rem">
+           <img class="card-img-top" src="ico1.png" style="height:50px;width:70px;margin-top:10%" alt="Card image cap">
+             <div class="card-block">
+               <h4 class="card-title">Easy Cancellation</h4>
+                 <p class="card-text">Review your memories and experiences of your bygone journey and know the amount spent on each travel through the form of bill that was generated during each travel.</p>
+              </div>
+            </div>
+          </center>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+<div class="footer WOW slidInLeft" style="background-color:#3F403F">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" style="padding-top:3%">
+  <h4 style="color:white">INLINE</h4>
+  <p style="color:white">A new place to Book Appointments Online.</p>
+  <p style="color:#ECECEC">What is INLINE?Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+<div class="col-md-offset-1 col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">About</p>
+  <p style="color:#ECECEC;margin-bottom:0">Legal</p>
+  <p style="color:#ECECEC;margin-bottom:0">Saloon and Spa</p>
+  <p style="color:#ECECEC;margin-bottom:0">Clinics</p>
+  <p style="color:#ECECEC">Service Center</p>
+</div>
+
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">Hotels</p>
+  <p style="color:#ECECEC;margin-bottom:0">Review</p>
+  <p style="color:#ECECEC;margin-bottom:0">Contact us</p>
+  <p style="color:#ECECEC;margin-bottom:0">Terms</p>
+</div>
+
+<div class="col-md-3" style="padding-top:4%">
+  <p style="color:#ECECEC;font-size:20px">2,789 Appointments to Book</p>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <a href="#"><img src="fb.png" style="height:40px;width:40px;"></a>&nbsp&nbsp
+    <a href="#"><img src="twitter.png" style="height:40px;width:40px;"></a>
+  </div>
+  <p style="color:white">Copyright &copy; 2016-2017  Inline Private Limited</p>
+  <div class="col-md-offset-1 col-md-4">
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+  <div class="modal fade modal-default" id="usersignup" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="color:white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center" >User Signup</h4>
+        </div>
+
+        <div class="modal-body">
+              <form action="php/usersignup.php" method="post" >
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">User Name:<span class="after">*</span></label>
+                      <input type="text" class="mat-input form-control" name="username" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">E-mail<span class="after">*</span></label>
+                      <input type="email" class="mat-input form-control" name="mailid" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Password<span class="after">*</span></label>
+                      <input type="text" class="mat-input form-control" name="password" required>
+                  </div><br><br>
+                </div>
+                <div class="col-md-6">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Mobile Number<span class="after">*</span></label>
+                      <input type="number" class="mat-input form-control" name="mobilenumber" required>
+                  </div><br><br>
+                </div>
+
+                <div class="col-md-12" >
+                  <label for="sel1" style="font-size: 16px; color:white;">City:<span class="after">*</span></label>
+                  <select class="form-control" id="sel1" name="location" required>
+                    <option value="notselected">Select City</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mumbai">Mumbai</option>
+                  </select><br><br>
+                </div><br><br>
+
+
+                <center>
+                <button type="submit" class="btn  btn-lg btn-primary" id="studentsubmit">Submit</button>
+                </center>
+              </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+  <div class="modal fade modal-default" id="loginalluser" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="color:white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Login</h4>
+        </div>
+
+        <div class="modal-body">
+              <form action="php/loginalluser.php" method="post" >
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Email:</label>
+                      <input type="text" class="mat-input form-control" name="email" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mat-div">
+                      <label for="first-name" class="mat-label">Password:</label>
+                      <input type="password" class="mat-input form-control" name="password" required>
+                  </div><br><br>
+                </div><br><br>
+
+                <center>
+                <button type="submit" class="btn  btn-lg btn-primary" id="studentsubmit">Submit</button>
+                </center>
+              </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<script type="text/javascript">
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#FB4559');
+       } else {
+          $('.navbar-default').css('background-color', 'transparent');
+       }
+   });
+    }
+});
+</script>
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>

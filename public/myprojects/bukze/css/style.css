@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Brandon_reg;
+    src: url(../fonts/Brandon_reg.otf);
+}
+
+body{
+  font-family: brandon_reg;
+}
+
+.logo{
+    height: 6vh;
+    width: 17vh;
+    margin-left: 65%;
+    margin-top: 6%;
+}
+
+.form-control{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 20px;
+    width: 700px;
+    font-family: brandon_reg;
+    border: 1px solid #eeeeee;
+
+}
+
+
+.navbar-inverse{
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.second-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+}
+
+.second-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #248CCB;
+    transition: width .3s;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.second-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.slider-size {
+height: 500px; /* This is your slider height */
+
+}
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+ }
+ .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  right: 15px; 
+  top:-30px; //or you can increase this
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  left: 0px;
+  top:-30px; //or you can increase this
+}
+.glyphicon.glyphicon-chevron-right{
+   color:white;
+}
+.glyphicon.glyphicon-chevron-left{
+   color:white;
+}
+.carousel-indicators li {
+ visibility: hidden; 
+}
+#myCarousel1 .carousel-control{
+    top: 50%;
+    bottom: 50%;
+}
+#myCarousel2 .carousel-control{
+    top: 50%;
+    bottom: 50%;
+}
+ .four_services{
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15)
+ }
+ .carousel-inner p{
+  font-family: brandon_reg;
+ }
+ .feedback p{
+  font-family: brandon_reg;
+ }
+ .feedback h4{
+  font-family: brandon_reg;
+ }
+ .footer p{
+  font-family: brandon_reg;
+ }
+ .footer h4{
+  font-family: brandon_reg;
+ }
+
+ .slider-size{
+  height: 67vh;
+ }
+ .navbar-fixed-top2
+ {
+
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 500;
+ }
+.effect1{
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
+     display: block;
+     padding-bottom: 10px;
+}
+ .searchbutton
+ {
+  position: absolute;
+  z-index: 1000;
+    color: #eeeeee;
+ }
+ .searchbutton:hover
+ {
+  color: red;
+  background-color: red;
+    display: block;
+ }
+
+.form-control:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.form-control{
+  padding-left: 2rem;
+}
+
+#search{
+  padding-top:3%;
+  padding-bottom:3%;
+  border-radius:30px;
+  width:650px;
+  font-family:brandon_reg;
+  border: 1px solid #cecece;
+    margin-top: 2.9px;
+}
+
+.form-control-feedback{
+  right: inherit;
+}
+
+.slider-right{
+    position: absolute;
+    width: 27%;
+    margin-left: 24%;
+    top: -8vh;
+}
+
+.slider-left{
+     position: absolute;
+    width: 27%;
+    left: inherit;
+    margin-left: -2px;
+    top: -8vh;
+}
+
+
+
+ .carousel-control{
+  opacity: 1;
+ }

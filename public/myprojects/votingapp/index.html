@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Voting</title>
+	
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="gridism.css">
+
+
+	<style type="text/css">
+
+	@font-face {
+ 	   font-family: Urban-light;
+       src: url(Urban_Grotesk_Light.otf);
+	}
+	
+	@font-face {
+    font-family: Urban-bold;
+    src: url(Urban_Grotesk_Bold.otf);
+	}
+	
+	@font-face {
+    font-family: Urban-reg;
+    src: url(Urban_Grotesk_Regular.otf);
+	}
+		
+		html {
+    		height: 100%;
+		}
+		
+		body {
+  			height: 100%;
+  		    margin: 0;
+  		    overflow: hidden;
+			background: linear-gradient(30deg, #52b0ff, #5baad6,#5cdaff)no-repeat ;
+		}
+
+		.card {
+			    background: white;
+    border-radius: 20px;
+    height: 430px;
+    width: 278px;
+    margin: auto;
+    margin-top: 3%;
+    -webkit-box-shadow: 0px 6px 19px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 6px 19px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 6px 19px 0px rgba(0,0,0,0.35);
+    font-family: Urban-reg;
+
+		}
+
+		button {
+ 			    background-color: Transparent;
+    border: none;
+    outline: none;
+    color: #5baad6;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 18%;
+    margin-top: 10px;
+		}
+
+		.photo {
+			border-radius: 50%;
+    background-color: #52b0ff;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 20px;
+
+		}
+
+		#align {
+			margin-left: 12%;
+		}
+
+		p{
+			text-align: center;
+			font-family: Urban-bold;
+			color: white;
+			font-size: 30px;
+			margin-bottom: 0;
+		}
+
+
+		.submit {
+margin: auto;
+ 
+   background-position: center;
+   background-size: 65% 65%;
+    background-image: url('tick.png');  
+ 			    background-color: white;
+ 			    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width:80px;
+    height: 80px;
+    margin-top: 20px;
+    display: block;
+
+		}
+
+		.confirm {
+			font-family: Urban-reg;
+			margin-top: 5px;
+			font-size: 24px;
+		}
+
+	.grid .unit {
+		padding: 0px;
+		margin-top: 15px;
+	}
+
+
+	input {
+	display: none;
+}
+
+label {
+	cursor: pointer;
+	margin: 10px 10px;
+	vertical-align: -webkit-baseline-middle;
+}
+
+label:before {
+	content: '';
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background: #5baad6;
+	border-radius: 50%;
+	z-index: 2;
+	transition: box-shadow .4s ease,
+					background .3s ease;
+}
+
+input:checked + label:before {
+	box-shadow: inset 0px 0px 0 6px rgba(92,218,255,1);
+	background: #fff;
+}
+
+.labelw {
+	color: #52b0ff;
+    font-family: Urban-reg;
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+    .vote
+    {
+    font-family: Urban-reg;
+    color: #52b0ff;
+    margin-top: 0;
+    padding-top: 15px;
+    }
+
+	</style>
+
+
+
+</head>
+<body class="wider">
+ 	<p>Election</p>
+<div class="grid">
+	
+	<div class="unit one-quarter">
+		<div class="card ">
+
+		<p class="vote">Seceretary</p>
+ 		
+ 		<img class="photo" src="msd.jpg">
+ 	
+		<div class="labelw">
+		<input type="radio" name="sec" id="secandidate1">
+		Candidate 1
+		<label for="secandidate1"></label>
+		</div>
+		
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+
+		<div class="labelw">
+		<input type="radio" name="sec" id="secandidate2">
+		Candidate 2
+		<label for="secandidate2"></label>
+		</div>
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+		<div class="labelw">
+		<input type="radio" name="sec" id="secandidate3">
+		Candidate 3
+		<label for="secandidate3"></label>
+		</div>
+	
+
+		</div>	
+	</div>
+
+	<div class="unit one-quarter">
+		<div class="card ">
+ 
+ <p class="vote">Joint-Seceretary</p>
+
+ <img class="photo" src="msd.jpg">
+ 	
+		<div class="labelw">
+		<input type="radio" name="js" id="jscandidate1">
+		Candidate 1
+		<label for="jscandidate1"></label>
+		</div>
+		
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+
+		<div class="labelw">
+		<input type="radio" name="js" id="jscandidate2">
+		Candidate 2
+		<label for="jscandidate2"></label>
+		</div>
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+		<div class="labelw">
+		<input type="radio" name="js" id="jscandidate3">
+		Candidate 3
+		<label for="jscandidate3"></label>
+		</div>
+	
+
+		</div>	
+	</div>
+
+
+	<div class="unit one-quarter">
+		<div class="card ">
+
+		 <p class="vote">Treasurer</p>
+		 <img class="photo" src="msd.jpg">
+ 	
+		<div class="labelw">
+		<input type="radio" name="tr" id="trcandidate1">
+		Candidate 1
+		<label for="trcandidate1"></label>
+		</div>
+		
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+
+		<div class="labelw">
+		<input type="radio" name="tr" id="trcandidate2">
+		Candidate 2
+		<label for="trcandidate2"></label>
+		</div>
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+		<div class="labelw">
+		<input type="radio" name="tr" id="trcandidate3">
+		Candidate 3
+		<label for="trcandidate3"></label>
+		</div>
+
+		</div>	
+	</div>
+
+
+
+	<div class="unit one-quarter">
+		<div class="card ">
+
+		 <p class="vote">Joint-Treasurer</p>
+
+		 <img class="photo" src="msd.jpg">
+ 	
+		<div class="labelw">
+		<input type="radio" name="jt" id="jtcandidate1">
+		Candidate 1
+		<label for="jtcandidate1"></label>
+		</div>
+		
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+
+		<div class="labelw">
+		<input type="radio" name="jt" id="jtcandidate2">
+		Candidate 2
+		<label for="jtcandidate2"></label>
+		</div>
+		
+		<br><br>
+		<img class="photo" src="msd.jpg">
+		<div class="labelw">
+		<input type="radio" name="jt" id="jtcandidate3">
+		Candidate 3
+		<label for="jtcandidate3"></label>
+		</div>
+ 
+		
+
+		</div>	
+	</div>
+
+
+	
+
+
+</div>
+
+		
+<button class="submit" onclick="confirm()"></button>
+<p class="confirm">Confirm</p>
+
+<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+
+
+
+function confirm()
+{
+
+	var i=0;
+
+	var isChecked = $("input[name=sec]:checked").val();
+     if(!isChecked){
+         alert('Choose a Secretary');
+     }
+     else{
+     	  i=i+1
+
+     }
+
+     	var isChecked = $("input[name=js]:checked").val();
+     if(!isChecked){
+         alert('Choose a Joint-Secretary');
+      }
+     else{
+     	  i=i+1
+
+     }
+   
+   	var isChecked = $("input[name=tr]:checked").val();
+     if(!isChecked){
+         alert('Choose a Treasurer');
+     }
+     else{
+     	  i=i+1
+
+     }
+   
+   	var isChecked = $("input[name=jt]:checked").val();
+     if(!isChecked){
+         alert('Choose a Joint-Treasurer');
+     }
+     else{
+     	  i=i+1
+
+     }
+   
+   
+
+if(i==4)
+{ 
+
+
+	console.log("2");
+if (document.getElementById('secandidate1').checked) {
+	console.log("tamizh");
+	secretary1();
+}
+
+if (document.getElementById('secandidate2').checked) {
+	console.log("karthi");
+}
+
+if (document.getElementById('secandidate3').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('jscandidate1').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('jscandidate2').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('jscandidate3').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('trcandidate1').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('trcandidate2').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('trcandidate3').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('jtcandidate1').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('jtcandidate2').checked) {
+	console.log("rakesh");
+}
+
+if (document.getElementById('jtcandidate3').checked) {
+	console.log("rakesh");
+}
+
+}
+}
+
+
+	
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

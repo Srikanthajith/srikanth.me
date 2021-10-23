@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MUZEIK</title>
+<meta name="description" content="MUZEIK">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<style>
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.s-animate {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.grey{background-color: #323232;}
+.blue{background-color: #01c8c8;}
+.red{background-color: #eb6b56;}
+.yellow{background-color: #fac51c;}
+.green{background-color: #61bd6d;}
+
+.bottom {
+    z-index: -1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="s-animate  grey"></div>
+    <div class="s-animate  blue"></div>
+    <div class="s-animate  red"></div>
+    <div class="s-animate  yellow"></div>
+    <div class="s-animate  green"></div>
+</div>
+<script type="text/javascript">
+function animate($el) {
+    $el.addClass('animated  lightSpeedOut');
+}
+
+var elCounter = 0;
+
+$(document).ready(function () {
+    elCounter = $('.s-animate').length;
+    animate($('.s-animate').eq(elCounter - 1));
+
+    $('.s-animate').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+        elCounter = elCounter - 1;
+        $(this).addClass('bottom');
+        if (elCounter <= 0) {
+            $('.bottom').removeClass('bottom');
+            elCounter = $('.s-animate').length;
+        }
+        $(this).removeClass('animated  lightSpeedOut');
+        animate($('.s-animate').eq(elCounter - 1));
+    });
+});
+
+</script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

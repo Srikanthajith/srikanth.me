@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BUZKE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<style>
+
+
+
+  
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 11px;
+}
+
+
+.searchbar
+{
+  height: 41.7px;
+}
+
+ul#mmenu {
+    width: 960px;
+    display: table;
+    table-layout: fixed;
+}
+ul#mmenu li {
+    display: table-cell;
+}
+ul#mmenu li a {
+    display: block;
+}
+
+
+@font-face {
+    font-family: Brandon_reg;
+    src: url(Brandon_reg.otf);
+}
+.navbar-inverse{
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.effect2{
+     box-shadow: 0 10px 6px -6px #777;
+}
+.effect3{
+   box-shadow: 0 10px 6px -6px #777;
+}
+.second-nav .navbar-fixed-top{
+  top: 15px;
+}
+.second-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+}
+
+.second-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #248CCB;
+    transition: width .3s;
+}
+
+.second-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.footer p{
+  font-family: brandon_reg;
+ }
+ .footer h4{
+  font-family: brandon_reg;
+ }
+ .content h4{
+  font-family: brandon_reg;
+ }
+ .content p{
+  font-family: brandon_reg;
+ }
+ .content li{
+  font-family: brandon_reg;
+ }
+ ul{
+  list-style-type: none;
+ }
+ .navbar-fixed-top2
+ {
+
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 500;
+ }
+
+ .searchbutton
+ {
+  position: absolute;
+  z-index: 1000;
+    color: #eeeeee;
+ }
+ .searchbutton:hover
+ {
+  color: red;
+  background-color: red;
+    display: block;
+ }
+ .sameline p{
+  display: inline-block;
+  padding-right: 10px;
+ }
+ .sameline1 h4{
+  display: inline-block;
+ }
+ .community .col-md-3{
+  width: 22%;
+ }
+
+ .pincode{
+  outline: none;
+  border:none;
+  border-bottom: 2px solid #248CCB;
+  margin-bottom: .9rem;
+  text-align:center;
+ }
+</style>
+<body>
+  <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top effect1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" class="logo"></img></a>
+        </div>
+      </div>
+      <div class="col-md-offset-2 col-md-6">
+        <div class="col-md-9">
+        <form class="navbar-form">
+          <div class="input-group has-feedback has-feedback-left">
+            <span class="glyphicon glyphicon-search form-control-feedback searchbutton" style="padding-top:0.2em; font-size:20px;"></span>
+            <input type="text" class="form-control searchbar" id="search" style="font-size:20px;color:#555"placeholder="&nbsp &nbsp Search" />
+          </div>
+          </div>
+        </form>
+      </div>
+      <div class=" col-md-3">
+        <div class="col-md-offset-5 col-md-6">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><img src="bag.png" style="height:20px;width:20px"></img></a></li>
+          <li><a href="#"><img src="user.png" style="height:20px;width:20px"></img></a></li>
+
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container-fluid">
+<div class="second-nav">
+<nav class="navbar navbar-inverse navbar-fixed-top2" style="margin-top:3.6%;padding-top:2%;background-color:#FFFFFF;box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+">
+  <div class="container-fluid">
+
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="myNavbar1">
+    <div class="row" style="margin-left: 25.2%;">
+
+  <ul class="nav navbar-nav" style="" id='mmenu'>
+   <li><a href="page2.html" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px;">&nbsp Education&nbsp</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px"> &nbsp &nbsp Fiction &nbsp &nbsp</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">Non-Fiction</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">&nbsp Kid's Zone</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">&nbsp&nbsp&nbspHealth&nbsp&nbsp</a></li>
+    <li><a href="#" style="color:#0e0e0e;font-family:brandon_reg;font-size:20px">&nbsp&nbspGeneral&nbsp&nbsp</a></li>
+    
+   
+  </ul>
+
+</div>
+</div>
+</nav>
+
+</div>
+</div>
+<br>
+<div class="container">
+<div class="content" style="margin-top:15%;">
+  <div class="row">
+    <div class="col-md-9">
+    <div class="col-md-4">
+     <img src="book1.jpg" style="height:400px;width:250px">
+    </div>
+    <div class="col-md-7">
+      <h2 >Big Magic</h2>
+      <p style="margin-bottom:0">Author&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : Lorem Ipsum</p>
+      <p style="margin-bottom:0">ISBN&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : 7846547895</p>
+      <p style="margin-bottom:0">Edition/Year&nbsp : First 2015</p>
+      <p style="margin-bottom:0">Publisher&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : Lakxmi Publications</p>
+      <p style="margin-bottom:0">Pages&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : 784</p>
+      <p style="margin-bottom:0">Type&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : Hardcover</p>
+      <p style="margin-bottom:10px">Language&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : English</p>
+             <p style="font-size:small;color:#808080;padding-top:10px;margin-bottom:0px">MRP:<del> ₹  1957.47</del></p>  
+      <div class="sameline">
+       <p style="font-size:18px;color:black;padding-top:10px;margin-bottom:0px"><b>₹  1761<sup>96<sup></b></p>
+ 
+ 
+        <p style="font-size:14px;color:#808080">You Saved ₹  95.77</p>
+      </div>
+
+      
+      
+        <div class="col-md-4" style="margin-top:5%;padding-left: 0;margin-top: 0">
+    <p style="font-size:18px">Check Availablity</p>
+          <a href="payment.html"><button type="button" class="btn btn-default effect3" style="background-color:#248CCB;border-radius:20px;width:150px;color:white;outline-style: none;    margin-top: 24px;
+">ADD TO BAG</button></a>
+
+  </div>
+    <div class="col-md-6" style="margin-top:5%;margin-top: 0">
+    <input type="text" name="pincode" placeholder="Enter your pincode" class="pincode">
+            <button type="button" class="btn btn-default effect3" style=" margin-top: 24px;background-color:#248CCB;border-radius:20px;width:150px;color:white;outline-style: none;">BUY NOW</button>
+  </div>
+
+
+
+
+     
+
+
+    </div>
+    <div class="col-md-1">
+      <a href="#"><img src="heart.png" style="height:50px;width:40px"></img></a>
+    </div>
+
+    <div class="community">
+
+
+</div>
+  <br>
+    
+  <div class="col-md-12">
+
+      <br><br><br>
+ <h4>Community Reviews</h4>
+ <img src="stars.png" style="height:20px;width:70px">&nbsp <a href="#" style="color:black;font-family:brandon_reg">360 Reviews</a></img>
+    <hr style="color:black">
+  </div>
+  <div class="col-md-2">
+    <img src="team1.jpg" style="border-radius:50%;height:75px;width:75px;">
+  </div>
+  <div class="col-md-10">
+    <div class="sameline1">
+      <h4 style="font-size:18px;padding-right:10px">Andrew Jones</h4>
+      <h4 style="font-size:15px;color:#808080;padding-right:7px">Rated it</h4><img src="stars.png" style="height:15px;width:55px"></img>
+      </div>
+    <p style="margin-top:0px;font-size:12px;color:#808080">July 27, 2015</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <br>
+  <br>
+  </div>
+  <div class="col-md-2">
+    <img src="team3.jpg" style="border-radius:50%;height:75px;width:75px;">
+  </div>
+  <div class="col-md-10">
+    <div class="sameline1">
+      <h4 style="font-size:18px;padding-right:10px">Adam Christiano</h4>
+      <h4 style="font-size:15px;color:#808080;padding-right:7px">Rated it</h4><img src="stars.png" style="height:15px;width:55px"></img>
+      </div>
+    <p style="margin-top:0px;font-size:12px;color:#808080">December 25, 2015</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  </div>
+  <div class="col-md-12">
+    <div class="panel panel-default">
+  <center>
+    <a href="#" style="color:#808080"><div class="panel-body" style="font-family:brandon_reg">View All Reviews</div></a>
+  </center>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+    <div class="col-md-12">
+      <p style="font-size:20px">Related Books</p>
+    </div>
+  <div class="col-md-4">
+      <img src="book1.jpg" style="height:125px;width:75px" />
+      <img src="book1.jpg" style="height:125px;width:75px;margin-top:10px" />
+      <img src="book1.jpg" style="height:125px;width:75px;margin-top:10px" />
+      <img src="book1.jpg" style="height:125px;width:75px;margin-top:10px" />
+    </div>
+    <div class="col-md-8">
+      <div class="one">
+      <p style="margin-bottom:0">Eat Pray Love</p>
+      <p style="margin-bottom:0">Elizabeth Clibert</p>
+      <p>$13.98</p>
+      </div>
+      <div class="two" style="padding-top:50px">
+      <p style="margin-bottom:0">Eat Pray Love</p>
+      <p style="margin-bottom:0">Elizabeth Clibert</p>
+      <p>$13.98</p>
+      </div>
+      <div class="three" style="padding-top:50px">
+      <p style="margin-bottom:0">Eat Pray Love</p>
+      <p style="margin-bottom:0">Elizabeth Clibert</p>
+      <p>$13.98</p>
+      </div>
+      <div class="four" style="padding-top:50px">
+      <p style="margin-bottom:0">Eat Pray Love</p>
+      <p style="margin-bottom:0">Elizabeth Clibert</p>
+      <p>$13.98</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="container-fluid">
+<div class="footer" style="background-color:#248CCB">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" style="padding-top:3%">
+  <h4 style="color:white">BUZKE</h4>
+
+  <p style="color:white">A new place to find books</p>
+  <p style="color:#ECECEC">What is Buzke?Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+</div>
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">About</p>
+  <p style="color:#ECECEC;margin-bottom:0">Legal</p>
+  <p style="color:#ECECEC">Testimonials</p>
+</div>
+
+<div class="col-md-2" style="padding-top:3%">
+  <p style="color:#ECECEC;margin-bottom:0">Contact us</p>
+  <p style="color:#ECECEC;margin-bottom:0">Terms</p>
+</div>
+<div class="col-md-1" style="padding-top:3%">
+  <img src="book.png" style="height:75px;width:75px">
+</div>
+<div class="col-md-3" style="padding-top:4%">
+  <p style="color:#ECECEC;font-size:30px">12,789 Pages Turned</p>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <a href="#"><img src="fb.png" style="height:40px;width:40px;"></a>&nbsp&nbsp
+    <a href="#"><img src="twitter.png" style="height:40px;width:40px;"></a>
+  </div>
+  <p style="color:white">Copyright &copy; 2016-2017  Thoutz Technologies Private Limited</p>
+  <div class="col-md-offset-1 col-md-4">
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script type="text/javascript" src="jquery-2.0.2.js"></script>
+<script src="bootstrap.js"></script>
+</html>

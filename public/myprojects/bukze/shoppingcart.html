@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>BUKZE</title>
+    <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">      
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<style type="text/css">
+
+@font-face {
+    font-family: Brandon_reg;
+    src: url(Brandon_reg.otf);
+}
+
+body
+{
+    overflow-x: hidden;
+    font-family: Brandon_reg;
+}
+
+
+/* Navbar CSS Starts */
+.navbar-inverse{
+  background-color: #FFFFFF;
+  border: none;
+}
+.effect1{
+     box-shadow: 0 10px 6px -6px #777;
+     display: block;
+}
+.second-nav{
+  position: relative;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.second-nav .navbar-fixed-top{
+  top: 15px;
+}
+.second-nav li {
+    display: inline-block;
+    color: #248CCB;
+    text-decoration: none;
+}
+
+.second-nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #248CCB;
+    transition: width .3s;
+}
+
+.second-nav li:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+ .navbar-fixed-top2
+ {
+
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 500;
+ }
+
+ .searchbutton
+ {
+  position: absolute;
+  z-index: 1000;
+  color: #eeeeee;
+ }
+
+  .footer p{
+  font-family: brandon_reg;
+ }
+ .footer h4{
+  font-family: brandon_reg;
+ }
+/* Navbar CSS Ends */
+
+.topheading
+{   
+    position: absolute;
+    top: 20%;
+    min-height: 20%;
+    background-color: blue;
+    box-shadow: 0 10px 6px -6px #777;
+
+}
+.topheading>h1
+{
+    font-family: Brandon_reg;
+    text-align: center;    
+    color: white;
+    font-size: 2em;
+    padding-top: 1em;
+
+}
+.headingcontents
+{
+    margin-top: 30%;
+    text-align: center;
+    color: black;
+}
+.insidecontents
+{
+    text-align: center;
+    color: black;
+}
+.bookimage
+{
+width: 100;
+}
+
+
+.insidecontents>h2
+{
+    font-size: 3em;
+}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+.footer
+{
+margin-left: -2%;
+margin-right: -2%;
+}
+
+.bookname>h3
+{
+text-align: left;
+}
+.bookname>h4
+{
+font-size: 1.2em;
+text-align: left;
+margin-top: -1%;
+}
+
+.qtyminus { 
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1.2em;
+}
+.qtyplus { 
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1.2em;
+}
+input.qty
+{
+    border: none;
+    color: black;
+    font-size: 1.5em;
+
+}
+.quantityclass
+{
+margin-top: 2%;
+}
+ 
+.priceclass>h4
+{
+    margin-top: 17%;
+}
+.totalclass>h4
+{
+    margin-top: 17%;
+}
+
+.closebutclass
+{
+
+    margin-top: 17%;
+    background: transparent;
+    font-size: 1.5em;
+}
+.continueshopbut
+{
+    border-radius: 25px;
+    background-color: white;
+    color: #006dcc;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.proceedshopbut
+{
+    border-radius: 25px;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.proceedshopbut:hover
+{
+    background-color: white;
+    color: #006dcc;
+}
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #e8e6e8; /* Modern Browsers */
+}
+
+.fa{
+	color: #444244;
+}
+
+.topheading{
+	background-image: url("shoppingpage.jpg");
+	    background-position: center center;
+ 
+    background-size: cover;
+}
+</style>
+<body>
+    
+<nav class="navbar navbar-inverse navbar-fixed-top effect1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div class="navbar-header">
+                    <a class="navbar-brand"><img src="logo.png" style="height:40px;width:100px;margin-left:60%;"></a>
+                </div>
+            </div>
+            <div class="col-md-offset-2 col-md-4">
+                <div class="input-group  navbar-form has-feedback has-feedback-left">
+                    <input type="text" class="form-control" placeholder="Search among 17,465 Books" style="padding-top:3%;padding-bottom:3%;border-radius:20px;width:700px;font-family:brandon_reg;border: 2px solid #eeeeee" />
+                    <span class="glyphicon glyphicon-search form-control-feedback searchbutton" style="padding-top:1%;"> </span>
+                </div>
+            </div>
+            <div class="col-md-offset-3 col-md-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><img src="user.png" style="height:20px;width:20px"></a></li>
+                    <li><a href="#"><img src="bag.png" style="height:20px;width:20px"></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-menu-hamburger" style="color:black;padding-top:3px"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="second-nav">
+    <nav class="navbar navbar-inverse navbar-fixed-top2" style="margin-top:4%;padding-top:2%;background-color:#FFFFFF">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar1">
+                <div class="row">
+                  <div class="col-md-offset-4">
+                      <ul class="nav navbar-nav">
+                        <li><a href="page2.html" style="color:black;font-family:brandon_reg;font-size:20px">Education</a></li>
+                        <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Philosophy</a></li>
+                        <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Literature</a></li>
+                        <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Magazines</a></li>
+                        <li><a href="#" style="color:black;font-family:brandon_reg;font-size:20px">Other</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav><!--End of Navbar-->
+</div>
+<br>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 topheading">
+            
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 headingcontents">
+            <div class="col-xs-5">
+                <h4>ITEMS</h4>
+            </div>
+            <div class="col-xs-2">
+                <h4>QUANTITY</h4>
+            </div>
+            <div class="col-xs-2">
+                <h4>PRICE</h4>
+            </div>
+            <div class="col-xs-2">
+                <h4>TOTAL</h4>
+            </div>
+            <div class="col-xs-offset-1">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12 insidecontents">
+            <div class="col-xs-offset-1 col-xs-1">
+                <img src="book1.jpg" class="img-responsive">
+            </div>
+            <div class="col-xs-3 bookname">
+                <h3>The Martian</h3>
+                <h4>Author: Claudia Gray</h4>
+            </div>
+            <div class="col-xs-2 quantityclass">
+
+                    <button class=' btn btn-md qtyminus' field='quantity'> <span class="fa fa-chevron-down"></span></button>
+                    <input type='text' name='quantity' value='0' class='qty' />
+                    <button class='btn btn-md qtyplus' field='quantity' > <span class="fa fa-chevron-up"></span></button>
+            </div>
+            <div class="col-xs-2 priceclass">
+                <h4>&#8377;200</h4>
+            </div>
+            <div class="col-xs-2 totalclass">
+                <h4>&#8377;200</h4>
+            </div>
+            <div class="col-xs-1">
+                <button class='btn btn-md closebutclass'> <span class="fa fa-times"></span></button>
+            </div>
+        </div>
+    </div><hr> 
+    <div class="row">
+        <div class="col-xs-12 insidecontents">
+            <div class="col-xs-offset-1 col-xs-1">
+                <img src="book1.jpg" class="img-responsive">
+            </div>
+            <div class="col-xs-3 bookname">
+                <h3>The Martian</h3>
+                <h4>Author: Claudia Gray</h4>
+            </div>
+            <div class="col-xs-2 quantityclass">
+
+                    <button class=' btn btn-md qtyminus' field='quantity'> <span class="fa fa-chevron-down"></span></button>
+                    <input type='text' name='quantity' value='0' class='qty' />
+                    <button class='btn btn-md qtyplus' field='quantity' > <span class="fa fa-chevron-up"></span></button>
+            </div>
+            <div class="col-xs-2 priceclass">
+                <h4>&#8377;200</h4>
+            </div>
+            <div class="col-xs-2 totalclass">
+                <h4>&#8377;200</h4>
+            </div>
+            <div class="col-xs-1">
+                <button class='btn btn-md closebutclass'> <span class="fa fa-times"></span></button>
+            </div>
+        </div>
+    </div><hr>
+    <div class="row">
+        <div class="col-xs-12 insidecontents">
+            <div class="col-xs-offset-1 col-xs-1">
+                <img src="book1.jpg" class="img-responsive">
+            </div>
+            <div class="col-xs-3 bookname">
+                <h3>The Martian</h3>
+                <h4>Author: Claudia Gray</h4>
+            </div>
+            <div class="col-xs-2 quantityclass">
+
+                    <button class=' btn btn-md qtyminus' field='quantity'> <span class="fa fa-chevron-down"></span></button>
+                    <input type='text' name='quantity' value='0' class='qty' />
+                    <button class='btn btn-md qtyplus' field='quantity' > <span class="fa fa-chevron-up"></span></button>
+            </div>
+            <div class="col-xs-2 priceclass">
+                <h4>&#8377;200</h4>
+            </div>
+            <div class="col-xs-2 totalclass">
+                <h4>&#8377;200</h4>
+            </div>
+            <div class="col-xs-1">
+                <button class='btn btn-md closebutclass'> <span class="fa fa-times"></span></button>
+            </div>
+        </div>
+    </div><hr><br><br>
+    <div class="row">
+        <div class="col-xs-12 insidecontents">
+            <div class="col-xs-offset-6 col-xs-3">
+                <h4>Subtotal</h4>
+            </div>
+            <div class="col-xs-3">
+                <h4>&#8377;200</h4>
+            </div>
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-xs-offset-6 col-xs-6">
+            <hr>
+        </div>
+    </div>   
+    <div class="row">
+        <div class="col-xs-12 insidecontents">
+            <div class="col-xs-offset-6 col-xs-3">
+                <h3>Total</h3>
+            </div>
+            <div class="col-xs-3">
+                <h3>&#8377;200</h3>
+            </div>
+        </div>
+    </div> <br><br> <br>  
+ 
+    <div class="row">
+        <div class="col-xs-12 insidecontents">
+            <div class="col-xs-offset-4 col-xs-4">
+                <button class="btn btn-lg btn-primary continueshopbut">CONTINUE SHOPPING</button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-lg btn-primary proceedshopbut">PROCEED CHECKOUT</button>
+            </div>
+        </div>
+    </div> <br><br> <br> 
+</div>
+
+<div class="container-fluid">
+    <div class="footer" style="background-color:#248CCB;padding-bottom:3%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="padding-top:3%">
+                    <h4 style="color:white">BUKZE</h4>
+                    <p style="color:white">A new place to find books</p>
+                    <p style="color:#ECECEC">What is Buzke?Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-2" style="padding-top:3%">
+                    <p style="color:#ECECEC;margin-bottom:0">About</p>
+                    <p style="color:#ECECEC;margin-bottom:0">Legal</p>
+                    <p style="color:#ECECEC">Testimonials</p>
+                </div>
+                <div class="col-md-2" style="padding-top:3%">
+                    <p style="color:#ECECEC;margin-bottom:0">Contact us</p>
+                    <p style="color:#ECECEC;margin-bottom:0">Terms</p>
+                </div>
+                <div class="col-md-1" style="padding-top:3%">
+                    <img src="book.png" style="height:75px;width:75px">
+                </div>
+                <div class="col-md-3" style="padding-top:4%">
+                    <p style="color:#ECECEC;font-size:30px">12,789 Pages Turned</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#"><img src="fb.png" style="height:40px;width:40px;"></a>&nbsp&nbsp
+                    <a href="#"><img src="twitter.png" style="height:40px;width:40px;"></a>
+                </div>
+                    <p style="color:white">Copyright &copy; 2016-2017  Thoutz Technologies Private Limited</p>
+                <div class="col-md-offset-1 col-md-4">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+    // This button will increment the value
+    $('.qtyplus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
+
+
+
+</script>
+</body>

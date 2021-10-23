@@ -1,0 +1,172 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">   
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" type="image/png" href="">
+	<title>URBANRIDER</title>
+
+</head>
+<style type="text/css">
+.carousel-caption
+{
+	margin-bottom:10vh;
+}
+.postbut
+{
+	position: absolute;
+	z-index: 5;
+	margin-top: 80vh;
+}
+.postbutton{
+		border-top-right-radius:30px;
+    border-bottom-left-radius:30px;
+    border-top-left-radius:30px;
+    border-bottom-right-radius:30px;
+}
+body
+{
+	margin-left: -15px;
+	margin-right: -15px;
+	overflow: hidden;
+	font-family: roboto;
+}
+
+.sharebut{
+	position: absolute;
+	margin-top: 90vh;
+	margin-left: 85vw;
+	z-index: 5;
+}
+.sharesocial{
+  width:4vw;
+  height:4vw;
+  text-align:center;
+  line-height:4vw;
+  font-size:2vw;
+  color:#fff;
+  background:black;
+  border-radius:50%;
+  transition:all 1s ease-in-out;
+}
+.sharesocial:hover{
+	  color:black;
+  background:#fff;
+}
+.modal{
+	top: 30vh;
+}
+.modal-content{
+	background-color: black;
+}
+
+</style>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="col-xs-12">
+		 
+ 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		      <li data-target="#myCarousel" data-slide-to="3"></li>
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+
+		      <div class="item active">
+		        <img src="images/1.jpg" alt="Chania" class="img-responsive mainbackpic">
+		        <div class="carousel-caption">
+		          <h3>Srikanth</h3>
+		          <p>It does not matter how slowly you go as long as you do not stop. </p>
+		        </div>
+		      </div>
+
+		      <div class="item">
+		        <img src="images/2.jpg" alt="Chania"class="img-responsive mainbackpic">
+		        <div class="carousel-caption">
+		          <h3>Rakesh</h3>
+		          <p>In order to succeed, we must first believe that we can. </p>
+		        </div>
+		      </div>
+		    
+		      <div class="item">
+		        <img src="images/3.jpg" alt="Flower"class="img-responsive mainbackpic">
+		        <div class="carousel-caption">
+		          <h3>Vasudev</h3>
+		          <p>Good, better, best. Never let it rest. 'Til your good is better and your better is best. </p>
+		        </div>
+		      </div>
+
+		      <div class="item">
+		        <img src="images/4.jpg" alt="Flower" class="img-responsive mainbackpic">
+		        <div class="carousel-caption">
+		          <h3>Vasant Kumar</h3>
+		          <p>Don't watch the clock; do what it does. Keep going. </p>
+		        </div>
+		      </div>
+		  
+		    </div>
+
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    </a>
+		  </div>
+
+		</div>
+
+
+		<div class="col-sm-offset-4 col-sm-4 col-xs-12 postbut">
+			<a href="fblogin.php">
+			<button class="btn-lg btn-default postbutton">Post Image</button>
+			</a>
+		</div>
+
+
+		<button class="btn btn-info btn-md sharebut" data-toggle="modal" data-target="#sharebutton">
+                   Share <i class="fa fa-share-alt" />                    
+       	</button>
+
+
+	</div>
+</div>
+
+
+<div id="sharebutton" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <center>
+                	<a href="www.facebook.com/urbanrider">
+                		<i class="fa fa-facebook sharesocial"></i>
+                	</a>
+                	<a href="www.youtube.com/urbanrider">
+                		<i class="fa fa-instagram sharesocial"></i>
+                	</a>
+                	<a href="www.instagram.com/urbanrider">
+                		<i class="fa fa-youtube sharesocial"></i>
+                	</a>              	
+                <button type="button" style="color:black;" class="close" data-dismiss="modal">&times;</button>
+                </center>
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>

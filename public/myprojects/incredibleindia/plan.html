@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Incredible India</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="favicon_new.png">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">      
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+
+  <style type="text/css">
+  	@font-face {
+    	font-family: caviardreams;
+    	src: url(./fonts/caviarDreams.ttf);
+	}
+
+	body{
+		font-family: caviardreams;
+
+	}
+
+  	.header {
+  		height: 10vh;
+  		box-shadow: 0px 5px 8px 0px rgba(36,36,36,0.35);
+  	}
+
+  	.logo{
+
+  		height: 2vh;
+  		margin-top: 4vh;
+
+
+  	}
+
+
+  	.searchbar{
+  		margin-top: 2.5vh;
+  		border-radius: 30px;
+  		height: 5vh;
+  		width: 100%;
+  		outline: none;
+  		border:1px solid #e4e4e4;
+  		padding-left: 5%;
+  	}
+
+  	.subheader{
+
+  		height: 6vh;
+  		background-color: #fcfcfc;
+  		
+  	}
+
+
+  	.control{
+  		padding-left: 2vw;
+  	}
+
+  	.control input {
+	
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+
+
+	.control input:checked ~ .control-select {
+	border-bottom: 2px solid #2aa1c0;
+}
+
+
+#plno{
+	color: #2aa1c0;
+}
+
+.filter-head{
+	margin-top: 4vh;
+	margin-left: 2vw;
+}
+
+.plan-link{
+	margin-top: 3.5vh;
+    text-align: center;
+    color: #71b7b1;
+    
+}
+
+.plan-link a{
+	color: #71b7b1;
+	text-decoration: none;
+	border-bottom: 2px solid #71b7b1;
+}
+
+.plan-head{
+	margin-top: 4vh;
+	margin-left: 2vw;
+	display: inline-block;
+	vertical-align: super;
+	text-align: center;
+}
+
+.plan-next{
+	background: transparent;
+	outline: none;
+	border: none;
+	color: #71b7b1;
+	font-weight: bold;
+	
+	
+}
+
+.box{
+	margin-left: 2vw;
+	padding: 5px 10px;
+    padding-right: 0;
+    margin-top: 2vh;
+    
+
+}
+
+.box h4{
+	text-align: left;
+}
+
+.box:hover{
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.35);
+}
+
+.box-after{
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.35);
+	border-left: 4px solid #71b7b1;
+
+}
+
+.sum-head{
+	margin-top: 4vh;
+	margin-left: 2vw;
+	vertical-align: super;
+	text-align: center;
+}
+
+.guidename,.hotelname,.travelsname{
+	display: inline-block;
+	margin-top: 0;
+}
+
+
+.controls{
+	text-align: end;
+
+}
+
+.sum-content{
+	margin-top: 10vh;
+}
+
+.finish{
+	border: none;
+	outline: none;
+	background-color: #71b7b1;
+	color: white;
+	font-weight: bold;
+	border-radius: 30px;
+	width: 8vw;
+	height: 4vh;
+	box-shadow: 0px 0px 10px 2px rgba(113,183,177,0.54);
+}
+
+
+
+  </style>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="header">
+				<div class="col-md-2">
+					<img src="logo.png" class="logo">
+				</div>
+				<div class="col-md-5">
+					<form action="#">
+						<input type="text" name="search"  onkeypress="getnumber(event)" placeholder="Search for any place,guides,hotels and more...." class="searchbar">
+					</form>
+				</div>
+				<div class="col-md-2">
+					<div class="plan-link"><b><a href="plan.html" >Plan a Tour</a></b></div>
+				</div>				
+			</div>
+		</div>
+
+
+
+	<div class="row">
+		<div class="col-md-7">
+			<h4 class="plan-head"><b id="title">Guides</b></h4>
+			<div class="controls">
+				<button class="plan-next" onclick="previous()">Previous</button>
+			<button class="plan-next" onclick="next()">Next</button>
+			</div>
+			
+			
+			<div id="plan-data">
+			   <div class="col-sm-6">
+    				<div class="box">
+    					<h4>Guide Name</h4>
+    					<h6>Languages - English &nbsp; Contact - 0123456789</h6>
+					</div>			
+				</div>
+			</div>
+
+
+			
+		</div>
+
+		<div class="col-md-5" >
+			<h4 class="sum-head" ><b id="title" >Summary</b></h4>
+			
+					<div class="sum-content" style="margin-left: 4vw;">
+					<center>
+						<h5>Guide Name :  </h5>
+						<h3 class="guidename">Your Guide</h3>
+						<br>
+						<h5 >Hotel Name  : </h5>
+						<h3 class="hotelname">Your Hotel</h3>
+						<br>
+						<h5 >Travel Agent : </h5>
+						<h3 class="travelsname">Your Travel Agent</h3>
+						<br><br>
+
+						<button class="finish" onclick="store();">Submit</button>
+
+					</center>
+				
+						
+					</div>
+						
+
+				
+			
+			
+			
+		</div>
+		
+	</div>
+
+
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+
+	var counter=0,id;
+	var guideid,guidename;
+	var hotelid,hotelname;
+	var travelid,travelsame;
+
+	function next(){
+
+
+		switch(counter) {
+   
+    case 0:
+        $("#title").html("Guides");
+			$.ajax({
+
+				url: "php/plan.php",
+				data:'id='+counter,
+				type: "post",
+				success:function(data){
+
+					$("#plan-data").html(data)
+					console.log(data);
+				}
+
+					});
+			counter++;
+        break;
+   
+   case 1:
+   		$("#title").html("Hotels");
+			$.ajax({
+
+				url: "php/plan.php",
+				data:'id='+counter,
+				type: "post",
+				success:function(data){
+
+					$("#plan-data").html(data)
+					console.log(data);
+				}
+
+					});
+			counter++;
+			break;
+
+	   case 2:
+   		$("#title").html("Travel Operators");
+			$.ajax({
+
+				url: "php/plan.php",
+				data:'id='+counter,
+				type: "post",
+				success:function(data){
+
+					$("#plan-data").html(data)
+					console.log(data);
+				}
+
+					});
+			counter++;
+			break;
+
+}
+
+	}
+
+
+
+	function previous(){
+
+
+		switch(counter) {
+   
+    case 2:
+        $("#title").html("Guides");
+        	id = 0;
+			$.ajax({
+
+
+				url: "php/plan.php",
+				data:'id='+id,
+				type: "post",
+				success:function(data){
+
+					$("#plan-data").html(data)
+					console.log(data);
+				}
+
+					});
+			counter--;
+			
+        break;
+   
+   case 3:
+   		$("#title").html("Hotels");
+   		id = 1;
+			$.ajax({
+
+
+				url: "php/plan.php",
+				data:'id='+id,
+				type: "post",
+				success:function(data){
+
+					$("#plan-data").html(data)
+					console.log(data);
+				}
+
+					});
+			counter--;
+			
+			break;
+
+	 
+
+}
+
+	}
+
+
+
+
+
+
+
+
+	next();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$("div").on("click", "div.box", function(){
+
+	$( "div.box"  ).removeClass( "box-after" );
+	$( this).addClass( "box-after" );
+
+	if (counter==1) {
+		
+		guideid = $(this).attr('id');
+		guidename = $(".box-after h4").text();
+
+
+		$(".guidename").html(guidename);
+	}
+
+	if (counter==2) {
+
+		hotelid = $(this).attr('id');
+		hotelname = $(".box-after h4").text();
+		$(".hotelname").html(hotelname);
+	}
+
+	if (counter==3) {
+
+		travelid = $(this).attr('id');
+		travelsname = $(".box-after h4").text();
+		$(".travelsname").html(travelsname);
+	}
+
+	
+	
+	
+	
+
+
+    
+});
+
+function store(){
+
+	$.ajax({
+
+
+				url: "php/planinsert.php",
+				data:{'guideid':guideid,'travelid':travelid,'hotelid':hotelid},
+				type: "post",
+				success:function(data){
+
+					window.location.replace("places.html");
+				}
+
+					});
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+		function getnumber(e){
+
+			 if(e.keyCode === 13) {
+			 	console.log("typed");
+
+
+				var id= $(".searchbar").val();
+				console.log(id);
+				$.ajax({
+
+				url: "php/search.php",
+				data:'id='+id,
+				type: "GET",
+				success:function(data){
+
+					$("#output").html(data)
+					console.log(data);
+
+				
+				
+
+
+
+				}
+				});
+
+
+			}
+	
+
+
+		}
+	</script>
+</body>

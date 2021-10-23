@@ -1,0 +1,109 @@
+
+body
+{
+	overflow: hidden;
+}
+.textos
+{
+	font-size: 3vh;
+	font-size: 3vw;
+	font-family: Open Sans;
+   color: #f05f40;
+}
+
+.textis
+{
+	font-size: 2vh;
+	font-size: 2vw;
+	font-family: Open Sans;
+	color: black;
+
+}
+
+.textisbut
+{
+	font-size: 2vh;
+	font-size: 2vw;
+	font-family: roboto;
+	color: white;
+
+}
+
+
+.btn-custom2
+{
+	background-color: red;
+	color: white;
+}
+
+.btn-custom1
+{
+	background-color: black;
+	color: white;
+}
+
+
+.land
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+
+.land.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+.addressboard
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.addressboard.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+
+.addressboardtext
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.addressboardtext.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+
+.housed
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.housed.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+
+
+.mailed
+{
+    opacity: 0;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
+}
+.mailed.is-showing
+{
+opacity: 1;
+transform: translateX(0px);
+}
+

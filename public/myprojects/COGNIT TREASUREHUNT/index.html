@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sherlock</title>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/stars.css">
+	<link rel="stylesheet" type="text/css" href="./css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="./js/material.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+	
+	<title>Online Treasure Hunt</title>
+
+	<style type="text/css">
+	body{
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+
+
+  background-repeat: no-repeat;
+	
+
+	}
+
+		.card {
+			    display: block;
+	
+    margin: auto;
+    height: auto;
+   width: 350px;
+
+
+		}
+		
+.mdl-button{
+	height: 50px;
+	width: 120px;
+}
+		.logo {
+			position: absolute;
+			margin-left: 3%;
+		}
+
+		.tagline {
+			font-size: 24px;
+    		letter-spacing: 0;
+    		margin: 0 0 16px;
+    		font-family: pacifico;
+    		color: white;
+    		margin-top: 3vh;
+    		text-align: center;
+		}
+
+		.icon {
+			width:50px;
+			margin-top: 5px;
+			margin-left: 90%;
+		
+
+		}
+		.header {
+			margin-top: 1%;
+			width: 100%
+		}
+.social-link
+{
+  padding-top: 1%;
+  float: right;
+  overflow:hidden;
+  list-style:none;
+      margin-right: 3%;
+}
+
+.social-link li
+{
+  float:left;
+  margin-right:15px;
+}
+.social-link li a
+{
+  display:block;
+  width:50px;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  font-size:25px;
+  color:#222222;
+  background-color:#fff;
+  border-radius:50%;
+  transition:all 0.5s ease-in-out;
+}
+.social-link li a:hover, .social-link li a:focus
+{
+  text-decoration:none;
+}
+
+.facebook a:hover
+{
+  color: #fff ;
+  background : #FB534C;
+}
+
+
+.youtube a:hover
+{
+  color: #fff ;
+  background :#FB534C;
+}
+
+.image {
+
+	width: 50%;
+	margin: auto;
+	display: block;
+	margin-top: 1vh;
+}
+
+.register{
+	margin-top:2vh;padding-bottom: 2vh;    margin-bottom: 2vh;
+}
+
+.reg-text{
+	font-size: 20px;
+	color:black;
+	font-weight: 500;
+	margin-top: 2vh;
+	margin-bottom: 0;
+}
+
+
+@media only screen and (min-width: 1378px){
+	.card {
+		width: 50vh;
+	}
+
+	.image{
+		margin-top: 3vh;
+		margin-bottom: 3vh;
+	}
+
+	.mdl-button {
+		margin-top: 2vh;
+	}
+
+	.register{
+	margin-top:3vh;
+	padding-bottom: 3vh;
+	    margin-bottom: 2vh;
+}
+
+.reg-text{
+	font-size: 20px;
+	color:black;
+	font-weight: 500;
+	margin-top: 3vh;
+	margin-bottom: 0;
+}
+
+}
+
+	</style>
+</head>
+<body>
+<div class="header">
+	<img src="./img/logo.png" class="logo">
+		<ul class="social-link">
+            <li class="facebook"><a href="https://www.facebook.com/cognitmnm/"><i class="fa fa-facebook"></i></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCqpD2S2M00nJM9rPz68IS-w"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+</div>
+<div style="clear: both"></div>
+      
+ <div style="width:100%;height:100%; position:fixed;">
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+ </div> 
+<div class="mdl-card mdl-shadow--8dp card">
+<img src="./img/event-logo.png" class="image" style="">
+	<form action="./php/signin.php" method="post">
+		<center>
+  		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" >
+    		<input class="email mdl-textfield__input" type="email" name="email" id="sample3" required>
+    		<label class="mdl-textfield__label" for="sample3">Email</label>
+
+  		</div>
+
+  		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    		<input class="mdl-textfield__input password" name="password" type="password" id="sample3" required>
+    		<label class="mdl-textfield__label" for="sample3">Password</label>
+  		</div>
+  	</center>
+ 
+  	<center>
+  	
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+  Sign in
+</button>
+
+<p class="reg-text">Not yet Registered?</p>
+
+</center>
+	</form>
+<center>
+		<a href="http://www.mnmcognit.com/mob/#register"><button class="register mdl-button mdl-js-button mdl-js-ripple-effect">
+  Register
+</button></a>
+</center>
+
+
+ </div>
+<p class="tagline">Coders Beyond Ages</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Cognit 2k16</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/firstpage/piclogo1.png">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.0.2.js"></script>
+
+<style type="text/css">
+ 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(images/firstpage/loader.gif) center no-repeat #fff;
+}
+
+
+
+body 
+{
+  background:#fff;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+.letlogo
+{
+  margin-top: 10%;
+  -webkit-transition-duration: all 10s;
+  height:40%;
+  width:60%;
+}
+
+.logopic
+{    
+  margin-top: 10%;
+  -webkit-transition-duration: all 10s;
+  height:60%;
+  width:60%;
+}
+
+.header
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;  
+  -webkit-transition-duration: 3s;
+background: linear-gradient(to bottom,#3b447f,#9f5f9b);
+ 
+}
+
+.header h1
+{
+  font-family: 'Montserrat',sans-serif;
+    font-size: 3vh;
+    font-size: 3vw;
+  font-weight:400;
+  color:#fff;
+  -webkit-transition-duration: 3s;
+}
+
+.we-create
+{
+  display:inline-block;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color:#fff;
+  padding:0 0 0 5px;
+  -webkit-transition-duration: 3s;
+}
+
+.p1
+{
+  font-size: 2vh;
+  font-size: 2vw;
+   font-weight:400;
+}
+.p2
+{
+  font-size: 1.5vh;
+  font-size: 1.5vw;
+  font-weight:100;
+}
+.p3
+{
+  font-size: 2vh;
+  font-size: 2vw;
+  font-weight:400;
+}
+
+.link
+{
+  padding:25px 25px;
+  font-size:20px;
+  font-weight:400;
+  font-family: 'Montserrat', sans-serif;
+  display:inline-block;
+  border-radius:50%;
+  text-transform:uppercase;
+  line-height:20px;
+  margin-bottom:20px;
+  color:#222222;
+  background:#fff; 
+  transition:all 1s ease-in-out;
+  -moz-transition:all 1s ease-in-out;
+  -webkit-transition:all 1s ease-in-out;
+}
+
+.link:hover 
+{
+  text-decoration:none;
+  color :#fff;
+  background :#222222;
+}
+
+.social-link
+{
+  margin-left: 40%;
+  display:block;
+  overflow:hidden;
+  list-style:none;
+}
+.social-link li
+{
+  float:left;
+  margin-right:15px;
+}
+.social-link li a
+{
+  display:block;
+  width:50px;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  font-size:25px;
+  color:#222222;
+  background:#fff;
+  border-radius:50%;
+  transition:all 1s ease-in-out;
+}
+.social-link li a:hover, .social-link li a:focus
+{
+  text-decoration:none;
+}
+
+.facebook a:hover
+{
+  color: #fff ;
+  background : #3b5998;
+}
+
+
+.youtube a:hover
+{
+  color: #fff ;
+  background :#cb2026;
+}
+</style>
+</head>
+
+
+<body>
+  <div class="se-pre-con"></div>
+
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+
+        <center>
+
+          <div class="animated fadeInDown delay-1s">
+           <img src="images/firstpage/letlogo1.png" class="letlogo img-responsive" id="letlogo">
+          </div>
+
+          <br><br>
+
+          <div class="we-create animated flipInX delay-1s">
+             <div class="p1">Will Arrive In:</div>
+             <div class="p2" id="clock">     
+             </div>
+             <div class="p2"> (20th august)    
+             </div>
+ 
+             <br>
+             <div class="p3">Click below to get on a journey to know more about our theme!!!</div>
+          </div>
+
+          <br><br><br>
+
+          <a class="link animated fadeInUp delay-1s" href="main.html">
+            <i class="fa fa-chevron-down "></i>
+          </a>
+
+        </center>
+
+      </div>
+
+
+
+      <div class="col-md-6">
+        <center>
+  
+          <div class="animated fadeInDown delay-1s">
+            <img src="images/firstpage/piclogo1.png" class="logopic img-responsive" id="logopic">
+         </div> 
+
+         <br><br>
+
+          <h1 class="animated flipInX delay-1s">"Coders Beyond Ages"</h1>
+
+        </center>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <center>
+
+         <br>
+
+          <ul class="social-link">
+            <li class="facebook"><a href="https://www.facebook.com/cognitmnm/"><i class="fa fa-facebook"></i></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCqpD2S2M00nJM9rPz68IS-w"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+            <p><br></p>
+        </center>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<script src="js/jquery-2.0.2.js"></script>
+<script src="js/jquery.countdown.js"></script>
+
+
+<script>
+
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");;
+  });
+
+
+   $('#clock').countdown('2016/8/20', function(event) {
+   var $this = $(this).html(event.strftime(''
+     + '<span>%w</span> Weeks '
+     + '<span>%d</span> Days '
+     + '<span>%H</span> Hrs '));
+ });
+
+var myVar = setInterval(myTimer, 10000);
+var black =0;
+
+function myTimer() {
+if(black==0)
+{
+
+
+$('.header').css({'background-image' : 'url(images/firstpage/whitebg.png)'});
+
+document.getElementById("letlogo").src="images/firstpage/logoblack.png";
+
+document.getElementById("logopic").src="images/firstpage/logoimageblack.png";
+
+$('.header h1').css({'color' : '#222222'});
+
+$('.we-create').css({'color' : '#262626'});
+
+$('.link').css({'color' : '#fff','background' : '#222222'});
+
+
+$(".link").hover(function () {
+    $(this).css({'color' : '#222222','background' : '#fff'});
+  }, 
+  function () {
+    $(this).css({'color' : '#fff','background' : '#222222'});
+  }
+);
+
+$('.social-link li a').css({'color' : '#fff','background' : '#222222'});
+
+
+
+$(".facebook a").hover(function () {
+    $(this).css({'color' : '#2222222', 'background' : '#3b5998'});
+  }, 
+  function () {
+    $(this).css({'color' : '#fff','background' : '#222222'});
+}
+);
+
+$(".youtube a").hover(function () {
+    $(this).css({'color' : '#2222222', 'background' : '#cb2026'});
+  }, 
+  function () {
+    $(this).css({'color' : '#fff','background' : '#222222'});
+}
+);
+
+
+
+
+black = 1;
+}
+
+
+
+else
+{
+
+$('.header').css({'background-image' : 'url(images/firstpage/blackbg.png)'});
+
+document.getElementById("letlogo").src="images/firstpage/logowhite.png";
+
+document.getElementById("logopic").src="images/firstpage/logoimagewhite.png";
+
+$('.header h1').css({'color' : '#fff'});
+
+$('.we-create').css({'color' : '#bcbcbc'});
+
+$('.link').css({'color' : '#222222','background' : '#fff'});
+
+
+$(".link").hover(function () {
+    $(this).css({'color' : '#fff','background' : '#222222'});
+  }, 
+  function () {
+    $(this).css({'color' : '#222222','background' : '#fff'});
+  }
+);
+
+
+$('.social-link li a').css({'color' : '#222222','background' : '#fff'});
+
+$(".facebook a").hover(function () {
+    $(this).css({'color' : '#fff', 'background' : '#3b5998'});
+  }, 
+  function () {
+    $(this).css({'color' : '#222222','background' : '#fff'});
+}
+);
+
+
+$(".youtube a").hover(function () {
+    $(this).css({'color' : '#fff', 'background' : '#cb2026'});
+  }, 
+  function () {
+    $(this).css({'color' : '#222222','background' : '#fff'});
+}
+);
+
+
+
+
+
+black = 0;
+}
+
+}
+
+
+
+$(document).bind("contextmenu",function(e) {
+ e.preventDefault();
+});
+
+
+$(document).keydown(function(e){
+    if(e.which === 123){
+       return false;
+    }
+            if(event.shiftKey && event.ctrlKey && event.which == 73) {
+            console.log("ctrl+alt+up"); //never triggered
+            return false;
+        }
+});
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
